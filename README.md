@@ -1,4 +1,4 @@
-##**Compumundo Hipermegared**
+## **Compumundo Hipermegared**
   Bienvenidos, esta es una  pagina de ventas de todo tipo de hardware,accesorios y componentes para una computadora, tambien ofrecemos el servicio de armado de computadoras a medida, apuntada a las personas que requieran una actualizacion o simplemente adquirir una nueva PC para jugar,streamear o ejecutar programas pensados para diseñar
 
   **¿Quienes somos?**
