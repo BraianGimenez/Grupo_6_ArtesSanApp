@@ -23,15 +23,20 @@
 
 Se establecio el tipo de producto/servicio que brinda la pagina, y para ello se tomaron referencias de las siguientes paginas ya existentes.
 
-https://compragamer.com/
-https://www.fullh4rd.com.ar/
-Https://www.gezatek.com.ar/
-Https://www.digitalmarket.com.ar/
-https://www.playxfun.com/
-https://www.mexx.com.ar/
-https://www.hardgamers.com.ar/
+https://compragamer.com/  (Se destaca la estetica, los colores, y el banner pincipal que destaca ofertas e informacion y tiene un tamaño grande por lo que brinda una informacion mas legible que resalta en el home )
+
+https://www.fullh4rd.com.ar/ (Tienen buena paleta colores, y la seccion de categorias esta clara y ordenada, como el header )
+
+Https://www.gezatek.com.ar/ (En la pagina se destaca la informacion de contacto, y los colores del header)
+
+Https://www.digitalmarket.com.ar/ (Nos gusto la forma del menu de categorias, tambien ofrece servicio de armado de pc, )
+
+https://www.playxfun.com/ (Se destaca los distintos menus desplegables ordenados, con imagenes grandes y mostrando parte del equipo como para mostrar fidelidad o confianza )
+https://www.mexx.com.ar/ (En esta pagina, hay muchos productos relacionados al tema de la computadoras y componentes)
+
+https://www.hardgamers.com.ar/ (Es una pagina que muestra productos de otras paginas, tambien brinda servicios de armado)
+
 https://www.maximus.com.ar/
 
-De las paginas anteriormente mencionadas, se tomaron caracteristicas como:
-Home,Disposicion de los productos,carritos de compra, tipografia, colores, estilo,variedad de productos,cartera de clientes, y los servicios que ofrecen.
-Se eligio como referencia principal la pagina de https://www.maximus.com.ar/ por la sumatoria de caracteristicas antes declaradas.
+ Se eligio como referencia principal la pagina de https://www.maximus.com.ar/  y se tomaron caracteristicas como:
+Home,Disposicion de los productos,carrito de compra, colores, estilo,variedad de productos,cartera de clientes, y los servicios que ofrecen.
