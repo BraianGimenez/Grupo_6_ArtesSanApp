@@ -1,5 +1,5 @@
-##  **ARTES-APP**
-Bienvenidos a *Artes-app*, una plataforma que ofrece servicios y productos artesanales, con el objetivo de acercar a los distintos artesanos y artistas a poder ofrecer sus creaciones a traves de esta pagina, adaptando funciones como envios o distintos metodos de pago, orientado a las personas que buscan esos productos, de manera mayoristas o incluso minoristas.
+##  **ARTESAN-APP**
+Bienvenidos a *Artesan-app*, una plataforma que ofrece servicios y productos artesanales, con el objetivo de acercar a los distintos artesanos y artistas a poder ofrecer sus creaciones a traves de esta pagina, adaptando funciones como envios o distintos metodos de pago, orientado a las personas que buscan esos productos, de manera mayoristas o incluso minoristas.
 
  **Nuestro equipo** esta compuesto por : 
 
