@@ -28,3 +28,7 @@ https://www.ebay.com/ (A pesar de no tener tematicas relacionadas a la artesania
 https://www.mercadolibre.com.ar/  (Esta pagina es la mas completa en cuanto funcionalidad, tambien por como muestra la informacion de ofertas destacadas y todas las herramientas que posee facilitan la compra en el sitio a cualquier cliente)
 
 
+*Link a nuestro espacio de organización*
+
+https://trello.com/b/nVNPZf3t/c19-grupo-6
+
