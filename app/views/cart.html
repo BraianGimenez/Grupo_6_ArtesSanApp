@@ -20,8 +20,8 @@
     </header>
     <main>
         <h1><i class="fa-solid fa-cart-shopping"></i>Mi carrito<i class="fa-solid fa-cart-shopping fa-flip-horizontal"></i></h1>
-<div class="cartLine"></div>
-        <section>
+        <div class="cartLine"></div>
+        <section id="product">
             <h2><i class="fa-solid fa-masks-theater"></i>Mis productos</h2>
             <article>
                 <div class="cartProduct" id="cartProduct">
@@ -155,7 +155,7 @@
             <article class="cartPaymentCash" id="cartPaymentCash">
                 <div>
                     <label for="payment">
-                        <input type="radio">
+                        <input type="radio" name="cartPayment">
                         <span>Efectivo</span>
                         <div class="p">
                             Podra pagar el precio especial abonando la cantidad completa
@@ -168,7 +168,7 @@
             <article class="cartPaymentMercadoPago" id="cartPaymentMercadoPago">
                 <div>
                     <label for="payment">
-                        <input type="radio">
+                        <input type="radio" name="cartPayment">
                         <span>Mercado Pago</span>
                         <div class="p">
                             precio especial en un pago o pago en cuotas a precio de lista
@@ -180,8 +180,8 @@
 
             <article class="cartPaymentBank" id="cartPaymentBank">
                 <div>
-                    <label for="payment">
-                        <input type="radio">
+                    <label for="payment" name="cartPayment">
+                        <input type="radio" name="cartPayment">
                         <span>Transferencia Bancaria</span>
                         <div class="p">
                             Podra abonar el precio especial de la compra abonando la cantidad completa
@@ -193,25 +193,25 @@
 
             <article class="cartPaymentCreditCard" id="cartPaymentCreditCard">
                 <div>
-                    <label for="payment">
-                        <input type="radio">
+                    <label for="payment" name="cartPayment">
+                        <input type="radio" name="cartPayment">
                         <span>Tarjeta de credito</span>
                         <div class="p">
                             <form method="post">
                             <label for="">
-                                <input type="radio" name="" id="">
+                                <input type="radio" name="payment" id="">
                                 1 Pago (Visa, Mastercard)
                             </label>
                             <label for="">
-                                <input type="radio" name="" id="">
+                                <input type="radio" name="payment" id="">
                                 3 Cuotas (Visa,Mastercard)
                             </label>
                             <label for="">
-                                <input type="radio" name="" id="">
+                                <input type="radio" name="payment" id="">
                                 Ahora 12 (Visa,Mastercard)
                             </label>
                             <label for="">
-                                <input type="radio" name="" id=""> 
+                                <input type="radio" name="payment" id=""> 
                                 Ahora 18 (Visa,Mastercard)             
                             </label>
                             </form>
@@ -259,9 +259,38 @@
             
         </div>
         </section>
+        <section class="cartOtherProducts">
+            <h2><i class="fa-solid fa-trophy"></i>Otros productos similares</h2>
+            <article class="cartOtherProductsFlex">
+                <div>
+                    <img src="/images/imagePlaceholder.jpg" alt="">
+                    <h4>nombre del producto</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laborum et beatae eligendi dicta vel corporis veniam, eveniet labore explicabo!</p>
+                </div>
+                <div>
+                    <img src="/images/imagePlaceholder.jpg" alt="">
+                    <h4>nombre del producto</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laborum et beatae eligendi dicta vel corporis veniam, eveniet labore explicabo!</p>
+                </div>
+                <div>
+                    <img src="/images/imagePlaceholder.jpg" alt="">
+                    <h4>nombre del producto</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laborum et beatae eligendi dicta vel corporis veniam, eveniet labore explicabo!</p>
+                </div>
+                <div>
+                    <img src="/images/imagePlaceholder.jpg" alt="">
+                    <h4>nombre del producto</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laborum et beatae eligendi dicta vel corporis veniam, eveniet labore explicabo!</p>
+                </div>
+                <div>
+                    <img src="/images/imagePlaceholder.jpg" alt="">
+                    <h4>nombre del producto</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laborum et beatae eligendi dicta vel corporis veniam, eveniet labore explicabo!</p>
+                </div>
+            </article>
+        </section>
         </main>
     <footer>
-        <!-- <img src="images/FooterPlaceholder.png" alt="footer"> -->
         <img src="/images/FooterPlaceholder.png" alt="footer">
     </footer>
     <script src="/js/cart.js"></script>
