@@ -32,6 +32,10 @@ font-size: var(--titulo);
     font-family: var(--Franklin);
     font-weight: 800;
 }
+
+body{
+    background:linear-gradient(var(--beige),var(--naranja),var(--verde));
+  }
 /* Scrollbar*/
 
 

@@ -11,5 +11,8 @@ app.get("/", (req, res) => {
 app.get("/cart", (req, res) => {
     return res.sendFile(path.join(__dirname, "/views/cart.html"))
 })
+app.get("/productDetail", (req, res) => {
+    return res.sendFile(path.join(__dirname, "/views/productDetail.html"))
+})
 
 app.listen(PORT, () => console.log(`servidor levantando en puerto : ${PORT}\n http://localhost:${PORT}`))

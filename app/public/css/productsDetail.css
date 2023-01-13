@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Libre+Franklin:wght@300&family=Milonga&family=Nerko+One&family=Parisienne&display=swap');
+@import url("/css/styles.css");
+/* GENERALS */
+
+
+body{
+    background:linear-gradient(var(--beige),var(--naranja),var(--verde));
+  }
+
+  button{
+    border:3px solid var(--negro); 
+    box-shadow: inset 7px -7px 16px var(--violeta);
+    border: 3px solid var(--negro);
+    font-family: var(--Nerko);
+    color: black;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px var(--violeta);
+  }
+  button:hover{
+    transform: scale(1.1);
+  }
+  button:active{
+    background-color: var(--negro);
+    box-shadow: 4px 4px 5px var(--negro);
+    transform: translateY(5px);
+    color: var(--blanco);
+  }
+
+/* HEADER */
+
+header img{
+    width: 100%;
+}
+
+footer img{
+    width: 100%;
+}
+
+
+/* END HEADER */
+
+/* PRODUCTS */
+
+section.detail-products{
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+
+}
+section article.product {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+}
+section article.product img{
+    width: 100%;
+}
+section article.product div.btn-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    color: black;
+    background-color: white;
+    opacity: 0.45;
+    border-radius: 15px;
+    width: 30px;
+    height: 40px;
+    font-size: 1rem;
+    position: absolute;
+    top: 45%;
+    left: 0;
+}
+section article.product div.btn-rigth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    color: black;
+    background-color: white;
+    opacity: 0.45;
+    border-radius: 15px;
+    width: 30px;
+    height: 40px;
+    font-size: 1rem;
+    position: absolute;
+    top: 45%;
+    right: 2px;
+} 
+section article.product div.btn-rigth:active{
+    transform:scale(1.5);
+    border: 5px solid var(--violeta);
+    background-color: var(--violeta);
+}
+section article.product div.btn-left:active{
+    transform:scale(1.5);
+    border: 5px solid var(--violeta);
+    background-color: var(--violeta);
+}
+section div.products-photos{
+    display: none;
+
+}
+section div.products-photos div.photo-container{
+    display: none;
+}
+section div h2 {
+    display: block;
+    width: 100%;
+    font-family: var(--Milonga);
+    font-size: 1.2rem;
+    text-align: left;
+    font-style: italic;
+    max-width: 300px;
+   
+    
+}
+section div.product--description{
+    margin-bottom: 10px;
+    padding-top: 10px;
+    height: 85px;
+    background:linear-gradient(360deg,var(--naranja),var(--beige));
+    border-radius: 7px;
+    font-family: var(--Nerko);
+    font-size: 1rem;
+    max-width: 360px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+}
+section div.product--description a.more{
+    color: black;
+    text-decoration: none;
+}
+
+section.similar-products{
+    display: none;
+}
+
+
+section div.information {
+    display:block;
+    width: 100%;
+    position: relative;
+    padding: 5px;
+    max-width: 360px;
+}
+
+section div.information div.stock{
+    padding: 2px;
+    margin: 5px;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    text-align: left;
+}
+
+section div.information div.price {
+    font-family: var(--Franklin);
+    font-size: 1.7rem;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+section div.information div.discount{
+    width: 100%;
+    font-weight: bold;
+    font-size: 1rem;
+    color: green;
+    margin: 10px;
+    font-family: var(--Franklin);
+}
+
+section div.information button.cart-btn{
+    display: flex;
+    font-family: var(--Franklin);
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    width: 100px;
+    height: 40px;
+    border-radius: 7px;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+/* PRODUCT INFORMATION */
+
+section div.information h5{
+    font-style: italic;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+section div.information div.information-list ul {
+    display: block;
+    width: 100%;
+    list-style-type:disc;
+    font-size: 1rem;
+    padding: 15px;
+    max-width: 220px;
+    position: relative;
+    text-align: left;
+}
+section div.information div.information-list i {
+    color: var(--violeta);
+    padding-right: 10px;
+    text-shadow: 2px 2px 3px black;
+}
+section div.information div.information-list ul li{
+    margin: 5px;
+    font-family: var(--Franklin);
+    font-weight: 800;
+
+}
+
+section div.information div.information-list button.btn-calculate{
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+    width: 125px;
+    height: 30px;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+    font-family: var(--Franklin)
+}
+
+section div.finalize-purchase-btn{
+    padding: 5px;
+    
+}
+
+a.link{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+section div.information div.finalize-purchase-btn button.goCart-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    border-radius: 15px;
+    max-width: 360px;
+    font-size: 1.2rem;
+    margin: 20px 1px 1px;
+    width: 100%;
+    font-family: var(--Franklin)
+}
+
+/* END PRODUCTS */
+
+/* FOOTER */
+footer img{
+    width: 100%;
+}
+/* END FOOTER */
+
+/* MEDIA QUERIES */
+
+@media(min-width:768px){
+    /* HEADER */
+
+    /* PRODUCTS */
+    section article.product img{
+        border: 5px solid var(--naranja);
+        border-radius: 25px;
+        box-shadow: 5px -3px 10px black;
+    }
+    section div.products-photos{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 70px;
+
+
+    }
+    section div.products-photos div.photo-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 80px;
+        height: 65px;
+        margin: 5px 10px;
+        border-radius: 5px;
+        box-shadow: 5px -3px 15px black;
+        
+    }
+    section div.products-photos div.photo-container img{
+        border-radius: 5px;
+        width: 85px;
+        height: 68px;
+        border: 5px solid var(--naranja);
+    }
+    section div.products-photos div.photo-container img:hover{
+        transform: scale(1.1);
+        transition: all 1s;
+        border: 5px solid var(--violeta);
+        
+    }
+      
+
+
+    section div h2 {
+        width: 100%;
+        font-family: var(--Milonga);
+        font-size: 1.3rem;
+        text-align: left;
+        font-style: italic;
+        position: absolute;
+        top: 100px;
+        left: 425px;
+        text-shadow: 1px -1px 1px black ;
+    }
+    section div.product--description{
+        margin-bottom: 30px;
+        margin-left: 10px;
+        padding-top: 30px;
+        height: 185px;
+        font-family: var(--Nerko);
+        font-size: 1.5rem;
+        margin-top: 30px;
+        width: 100%;
+        box-shadow: 5px -1px 10px black;
+    }
+    section div.product--description a.more{
+       display: none;
+    }
+
+    section.similar-products{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      background: linear-gradient(var(--naranja),var(--verde));
+      
+     
+    }
+    div.title-similar-products h4{
+        display: block;
+        font-size: 1.5rem;
+        font-family: var(--Milonga);
+        padding: 10px;
+
+    }
+
+    section.similar-products img{
+        width: 100%;
+        width: 150px;
+        height: 100px;
+        border-radius: 15px;
+        border: 5px solid var(--naranja);
+        cursor: pointer;
+        box-shadow: 15px 5px 20px var(--negro);   
+    }
+    section.similar-products img:hover{
+        transform: scale(1.1);
+        transition: all 1s;
+        border: 5px solid var(--violeta);
+        
+    }
+    
+
+    section div.information{
+        position: absolute;
+        top: 150px;
+        left: 405px;
+    }
+
+    section div.information div.stock h5{
+        font-style: italic;
+        text-align: left;
+        font-size: 1.2rem;
+    }
+
+    section div.information div.price {
+        margin-top: 50px;
+        font-size: 2rem;
+        text-shadow: 1px -1px 2px black ;
+    }
+
+    section div.information div.discount{
+        font-size: 1.4rem;
+        margin: 20px;
+    }
+    section div.information button.cart-btn{
+        top: 80px;
+        right: 8px;
+        width: 150px;
+        height: 40px;
+        justify-content: center;
+        border-right: 2px solid black;
+    }
+
+    section div.information div.information-list h5{
+        margin-top: 60px;
+        text-align: left;
+        font-size: 1.3rem;
+    }
+    
+    section div.information div.information-list ul {
+        margin-bottom: 30px;
+        margin-top: 5px;
+        font-size: 1.4rem;
+        padding: 15px;
+        font-weight: 500;
+        text-align: center;
+        max-width: 350px;
+    }
+    section div.information div.information-list ul li{
+        max-width: 350px;
+        text-align: left;
+        margin: 20px;
+
+    }
+    section div.information div.information-list button.btn-calculate{
+        bottom: 80px;
+        right: 130px;
+        width: 120px;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+    section div.finalize-purchase-btn{
+        padding: 5px;
+    }
+
+    section div.information div.finalize-purchase-btn button.goCart-btn{
+        width: 340px;
+        height: 30px;
+        border-radius: 15px;
+        max-width: 350px;
+        font-size: 1.2rem;
+        margin: 40px 1px 1px;
+      
+    }
+}
+    /* FOOTER */
+@media(min-width: 1024px) {
+    section div.product--description{
+        width: 540px;
+        max-width: 600px;
+    }
+    
+    section div.information{
+        top: 220px;
+        left: 600px;
+    }
+
+    section div h2 {
+        max-width: 400px;
+        font-size: 2rem;
+        text-align: center;
+        top: 120px;
+        left: 560px;
+    }
+    section div.products-photos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 70px;
+        position: absolute;
+        top: 280px;
+        left: 450px;
+        max-width: 80px;
+}
+section div.products-photos div.photo-container {
+  margin: 30px 0px;
+}
+section div.information div.information-list h5{
+    margin-top: 30px;
+    text-align: left;
+    font-size: 1.3rem;
+}
+section div.information div.information-list ul {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 5px;
+}  
+
+}
