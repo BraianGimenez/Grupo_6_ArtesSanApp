@@ -91,3 +91,5 @@ function togglePaymentCreditCard (){
 }
 
 // END PAYMENT-----------------------
+
+// JS MEDIA QUERY
