@@ -26,5 +26,7 @@
 
 
     body{
-        background:linear-gradient(var(--beige),var(--naranja),var(--verde));
+        background: url("../images/background.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
       }
