@@ -78,17 +78,24 @@ label {
     width: 100%;
 }
 
-.check{
+.check{ 
     flex-direction: column;   
 }
 
-.check div.label {
-    font-size: 13px;
-    
+.check label {
+    margin-right: 0.5rem;   
 }
 
+/* .check div.label {
+    font-size: 13px;
+    
+} */
+
 .error-message {
+    
+    
     margin-top: 0.5rem;
+    
 }
 
 /* BUTTONS */
@@ -124,13 +131,13 @@ label {
 
 @media screen and (min-width: 768px) {
      body {
-       background: url("/images/background.jpeg")
+       background: url("../images/background.jpeg");
+       background-size: 100%;
        }
 
-.form{
-    font-size: 22px;
-}   
-
+span.error-message {
+        font-size: 14px;
+        }
 }
 
 /* DESKTOP */
@@ -138,5 +145,11 @@ label {
 @media screen and (min-width: 1025px) {
     body {
         background: url("../images/background.jpeg");
-      }
+        background-size: 100%;
+    }
+    span.error-message {
+        font-size: 16px;
+        text-align: center;
+        
+    }
 }

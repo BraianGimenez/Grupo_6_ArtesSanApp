@@ -127,18 +127,30 @@ label {
     background: linear-gradient(285deg, rgba(255,255,255,0.5) 0%,  rgba(39,255,232,0.5) 50%);
 }
 
-.btn-reset {
-    background:  linear-gradient(45deg, rgba(255,255,255,1) 0%,  rgba(39, 151, 255, 0.5) 50%);
-    color: rgb(75, 75, 75);
-    font-weight: bold;
-    transition: all 4s ease;
-}
-
-.btn-reset:hover {
-    color: rgb(172, 172, 172);
-    box-shadow: -5px -5px 10px rgb(255, 255, 255, 0.7);
-    background: linear-gradient(285deg, rgba(255,255,255,0.5) 0%,  rgba(39, 151, 255, 0.5) 50%);
-}
-
 /* MEDIA QUERIES */
 
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+    body {
+      background: url("/images/background.jpeg");
+      background-size: 100%;
+      }
+
+    span.error-message {
+      font-size: 14px;
+      }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1025px) {
+    body {
+       background: url("../images/background.jpeg");
+       background-size: 100%;
+     }
+
+    span.error-message {
+        font-size: 16px;
+        }
+}
