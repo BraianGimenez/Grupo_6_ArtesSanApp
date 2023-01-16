@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Libre+Franklin:wght@300&family=Milonga&family=Nerko+One&family=Parisienne&display=swap');
+@import url(/css.style.css);
+
+.content_s{
+    display: inline-block;
+    text-align: center;
+    display: flex;
+    vertical-align: top;
+    margin: 5%;
+    padding: 50px 10px 30px;
+    box-sizing: border-box;
+    border: 6px solid #000000;
+    border-radius: 10px ;
+}
+
+.content_s{
+   border-color: #a86840;
+   
+   display: block;
+  
+}
+
+
+
+
+
+
+
+.content_s:hover{
+    background: darkorange;
+    transform: scale(1.030);
+}
+
+
