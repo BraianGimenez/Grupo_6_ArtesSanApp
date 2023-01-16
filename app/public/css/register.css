@@ -2,7 +2,7 @@
 
 body{
     font-family: var(--Franklin);
-    /* background:linear-gradient(var(--beige),var(--naranja),var(--verde)); */
+    background-size: 100%;
     min-height: 100vh;
     padding: 2rem;
     display: flex;
@@ -124,7 +124,8 @@ label {
 
 @media screen and (min-width: 768px) {
      body {
-       background: url("/images/background.jpeg")
+       background: url("/images/background.jpeg");
+       background-size: 100%;
        }
 
 .form{
@@ -138,5 +139,6 @@ label {
 @media screen and (min-width: 1025px) {
     body {
         background: url("../images/background.jpeg");
+        background-size: 100%;
       }
 }

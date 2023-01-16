@@ -2,13 +2,12 @@
 
 body{
     font-family: var(--Franklin);
-    background:linear-gradient(var(--beige),var(--naranja),var(--verde));
-    /* background:linear-gradient(90deg,orange,black); */
     min-height: 100vh;
     padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: 100%;
 }
 
 a {
