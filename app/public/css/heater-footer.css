@@ -155,7 +155,7 @@ footer div.caja__footer{
         font-size: 13px;
     }
     .barra{
-        /*display: none*/
+        display: none
     }
     .logo img{
         width: 80px;
