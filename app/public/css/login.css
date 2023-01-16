@@ -1,0 +1,144 @@
+@import url('/css/styles.css');
+
+body{
+    font-family: var(--Franklin);
+    background:linear-gradient(var(--beige),var(--naranja),var(--verde));
+    /* background:linear-gradient(90deg,orange,black); */
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: darkblue;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+h2 {
+    
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+hr {
+    background: linear-gradient(90deg, black, white);
+    height: 3px;
+    margin-bottom: 3rem; 
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.input-container,
+.button-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 80%;
+}
+
+span.error-message {
+    color: var(--negro);
+    font-size: 0.7rem;
+}
+input.input-style {
+    border: none;
+    border-radius: 0.2rem;
+    height: 2rem;
+    padding: 0 0.5rem;
+    outline: none;
+    color: black;
+}
+
+input.input-style::placeholder {
+    color: rgb(184, 177, 177);
+}
+
+input.input-style:focus {
+    box-shadow: 0 0 6px var(--verde);
+}
+
+label {
+    font-size: 0.8rem;
+}
+
+.form-container {
+    background: linear-gradient(var(--violeta), var(--naranja));
+    padding: 1rem;
+    border-radius: 0.9rem;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+    max-width: 350px;
+    width: 100%;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 80%;
+}
+
+.check label {
+    margin-right: -3rem;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* BUTTONS */
+
+.btn {
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    height: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    
+}
+.btn-submit {
+    background:  linear-gradient(45deg, rgba(255,255,255,1) 0%,  rgba(106, 219, 140, 0.5) 50%);
+    color: rgb(75, 75, 75);
+    margin: 1rem;
+    height: 2rem;
+    width: 5rem;
+    font-weight: bold;
+    transition: all 4s ease;
+}
+
+.btn-submit:hover {
+    color: rgb(172, 172, 172);
+    box-shadow: -5px -5px 10px rgb(255, 255, 255, 0.7);
+    background: linear-gradient(285deg, rgba(255,255,255,0.5) 0%,  rgba(39,255,232,0.5) 50%);
+}
+
+.btn-reset {
+    background:  linear-gradient(45deg, rgba(255,255,255,1) 0%,  rgba(39, 151, 255, 0.5) 50%);
+    color: rgb(75, 75, 75);
+    font-weight: bold;
+    transition: all 4s ease;
+}
+
+.btn-reset:hover {
+    color: rgb(172, 172, 172);
+    box-shadow: -5px -5px 10px rgb(255, 255, 255, 0.7);
+    background: linear-gradient(285deg, rgba(255,255,255,0.5) 0%,  rgba(39, 151, 255, 0.5) 50%);
+}
+
+/* MEDIA QUERIES */
+

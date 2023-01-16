@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body class="register">
+    <div class="form-container">
+        <h2>Registro</h2>
+        <hr>
+        <form action="" method="POST">
+            <div class="form">
+            <div class="input-container">
+                <input class="input-style" type="name" name="name" placeholder="Ingrese su nombre y apellido">
+                <span class="error-message">Debe ingresar su nombre y apellido</span>
+            </div>
+            <div class="input-container">
+                <input class="input-style" type="email" name="email" placeholder="Ingrese su email">
+                <span class="error-message">Debe ingresar su email</span>
+            </div>
+            <div class="input-container">
+                <input class="input-style" type="password" name="pass" placeholder="Ingrese su contraseña">
+                <span class="error-message">Debe ingresar su contraseña</span>
+            </div>
+            <div class="input-container">
+                <input class="input-style" type="password" name="pass2" placeholder="Re-ingrese su contraseña">
+                <span class="error-message">Debe re-ingresar su contraseña</span>
+            </div>
+            <div class="check">
+            <div>
+                <label for="recordar">  Acepto los <a href="">términos y condiciones</a> </label>
+                <input type="checkbox" name="terms" id="recordar"> 
+            </div>
+                <span class="error-message">Debe aceptar los términos y condiciones</span>
+            </div>
+            <span class="error-message">Credenciales inválidas</span>
+            <div class="button-container">
+                 
+                <button type="submit" class="btn btn-submit">Registrarme</button>
+            </div> 
+                <span><a href="/login">Ya tengo cuenta</a></span>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
