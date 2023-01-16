@@ -1,4 +1,7 @@
-* {
+@import url("/css/styles.css");
+@import url("/css/heater-footer.css");
+
+*{
     box-sizing: border-box;
 }
 
