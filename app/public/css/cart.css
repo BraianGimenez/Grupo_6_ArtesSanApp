@@ -19,19 +19,20 @@
     --subtitulo:30px;
     --parrafo:16px;
 }
-.k{
 
-font-family: var(--Paris);
-font-size: var(--titulo);
 
-}
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: var(--Franklin);
     font-weight: 800;
+    
 }
+
+body{
+    background:linear-gradient(var(--beige),var(--naranja),var(--verde));
+  }
 /* Scrollbar*/
 
 
@@ -49,7 +50,7 @@ font-size: var(--titulo);
   
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-image: linear-gradient(var(--negro),var(--verde),var(--naranja),var(--verde),var(--negro));
+  background-image: linear-gradient(var(--blanco),var(--verde),var(--negro),var(--verde),var(--blanco));
   
 }
 /* End of Scrollbar*/
@@ -60,15 +61,20 @@ font-size: var(--titulo);
 
 header img{
     width: 100%;
+    height: auto;
+    
 }
 
 footer img{
     width: 100%;
+    vertical-align: middle;
 }
 
 body{
-  /* background: linear-gradient(var(--verde),var(--naranja),var(--violeta)); */
-  background:linear-gradient(var(--beige),var(--naranja),var(--verde));
+  /* background:linear-gradient(var(--beige),var(--naranja),var(--verde)); */
+  background: url("../images/background.jpeg");
+  
+  
 }
 
 /*TITLE*/
@@ -139,20 +145,23 @@ section article div.cartProduct{
   height: 100px;
 }
 
-section div.cartProduct div, section div.toggleCartProduct div{
+section div.cartProduct div, 
+section div.toggleCartProduct div{
   display: flex;
   border-radius: 10px;
   height: 100px;
   margin: 0 0.1rem 0 0;
 }
 
-section div.cartProduct div img, section div.toggleCartProduct div img{
+section div.cartProduct div img, 
+section div.toggleCartProduct div img{
   height: 100%;
   border-radius: 50%;
   object-fit: contain;
 }
 
-section div.cartProduct button.cartbtn,section div.toggleCartProduct button.cartbtn {
+section div.cartProduct button.cartbtn,
+section div.toggleCartProduct button.cartbtn {
   position: absolute;
   top: 25px;
   right: 5px;
@@ -180,7 +189,7 @@ section div.cartProduct div.cartPrice{
 
 section article div.toggleCartProduct{
   overflow:auto;
-  border: 3px solid var(--violeta);
+  border: 3px solid var(--negro);
   border-radius: 10px;
   margin: 0 0.5rem 1rem;
   background: linear-gradient(var(--naranja),var(--verde),var(--blanco));
@@ -190,7 +199,7 @@ section article div.toggleCartProduct{
 
 section article div.toggleCartProduct div.item{
   flex-direction: column;
-  border: 3px solid black;
+  border: 3px solid var(--negro);
   height: auto;
   align-items: center;
   background: linear-gradient(var(--verde),var(--naranja),var(--violeta));
@@ -255,11 +264,12 @@ section article div.toggleCartProduct div.toggleCartProductBtn{
 
 section.cartShipping article, 
 section.cartPayment article, 
-section.cartResume article {
+section.cartResume article{
   border: 3px solid var(--negro);
   border-radius: 10px;
   margin: 0 0.5rem 1rem;
   background: linear-gradient(var(--verde),var(--naranja),var(--violeta));
+  opacity: 0.9;
   height: 100px;
   display: flex;
   justify-content: left;
@@ -422,7 +432,6 @@ section.cartPayment article.cartPaymentCreditCardOpen div.p form{
   display: flex;
   flex-direction: column;
   height: auto;
-  
 }
 
 section.cartPayment article.cartPaymentCreditCardOpen div label div.p form label{
@@ -559,3 +568,309 @@ button.cartDelete:active{
 }
 
 /*END FINAL BUTTONS*/
+
+/* CART OTHER PRODUCTS */
+
+section.cartOtherProducts{
+  border: 3px solid var(--negro);
+  border-radius: 10px;
+  margin: 0 0.5rem 1rem;
+  background: linear-gradient(var(--verde),var(--naranja),var(--violeta));
+  opacity: 0.9;
+  height: auto;
+}
+
+section.cartOtherProducts article.cartOtherProductsFlex{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  border-radius: 10px;
+  margin: 0 0.5rem 1rem;
+  height: auto;
+  justify-content: flex-start;
+}
+
+section.cartOtherProducts article.cartOtherProductsFlex div img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+section.cartOtherProducts article.cartOtherProductsFlex div h4{
+  font-size: 1.5rem;
+}
+
+section.cartOtherProducts article.cartOtherProductsFlex div p{
+  display: none;
+}
+/* END CART OTHER PRODUCTS */
+
+/* MEDIAQUERYS */
+
+@media screen and (min-width:768px){
+  body{
+    /* background:linear-gradient(var(--beige),var(--naranja),var(--verde)); */
+    background: url("../images/background.jpeg");
+    
+  }
+  h1 i{
+    padding: 0px 25px;
+  }
+section{
+  margin:1rem;
+}
+footer{
+  margin: 0;
+}
+  /*-------------- SHIPPING --------------*/
+  section.cartShipping{
+    border: 3px solid black;
+    border-radius: 15px;
+    background: linear-gradient(var(--verde),var(--naranja),var(--violeta));
+    opacity: 0.9;
+  }
+
+  section.cartShipping i{
+    font-size: 2.5rem;
+  }
+
+  section.cartShipping article.branch,
+  section.cartShipping article.pickUp,
+  section.cartShipping article.shipping{
+    height: auto;
+    display: block;
+    text-align: center;
+    position: relative;
+    border: 1px solid var(--blanco);
+  }
+  
+  section.cartShipping article.branch div,
+  section.cartShipping article.pickUp div,
+  section.cartShipping article.shipping div{
+    margin: 1rem 0 1rem 0; 
+  }
+  
+  section.cartShipping article.branch div label div{
+    margin-top: 2rem;
+    display: block;
+  }
+  
+  section.cartShipping article.branch button,
+  section.cartShipping article.pickUp button,
+  section.cartShipping article.shipping button.cartShippingbtn{
+    display: none;
+  }
+  
+  section.cartShipping article.pickUp div label div{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  section.cartShipping article.shipping div label div{
+    margin-top: 2rem;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*-------------- END SHIPPING --------------*/
+
+  /*-------------- PAYMENT --------------*/
+  section.cartPayment{
+    border: 3px solid var(--negro);
+    border-radius: 15px;
+    background: linear-gradient(var(--verde),var(--naranja),var(--violeta));
+    opacity: 0.9;
+  
+  }
+  section.cartPayment i{
+    font-size: 2.5rem;
+  }
+  section.cartPayment article.cartPaymentCash,
+  section.cartPayment article.cartPaymentMercadoPago,
+  section.cartPayment article.cartPaymentBank{
+    height: auto;
+    display: block;
+    text-align: center;
+    position: relative;
+    border: 1px solid var(--blanco);
+  }
+  
+  section.cartPayment article.cartPaymentCash div,
+  section.cartPayment article.cartPaymentMercadoPago div,
+  section.cartPayment article.cartPaymentBank div{
+    margin: 1rem 0 1rem 0; 
+  }
+  
+  section.cartPayment article.cartPaymentMercadoPago div.p,
+  section.cartPayment article.cartPaymentBank div.p,
+  section.cartPayment article.cartPaymentCash div.p,
+  section.cartPayment article.cartPaymentCreditCard div
+  {
+    margin-top: 2rem;
+    display: block;
+  }
+  
+  section.cartPayment article.cartPaymentCreditCard div.p form{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  section.cartPayment article.cartPaymentCreditCard div label div.p form label{
+    margin-bottom: 1rem;
+    margin-left:0.5rem;
+    display: block;
+  }
+  section.cartPayment article.cartPaymentCreditCard{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid var(--blanco);
+
+  }
+
+  section.cartPayment article.cartPaymentCreditCard div label div.p{
+    display: block;
+  }
+  section.cartPayment article button{
+    display: none;
+  }
+  /*-------------- END PAYMENT --------------*/
+
+  /*-------------- Cart Resume --------------*/
+  section.cartResume{
+    border: 3px solid black;
+    border-radius: 15px;
+    background: linear-gradient(var(--verde),var(--naranja),var(--violeta));
+    opacity: 0.9;
+    
+  }
+
+  section.cartResume i{
+    font-size: 2.5rem;
+  }
+  section.cartResume article{
+    border: 1px solid var(--blanco);
+    background: none;
+  }
+
+  section.cartResume article div{
+    border: 1px solid var(--blanco);
+  }
+  /*-------------- END Cart Resume --------------*/
+  /* CART OTHER PRODUCTS */
+  section.cartOtherProducts article.cartOtherProductsFlex div p{
+    display: block;
+  }
+  section.cartOtherProducts{
+    margin: 0 1rem 1rem;
+  }
+  /* END CART OTHER PRODUCTS */
+
+  section article button.cartShippingbtn{
+    display: none;
+  }
+}
+
+@media screen and (min-width:1200px){
+  body{
+    /* background:linear-gradient(var(--beige),var(--naranja),var(--verde)); */
+    background: url("../images/background.jpeg");
+    background-size: 100%;
+  }
+  main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  h1{
+    font-size: 4rem;
+  }
+  h1 i{
+    font-size: 4rem;
+  }
+  section h2{
+    font-size: 3rem;
+  }
+  section h2 i{
+    font-size: 3rem;
+  }
+  section article div.toggleCartProduct div.item{
+    width: 95%;
+    margin: 1rem;
+    border: 1px solid var(--blanco);
+    flex-direction: row;
+    
+  }
+  section article div.toggleCartProduct{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+  }
+section article div.toggleCartProduct button.cartProductDelete{
+  width: 20%;
+  margin:1rem;
+}
+section article div.toggleCartProduct div.cartPrice{
+  height: 50%;
+  
+}
+section article div.toggleCartProduct div.item h3{
+  margin: 0 0 0 5rem;
+}
+section article div.toggleCartProduct div.item img{
+  width: auto;
+  margin: 0 1rem;
+}
+  section#product{
+    width: 95%;
+  }
+  section.cartShipping{
+    width: 45%;
+  }
+  section.cartPayment{
+    width: 47%; 
+    height: 770px;
+  }
+  section.cartPayment article.cartPaymentCash,
+  section.cartPayment article.cartPaymentMercadoPago,
+  section.cartPayment article.cartPaymentBank,
+  section.cartPayment article.cartPaymentCreditCard
+  {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  section.cartResume{
+    width: 94%;
+    
+  }
+
+  section.cartResume div.cartFinalBtnDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.cartResume div button.cartFinalBtn{
+    width: 50%;
+
+  }
+  section.cartResume div button.cartDelete{
+    width: 50%;
+    
+  }
+  section.cartOtherProducts{
+    width: 94%;
+  }
+}
+
+/* END MEDIAQUERYS */
