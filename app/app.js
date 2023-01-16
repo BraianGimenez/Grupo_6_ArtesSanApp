@@ -8,8 +8,8 @@ app.use(express.static("public"));
 app.get("/", (req, res) => {
     return res.sendFile(path.join(__dirname, "/views/index.html"))
 })
-app.get("/cart", (req, res) => {
-    return res.sendFile(path.join(__dirname, "/views/cart.html"))
+app.get("/productCart", (req, res) => {
+    return res.sendFile(path.join(__dirname, "/views/productCart.html"))
 })
 app.get("/productDetail", (req, res) => {
     return res.sendFile(path.join(__dirname, "/views/productDetail.html"))

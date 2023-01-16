@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Libre+Franklin:wght@300&family=Milonga&family=Nerko+One&family=Parisienne&display=swap');
-
+@import url(/css/styles.css);
+/* @import url(/css/heater-footer.css); */
 :root{
     /*colores*/
     --negro:#000;
@@ -158,6 +159,8 @@ section div.toggleCartProduct div img{
   height: 100%;
   border-radius: 50%;
   object-fit: contain;
+  border: 5px solid var(--naranja);
+  box-shadow: 15px 5px 20px var(--negro); 
 }
 
 section div.cartProduct button.cartbtn,
@@ -209,8 +212,9 @@ section article div.toggleCartProduct div.item{
 }
 
 section article div.toggleCartProduct div.item img{
-  width: 100%;
+  width: auto;
   height: 100px;
+  margin-bottom: 1rem;
 }
 
 section article div.toggleCartProduct h3,
@@ -594,10 +598,13 @@ section.cartOtherProducts article.cartOtherProductsFlex div img{
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  border: 5px solid var(--naranja);
+  box-shadow: 15px 5px 20px var(--negro); 
 }
 
 section.cartOtherProducts article.cartOtherProductsFlex div h4{
   font-size: 1.5rem;
+  
 }
 
 section.cartOtherProducts article.cartOtherProductsFlex div p{
@@ -763,6 +770,7 @@ footer{
     border: 1px solid var(--blanco);
   }
   /*-------------- END Cart Resume --------------*/
+
   /* CART OTHER PRODUCTS */
   section.cartOtherProducts article.cartOtherProductsFlex div p{
     display: block;
@@ -829,6 +837,7 @@ section article div.toggleCartProduct div.item h3{
 section article div.toggleCartProduct div.item img{
   width: auto;
   margin: 0 1rem;
+  height: 90px;
 }
   section#product{
     width: 95%;
