@@ -81,7 +81,7 @@ div.busqueda {
     text-align: center;
 }
 
-button {
+header button {
     display: flex;
     margin-top: 16px;
     height: 30px;
@@ -185,7 +185,7 @@ footer div.caja__footer {
 
 
 @media (min-width: 768px) {
-    button{
+    header button{
         display: flex;
         
     }
