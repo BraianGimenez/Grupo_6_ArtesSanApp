@@ -22,4 +22,8 @@ app.get("/login", (req, res) => {
     return res.sendFile(path.join(__dirname, "/views/login.html"))
 })
 
+app.get("/about", (req, res) => {
+    return res.sendFile(path.join(__dirname, "/views/nosotros.html"))
+})
+
 app.listen(PORT, () => console.log(`servidor levantando en puerto : ${PORT}\n http://localhost:${PORT}`))
