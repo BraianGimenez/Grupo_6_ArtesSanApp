@@ -17,12 +17,14 @@
            <a href="/"><img src="/images/logo.png" alt="logo ArtesApp"></a>
         </div>
         <div class="busqueda">
+            <form action="search" method="post">
        <input type="text" placeholder="Buscar productos, Marcas...">
+    </form>
          <div class="caja__links">
            <a href="" class="nav-link">Productos</a>
            <a href="" class="nav-link">Ofertas</a>
            <a href="" class="nav-link">Vender</a>
-           <a href="" class="nav-link">Mas</a>
+           <a href="" class="nav-link">+</a>
          <label for="check" class="barra">
            <i class="fas fa-bars"></i>
            <div class="sub__menu">
@@ -85,7 +87,7 @@
                 <i class="product__icon fa-sharp fa-solid fa-cart-plus"></i>
             </div>
             <div class="product">
-                <img src="/images/products/3.jpg" alt="" class="product__img">
+                <a href="productDetail"><img src="/images/products/3.jpg" alt="" class="product__img"></a>
                 <div class="product__description">
                     <h3 class="product__title">Abanero</h3>
                     <span class="product__price">$90</span>
@@ -115,28 +117,31 @@
             </div>
            
            <div class="caja__titulos">
+        
            <div class="caja__titulo">
             <h2>Informacion</h2>
-            <a href="">info</a>
-            <a href="">info</a>
-            <a href="">info</a>
-            <a href="">info</a>
+            <a href="nosotros">Nosotros</a>
+            <a href="">Métodos de Pago</a>
+            <a href="">Envios</a>
+            <a href="">Contacto</a>
            </div>
            <div class="caja__titulo">
             <h2> Ayuda</h2>
-            <a href="">info</a>
-            <a href="">info</a>
-            <a href="">info</a>
-            <a href="">info</a>
+            <a href="register">Registro</a>
+            <a href="login">Iniciar sesión</a>
+            <a href="">Preguntas Frecuentes</a>
            </div>
-           <div class="caja__titulo">
+        </div>
+           <div class="caja__redes">
+               <div class="icon-container">
             <h2>Redes Sociales</h2>
-            <a href=""><i class="fab fa-facebook-square"></i> Facebook</a>
-            <a href=""><i class="fab fa-twitter-square"></i> Twiter</a>
-            <a href=""><i class="fab fa-instagram-square"></i> Instagram</a>
-            <a href=""><i class="fab fa-whatsapp-square"></i> Whatsapp</a>
+            <a class="icon-facebook" href=""><i class="fab fa-facebook-square"></i></a>
+            <a class="icon-twitter" href=""><i class="fab fa-twitter-square"></i></a>
+            <a class="icon-instagram" href=""><i class="fab fa-instagram-square"></i></a>
+            <a class="icon-whatsapp" href=""><i class="fab fa-whatsapp-square"></i></a>
            </div>
-          </div>
+        </div>
+          
         </div>
         <div class="caja__derechos">
           <hr>

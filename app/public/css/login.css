@@ -1,4 +1,5 @@
 @import url('/css/styles.css');
+@import url("/css/header-footer.css");
 
 body{
     font-family: var(--Franklin);
@@ -7,6 +8,19 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.header-logo{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+}
+.header-logo img {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    justify-items: center;
 }
 
 a {
@@ -130,11 +144,6 @@ label {
 /* TABLET */
 
 @media screen and (min-width: 768px) {
-    body {
-      background: url("/images/background.jpeg");
-      background-size: 100%;
-      }
-
     span.error-message {
       font-size: 14px;
       }
@@ -143,11 +152,7 @@ label {
 /* DESKTOP */
 
 @media screen and (min-width: 1025px) {
-    body {
-       background: url("../images/background.jpeg");
-       background-size: 100%;
-     }
-
+    
     span.error-message {
         font-size: 16px;
         }

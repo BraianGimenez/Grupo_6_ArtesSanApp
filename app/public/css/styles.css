@@ -26,7 +26,6 @@
 
 
     body{
-        background: url("../images/background.jpeg");
-        background-size: cover;
-        background-repeat: no-repeat;
+        background: linear-gradient(var(--beige), var(--violeta),var(--beige));
+    
       }

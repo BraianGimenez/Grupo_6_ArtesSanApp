@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Libre+Franklin:wght@300&family=Milonga&family=Nerko+One&family=Parisienne&display=swap');
 @import url("/css/styles.css");
-@import url("/css/heater-footer.css");
+@import url("/css/header-footer.css");
 /* GENERALS */
 button{
     border:3px solid var(--negro); 
@@ -37,11 +37,13 @@ section.detail-products{
 section article.product {
     display: block;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 75px;
     position: relative;
 }
 section article.product img{
     width: 100%;
+    box-shadow: 3px 3px 15px black;
+    border-radius: 5px;
     
 }
 section article.product div.btn-left{
@@ -100,10 +102,7 @@ section div h2 {
     font-size: 1.2rem;
     text-align: center;
     font-style: italic;
-    background:linear-gradient(var(--beige),var(--naranja),var(--verde));
     border-radius: 15px;
-    box-shadow: 5px 5px 5px black;
-    border: 3px solid black;   
 }
 section div.product--description{
     margin-bottom: 10px;
@@ -134,10 +133,7 @@ section div.information {
     width: 100%;
     position: relative;
     padding: 5px;
-    background:linear-gradient(var(--beige),var(--naranja),var(--verde));
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px black;
-    border: 3px solid black;   
+   
 }
 
 
@@ -150,9 +146,8 @@ section div.information div.stock{
 }
 
 section div.information div.price {
-    font-family: var(--Franklin);
+    font-family: var(--Milonga);
     font-size: 1.7rem;
-    font-style: italic;
     text-transform: uppercase;
     text-align: left;
     font-weight: bold;
@@ -201,7 +196,7 @@ section div.information div.information-list ul {
     font-weight: bolder;
 }
 section div.information div.information-list i {
-    color: var(--violeta);
+    color: var(--beige);
     padding-right: 10px;
     text-shadow: 2px 2px 3px black;
 }
@@ -391,9 +386,11 @@ div.title-similar-products{
     }
 
     section div.information div.price {
+        font-family: var(--Franklin);
         margin-top: 50px;
-        font-size: 2rem;
+        font-size: 2.2rem;
         text-shadow: 1px -1px 2px black ;
+        font-style: italic;
     }
 
     section div.information div.discount{
@@ -458,16 +455,16 @@ div.title-similar-products{
     }
     
     section div.information{
-        top: 200px;
-        left: 625px;
+        top: 175px;
+        left: 610px;
     }
 
     section div h2 {
         max-width: 500px;
         font-size: 2rem;
         text-align: center;
-        top: 120px;
-        left: 545px;
+        top: 105px;
+        left: 495px;
     }
     section div.products-photos{
         display: flex;

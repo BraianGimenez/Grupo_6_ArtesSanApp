@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Libre+Franklin:wght@300&family=Milonga&family=Nerko+One&family=Parisienne&display=swap');
-@import url(/css/styles.css);
-/* @import url(/css/heater-footer.css); */
+@import url("/css/styles.css");
+/* @import url(/css/header-footer.css); */
 :root{
     /*colores*/
     --negro:#000;

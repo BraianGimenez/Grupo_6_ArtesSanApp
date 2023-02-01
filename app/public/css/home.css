@@ -1,5 +1,5 @@
 @import url("/css/styles.css");
-@import url("/css/heater-footer.css");
+@import url("/css/header-footer.css");
 
 *{
     box-sizing: border-box;
@@ -75,6 +75,7 @@ img {
 
 .slider__section {
     width: 100%;
+    margin-top: 20px;
 }
 
 .slider__img {
