@@ -1,29 +1,23 @@
 const express = require("express");
-const app = express()
-const path = require("path")
+const app = express();
 const PORT = 3030;
 
+// public
 app.use(express.static("public"));
 
-app.get("/", (req, res) => {
-    return res.sendFile(path.join(__dirname, "/views/index.html"))
-})
-app.get("/productCart", (req, res) => {
-    return res.sendFile(path.join(__dirname, "/views/productCart.html"))
-})
-app.get("/productDetail", (req, res) => {
-    return res.sendFile(path.join(__dirname, "/views/productDetail.html"))
-})
-app.get("/register", (req, res) => {
-    return res.sendFile(path.join(__dirname, "/views/register.html"))
-})
+// routers
+const indexRouter = require("./routes/indexRouter");
+const productRouter = require("./routes/productRouter");
+const usersRouter = require("./routes/usersRouter");
+const cartRouter = require("./routes/cartRouter");
 
-app.get("/login", (req, res) => {
-    return res.sendFile(path.join(__dirname, "/views/login.html"))
-})
+// views
+app.use("/", indexRouter);
+app.use("/productCart", cartRouter);
+app.use("/product", productRouter);
+app.use("/user", usersRouter);
 
-app.get("/about", (req, res) => {
-    return res.sendFile(path.join(__dirname, "/views/nosotros.html"))
-})
 
+
+// port
 app.listen(PORT, () => console.log(`servidor levantando en puerto : ${PORT}\n http://localhost:${PORT}`))
