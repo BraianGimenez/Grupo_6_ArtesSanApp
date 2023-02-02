@@ -299,11 +299,10 @@ div.caja__redes{
         width: 100%;
     }
     header div.busqueda{
-        width: 400px;
+        width: 70%;
+        max-width: 800px;
     }
-    header div.busqueda input{
-        width: 100%;
-    }
+
     div.caja__links a.nav-link{
         padding-right: 20px;
      
@@ -342,4 +341,34 @@ div.caja__redes{
     div.caja__titulo {
         margin-right: 100px;
     }
+}
+
+@media (min-width: 1024px){
+  input.barra-busqueda{
+     width: 600px;
+     height: 20px;
+     box-shadow: 5px 5px 15px black;
+    }
+    div.caja__links{
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    }
+
+    div.caja__links a.nav-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85px;
+        background-color: var(--verde);
+        padding: 2px;
+        border-radius: 8px;
+        box-shadow: 5px 5px 15px black;
+    }
+    div.caja__titulo{
+        margin-left: 80px;
+    }
+
 }
