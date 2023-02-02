@@ -1,49 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Carrito</title>
-    <link rel="stylesheet" href="/css/header-footer.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/cart.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-</head>
+    <%-include("./partials/head") %> 
 <body>
-    <header>
-        <div class="header-logo">
-           <a href="/"><img src="/images/logo.png" alt="logo ArtesApp"></a>
-        </div>
-        <div class="busqueda">
-       <input class="barra-busqueda" type="text" placeholder="Buscar productos, Marcas...">
-         <div class="caja__links">
-           <a href="" class="nav-link">Productos</a>
-           <a href="" class="nav-link">Ofertas</a>
-           <a href="" class="nav-link">Vender</a>
-           <a href="" class="nav-link">Mas</a>
-         <label for="check" class="barra">
-           <i class="fas fa-bars"></i>
-           <div class="sub__menu">
-           <a href="" class="nav-link">info</a>
-           <a href="" class="nav-link">info</a>
-           <a href="" class="nav-link">info</a>
-           <a href="" class="nav-link">info</a>
-         </div>
-         </label>
-         </div>
-       </div>
-       <button class="log-in"> 
-         <a href="login"><i class="fa-regular fa-user"></i></a>
-       </button>
-       <button class="go-cart"> 
-         <a href="ProductCart"><i class="fa-solid fa-cart-shopping"></i></a>
-       </button>
-    </header>
+    <%-include("./partials/header") %> 
     <main>
         <h1><i class="fa-solid fa-cart-shopping"></i>Mi carrito<i class="fa-solid fa-cart-shopping fa-flip-horizontal"></i></h1>
         <div class="cartLine"></div>
@@ -316,44 +275,7 @@
             </article>
         </section>
         </main>
-        <footer>
-            <div class="contenedor__footer">
-               
-                 <div class="logo">
-                    <img src="/images/logo.png" alt="">
-                </div>
-               
-               <div class="caja__titulos">
-               <div class="caja__titulo">
-                <h2>Informacion</h2>
-                <a href="">info</a>
-                <a href="">info</a>
-                <a href="">info</a>
-                <a href="">info</a>
-               </div>
-               <div class="caja__titulo">
-                <h2> Ayuda</h2>
-                <a href="">info</a>
-                <a href="">info</a>
-                <a href="">info</a>
-                <a href="">info</a>
-               </div>
-               <div class="caja__titulo">
-                <h2>Redes Sociales</h2>
-                <a href=""><i class="fab fa-facebook-square"></i> Facebook</a>
-                <a href=""><i class="fab fa-twitter-square"></i> Twiter</a>
-                <a href=""><i class="fab fa-instagram-square"></i> Instagram</a>
-                <a href=""><i class="fab fa-whatsapp-square"></i> Whatsapp</a>
-               </div>
-              </div>
-            </div>
-            <div class="caja__derechos">
-              <hr>
-              <p>Todos los derechos reservados 2023</p>
-          
-            </div>
-          
-          </footer>
+        <%-include("./partials/footer") %> 
     <script src="/js/cart.js"></script>
 </body>
 </html>

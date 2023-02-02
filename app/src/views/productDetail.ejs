@@ -1,50 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ProductDetail</title>
-  <link rel="stylesheet" href="/css/header-footer.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/productsDetail.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
-</head>
+<%-include("./partials/head") %> 
 
 <body> 
-  <header>
-       
-    <div class="header-logo">
-       <a href="/"><img src="/images/logo.png" alt="logo ArtesApp"></a>
-    </div>
-    <div class="busqueda">
-        <form action="search" method="post">
-   <input class="barra-busqueda" type="text" placeholder="Buscar productos, Marcas...">
-</form>
-     <div class="caja__links">
-       <a href="" class="nav-link">Productos</a>
-       <a href="" class="nav-link">Ofertas</a>
-       <a href="" class="nav-link">Vender</a>
-       <a href="" class="nav-link">+</a>
-     <label for="check" class="barra">
-       <i class="fas fa-bars"></i>
-       <div class="sub__menu">
-       <a href="" class="nav-link">info</a>
-       <a href="" class="nav-link">info</a>
-       <a href="" class="nav-link">info</a>
-       <a href="" class="nav-link">info</a>
-     </div>
-     </label>
-     </div>
-   </div>
-   <button class="log-in"> 
-     <a href="login"><i class="fa-regular fa-user"></i></a>
-   </button>
-   <button class="go-cart"> 
-     <a href="ProductCart"><i class="fa-solid fa-cart-shopping"></i></a>
-   </button>
-</header>
+  <%-include("./partials/header") %> 
      
 
     <!--PRODUCTOS-->
@@ -108,47 +68,7 @@
   <div class="photo-container"><img src="/productos/indumentaria/sombrero7.jpg" alt=""></div>
 
 </section>
-<footer>
-  <div class="contenedor__footer">
-     
-       <div class="logo">
-          <img src="/images/logo.png" alt="">
-      </div>
-     
-     <div class="caja__titulos">
-  
-     <div class="caja__titulo">
-      <h2>Informacion</h2>
-      <a href="nosotros">Nosotros</a>
-      <a href="">Métodos de Pago</a>
-      <a href="">Envios</a>
-      <a href="">Contacto</a>
-     </div>
-     <div class="caja__titulo">
-      <h2> Ayuda</h2>
-      <a href="register">Registro</a>
-      <a href="login">Iniciar sesión</a>
-      <a href="">Preguntas Frecuentes</a>
-     </div>
-  </div>
-     <div class="caja__redes">
-         <div class="icon-container">
-      <h2>Redes Sociales</h2>
-      <a class="icon-facebook" href=""><i class="fab fa-facebook-square"></i></a>
-      <a class="icon-twitter" href=""><i class="fab fa-twitter-square"></i></a>
-      <a class="icon-instagram" href=""><i class="fab fa-instagram-square"></i></a>
-      <a class="icon-whatsapp" href=""><i class="fab fa-whatsapp-square"></i></a>
-     </div>
-  </div>
-    
-  </div>
-  <div class="caja__derechos">
-    <hr>
-    <p>Todos los derechos reservados 2023</p>
-
-  </div>
-
-</footer>
+<%-include("./partials/footer") %> 
 
 
 </body>
