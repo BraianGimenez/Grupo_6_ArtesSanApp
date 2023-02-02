@@ -2,6 +2,10 @@ const express = require("express");
 const app = express();
 const PORT = 3030;
 
+//Template engines
+app.set("view engine","ejs") //lo instale para probar
+app.set("views", "./src/views/users") //
+
 // public
 app.use(express.static("public"));
 
