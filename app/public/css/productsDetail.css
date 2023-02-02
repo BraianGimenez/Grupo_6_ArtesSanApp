@@ -146,7 +146,7 @@ section div.information div.stock{
 }
 
 section div.information div.price {
-    font-family: var(--Milonga);
+    font-family: var(--Franklin);
     font-size: 1.7rem;
     text-transform: uppercase;
     text-align: left;
