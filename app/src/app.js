@@ -2,6 +2,10 @@ const express = require("express");
 const app = express();
 const PORT = 3030;
 
+//Template engines
+app.set("view engine","ejs")
+app.set("views", "./src/views")
+
 // public
 app.use(express.static("public"));
 
@@ -18,7 +22,6 @@ app.use("/product", productRouter);
 app.use("/user", usersRouter);
 
 // ejs engine
-
 
 app.set("view engine", "ejs");
 
