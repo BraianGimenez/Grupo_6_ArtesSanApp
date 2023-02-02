@@ -17,7 +17,10 @@ app.use("/productCart", cartRouter);
 app.use("/product", productRouter);
 app.use("/user", usersRouter);
 
+// 
 
+app.set("view engine", "ejs");
+app.set("views", "./src/views")
 
 // port
 app.listen(PORT, () => console.log(`servidor levantando en puerto : ${PORT}\n http://localhost:${PORT}`))
