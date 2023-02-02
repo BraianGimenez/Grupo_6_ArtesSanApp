@@ -3,8 +3,8 @@ const app = express();
 const PORT = 3030;
 
 //Template engines
-app.set("view engine","ejs") //lo instale para probar
-app.set("views", "./src/views/users") //
+app.set("view engine","ejs")
+app.set("views", "./src/views")
 
 // public
 app.use(express.static("public"));
@@ -21,10 +21,10 @@ app.use("/productCart", cartRouter);
 app.use("/product", productRouter);
 app.use("/user", usersRouter);
 
-// 
+// ejs engine
 
 app.set("view engine", "ejs");
-app.set("views", "./src/views")
+
 
 // port
 app.listen(PORT, () => console.log(`servidor levantando en puerto : ${PORT}\n http://localhost:${PORT}`))
