@@ -4,7 +4,7 @@ const PORT = 3030;
 
 //Template engines
 app.set("view engine","ejs")
-app.set("views", "./src/views")
+app.set("views", ["./src/views", "./src/views/users" ,"./src/views/products"]);
 
 // public
 app.use(express.static("public"));
