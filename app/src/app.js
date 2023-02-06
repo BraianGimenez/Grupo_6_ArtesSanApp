@@ -3,7 +3,6 @@ const app = express();
 const PORT = 3030;
 
 //Template engines
-app.set("view engine","ejs")
 app.set("views", "./src/views")
 
 // public

@@ -113,7 +113,7 @@ label {
 
 /* BUTTONS */
 
-.btn {
+button.btn-submit1 {
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
@@ -123,7 +123,7 @@ label {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     
 }
-.btn-submit {
+button.btn-submit1 {
     background:  linear-gradient(45deg, rgba(255,255,255,1) 0%,  rgba(106, 219, 140, 0.5) 50%);
     color: rgb(75, 75, 75);
     margin: 1rem;
@@ -133,7 +133,7 @@ label {
     transition: all 4s ease;
 }
 
-.btn-submit:hover {
+button.btn-submit1:hover {
     color: rgb(172, 172, 172);
     box-shadow: -5px -5px 10px rgb(255, 255, 255, 0.7);
     background: linear-gradient(285deg, rgba(255,255,255,0.5) 0%,  rgba(39,255,232,0.5) 50%);
