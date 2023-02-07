@@ -8,4 +8,7 @@ const controller = require("../controllers/productController")
 router.get("/" , controller.all)
 router.get("/detail" , controller.detail)
 
+// edit
+router.get("/edit", controller.edit)
+
 module.exports = router;

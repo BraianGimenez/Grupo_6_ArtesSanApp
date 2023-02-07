@@ -834,7 +834,7 @@ section article div.toggleCartProduct div.item img{
   }
   section.cartPayment{
     width: 47%; 
-    height: 770px;
+    height: auto;
   }
   section.cartPayment article.cartPaymentCash,
   section.cartPayment article.cartPaymentMercadoPago,

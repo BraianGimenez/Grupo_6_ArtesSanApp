@@ -3,10 +3,13 @@ const path = require("path");
 
 module.exports = {
     all: (req,res) => {
-        res.send("aca van todos los productos")
+        res.render("product")
     },
     detail: (req, res) => {
         res.render("productDetail")
     },
+    edit: (req,res) => {
+        res.render("product-edit")
+    }
     
 }
