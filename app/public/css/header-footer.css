@@ -112,7 +112,7 @@ div.busqueda {
     text-align: center;
 }
 
-header button {
+header button.log-in {
     display: flex;
     margin-top: 16px;
     height: 30px;
@@ -120,6 +120,24 @@ header button {
     box-shadow: inset 7px -7px 16px var(--violeta);
     border: 1px solid var(--negro);
     font-family: var(--Nerko);
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+
+}
+header button.go-cart {
+    display: flex;
+    margin-top: 16px;
+    height: 30px;
+    width: 40px;
+    box-shadow: inset 7px -7px 16px var(--violeta);
+    border: 1px solid var(--negro);
+    font-family: var(--Nerko);
+    font-size: 20px;
     cursor: pointer;
     border-radius: 15px;
     justify-content: center;
@@ -290,7 +308,11 @@ div.caja__redes{
 
 
 @media (min-width: 768px) {
-    header button{
+    header button.log-in{
+        display: flex;
+        
+    }
+    header button.go-cart{
         display: flex;
         
     }

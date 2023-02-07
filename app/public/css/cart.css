@@ -93,6 +93,7 @@ h1 i{
 section h2{
   text-align: center;
   text-decoration:underline var(--negro) dotted 2px;
+  margin-top: 2.5rem;
   margin-bottom: 2rem;
   font-family: var(--Milonga) ;
   font-size: var(--subtitulo);
@@ -609,11 +610,7 @@ section.cartOtherProducts article.cartOtherProductsFlex div p{
 /* MEDIAQUERYS */
 
 @media screen and (min-width:768px){
-  body{
-    /* background:linear-gradient(var(--beige),var(--naranja),var(--verde)); */
-    background: url("../images/background.jpeg");
-    
-  }
+
   h1 i{
     padding: 0px 25px;
   }
@@ -780,11 +777,7 @@ footer{
 }
 
 @media screen and (min-width:1024px){
-  body{
-    /* background:linear-gradient(var(--beige),var(--naranja),var(--verde)); */
-    background: url("../images/background.jpeg");
-    
-  }
+  
   main{
     display: flex;
     flex-wrap: wrap;
