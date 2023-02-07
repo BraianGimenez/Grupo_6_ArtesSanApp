@@ -10,18 +10,25 @@ body{
     align-items: center;
    
 }
-.header-logo{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-.header-logo img{
+.logo-container{
     display: flex;
-    width: 50%;
-    margin: auto;
     justify-content: center;
-    justify-items: center;
+    align-items: center;
+    width: 100%;
 
+}
+.home-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+ }
+ div.home-logo img{
+     display: flex;
+     justify-content: center;
+     justify-items: center;
+     width: 50%;
+     max-width: 300px;
 }
 a {
     color: darkblue;

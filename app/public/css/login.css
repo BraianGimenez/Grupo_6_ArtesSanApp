@@ -8,19 +8,29 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+
+
 }
-.header-logo{
- display: flex;
- justify-content: center;
- align-items: center;
- width: 100%;
-}
-.header-logo img {
+div.logo-container{
     display: flex;
-    width: 50%;
-    margin: auto;
     justify-content: center;
-    justify-items: center;
+    align-items: center;
+    width: 100%;
+
+}
+div.home-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+ }
+ div.home-logo img{
+     display: flex;
+     justify-content: center;
+     justify-items: center;
+     width:60%;
+     max-width: 300px;
+     margin: auto;
 }
 
 a {
