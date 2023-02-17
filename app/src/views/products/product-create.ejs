@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar producto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/header-footer.css">
+    <link rel="stylesheet" href="/css/product-edit.css">
+    
+
+    
+    
+</head>
+<body>
+    <%-include("./partials/header") %> 
+    <main class="product-edit">
+        <form action="/products/create" method="POST" class="product-edit-form">
+            <label for="">Nombre:
+                <input type="text" name="name">
+            </label>
+            <label for="">Descripcion:
+                <input type="text" name="description">
+            </label>
+            <label for="file" class="product-edit-label-file">Subir imagen
+                <input type="file" id="file" name="image" class="product-edit-input-file">
+            </label>
+            <label for="">Categoria:
+                <input type="text" name="category">
+            </label>
+            <label for="">Color:
+                <input type="text" name="color">
+            </label>
+            <label for="">Precio:
+                <input type="number" name="price">
+            </label>
+            <div class="product-edit-div-button">
+                <button type="reset" class="product-edit-form-reset">Restablecer</button>
+                <button type="submit" class="product-edit-form-submit">Grabar</button>
+            </div>
+            
+        </form>
+    </main>
+
+    <%-include("./partials/footer") %> 
+</body>
+</html>

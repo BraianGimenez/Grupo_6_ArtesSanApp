@@ -1,0 +1,146 @@
+[
+   {
+      "id": 1,
+      "name": "Marioneta de porcelana",
+      "description": "marioneta de porcelana de 1970, hecho en India",
+      "image": "img1.jpg",
+      "category": "antigüedades",
+      "color": "blanco",
+      "precio": 2500
+   },
+   {
+      "id": 1,
+      "name": "Marioneta de porcelana",
+      "description": "marioneta de porcelana de 1970, hecho en India",
+      "image": "img1.jpg",
+      "category": "antigüedades",
+      "color": "blanco",
+      "precio": 2500
+   },
+   {
+      "id": 1,
+      "name": "Marioneta de porcelana",
+      "description": "marioneta de porcelana de 1970, hecho en India",
+      "image": "img1.jpg",
+      "category": "antigüedades",
+      "color": "blanco",
+      "precio": 2500
+   },
+   {
+      "id": 1,
+      "name": "Marioneta de porcelana",
+      "description": "marioneta de porcelana de 1970, hecho en India",
+      "image": "img1.jpg",
+      "category": "antigüedades",
+      "color": "blanco",
+      "precio": 2500
+   },
+   {
+      "id": 1,
+      "name": "Marioneta de porcelana",
+      "description": "marioneta de porcelana de 1970, hecho en India",
+      "image": "img1.jpg",
+      "category": "antigüedades",
+      "color": "blanco",
+      "precio": 2500
+   },
+   {
+      "id": 1,
+      "name": "Marioneta de porcelana",
+      "description": "marioneta de porcelana de 1970, hecho en India",
+      "image": "img1.jpg",
+      "category": "antigüedades",
+      "color": "blanco",
+      "precio": 2500
+   },
+   {
+      "id": 1,
+      "name": "Marioneta de porcelana",
+      "description": "marioneta de porcelana de 1970, hecho en India",
+      "image": "img1.jpg",
+      "category": "antigüedades",
+      "color": "blanco",
+      "precio": 2500
+   },
+   {
+      "id": 1,
+      "name": "Marioneta de porcelana",
+      "description": "marioneta de porcelana de 1970, hecho en India",
+      "image": "img1.jpg",
+      "category": "antigüedades",
+      "color": "blanco",
+      "precio": 2500
+   },
+   {
+      "id": 1,
+      "name": "Marioneta de porcelana",
+      "description": "marioneta de porcelana de 1970, hecho en India",
+      "image": "img1.jpg",
+      "category": "antigüedades",
+      "color": "blanco",
+      "precio": 2500
+   },
+   {
+      "id": 1,
+      "name": "Marioneta de porcelana",
+      "description": "marioneta de porcelana de 1970, hecho en India",
+      "image": "img1.jpg",
+      "category": "antigüedades",
+      "color": "blanco",
+      "precio": 2500
+   },
+   {
+      "id": 1,
+      "name": "Marioneta de porcelana",
+      "description": "marioneta de porcelana de 1970, hecho en India",
+      "image": "img1.jpg",
+      "category": "antigüedades",
+      "color": "blanco",
+      "precio": 2500
+   },
+   {
+      "id": 1,
+      "name": "MOTO G42",
+      "description": "unas zapatilas",
+      "image": "",
+      "category": "zapatos",
+      "color": "negro",
+      "price": "76000"
+   },
+   {
+      "id": 1,
+      "name": "no puede seeeeeer",
+      "description": "NOOOOO!!!",
+      "image": "",
+      "category": "delfin",
+      "color": "hasta el fin",
+      "price": "76000"
+   },
+   {
+      "id": 1,
+      "name": "no puede seeeeeer",
+      "description": "NOOOOO!!!",
+      "image": "",
+      "category": "delfin",
+      "color": "hasta el fin",
+      "price": "76000"
+   },
+   {
+      "id": 1,
+      "name": "no puede seeeeeer",
+      "description": "NOOOOO!!!",
+      "image": "",
+      "category": "delfin",
+      "color": "hasta el fin",
+      "price": "76000"
+   },
+   {
+      "id": 1,
+      "name": "no puede seeeeeer",
+      "description": "NOOOOO!!!",
+      "image": "",
+      "category": "delfin",
+      "color": "hasta el fin",
+      "price": "76000"
+   }
+]

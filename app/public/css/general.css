@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+    :root{
+        /*colores*/
+    --negro:#000;
+    --blanco:#fff;
+    --verde: #B5D5C5;
+    --violeta: #B08BBB;
+    --naranja:#ECA869;
+    --beige:#f5f5dc;
+    /* fuentes */
+    --Diplomata: "Diplomata SC", cursive;
+    --Franklin:'Libre Franklin', sans-serif;
+    --Milonga: 'Milonga', cursive;
+    --Nerko: 'Nerko One', cursive;
+    --Paris: 'Parisienne', cursive;
+    /* Tamaños tipograficos*/
+    --titulo:36px;
+    --subtitulo:30px;
+    --parrafo:16px;
+    }
+
+    body{
+        background: linear-gradient(var(--beige), var(--violeta),var(--beige));    
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--blanco); 
+  }
+  ::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(var(--violeta),var(--blanco),var(--violeta));
+    border-radius: 0.5em;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(#000,#fff,#212121);
+  }

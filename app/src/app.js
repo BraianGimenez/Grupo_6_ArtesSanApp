@@ -9,6 +9,9 @@ app.set("views", ["./src/views", "./src/views/users" ,"./src/views/products"]);
 // public
 app.use(express.static("public"));
 
+// middlewares
+app.use(express.urlencoded({ extended: false }));
+
 // routers
 const indexRouter = require("./routes/indexRouter");
 const productRouter = require("./routes/productRouter");
@@ -18,7 +21,7 @@ const cartRouter = require("./routes/cartRouter");
 // views
 app.use("/", indexRouter);
 app.use("/productCart", cartRouter);
-app.use("/product", productRouter);
+app.use("/products", productRouter);
 app.use("/user", usersRouter);
 
 // ejs engine

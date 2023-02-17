@@ -1,120 +1,186 @@
-@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Libre+Franklin:wght@300&family=Milonga&family=Nerko+One&family=Parisienne&display=swap');
+@import url("general.css");
+/*--------------- HEADER START ---------------*/
 
-:root {
-    /*colores*/
-    --negro: #000;
-    --blanco: #fff;
-    --verde: #B5D5C5;
-    --violeta: #B08BBB;
-    --naranja: #ECA869;
-    --beige: #f5f5dc;
-    /* fuentes */
-    --Diplomata: "Diplomata SC", cursive;
-    --Franklin: 'Libre Franklin', sans-serif;
-    --Milonga: 'Milonga', cursive;
-    --Nerko: 'Nerko One', cursive;
-    --Paris: 'Parisienne', cursive;
-    /* Tamaños tipograficos*/
-    --titulo: 36px;
-    --subtitulo: 30px;
-    --parrafo: 16px;
-}
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-header {
+header.header-main {
     width: 100%;
     display: flex;
-    height: 70px;
+    height: 125px;
     background: linear-gradient(var(--verde), var(--blanco), var(--violeta));
-    justify-content: space-evenly;
+    justify-content: space-around;
     border: 1px solid var(--negro);
     box-shadow: 3px 3px 15px black;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    position: fixed;
+    position: sticky;
     top: 0;
-    z-index: 1;
-}
-header input{
-    border-radius: 15px;
-    border: 1px solid var(--violeta);
-    text-align: center;
-    width: 100%;
-    font-family: var(--Milonga);
-}
-a{
-    font-family: var(--Milonga);
-}
-
-a.nav-link {
-color: var(--violeta);
-text-shadow: 1px black;
-font-family: var(--Milonga);
-font-weight: bolder;
-}
-
-
-
-.logo {
-    display: flex;
+    z-index: 1000;
     align-items: center;
+    flex-wrap: wrap;
 }
-.logo:hover{
+
+header.header-main div.header-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+
+header.header-main div.header-logo:hover{
     transition: all 1s;
     transform: scale(1.1);
 }
 
-.header-logo{
-    display: flex;
-    align-items: center;
-    padding-bottom: 10px;
-}
-.header-logo img{
-    width: 60px;
-    margin-left: 5px;
-
+header.header-main div.header-logo a img{
+    width: 75px;
+    
 }
 
-.logo img {
-    margin-left: 5px;
-    max-width: 100px;
+header.header-main a{
+    font-family: var(--Milonga);
 }
 
-
-
-header div a {
-    display: flex;
-    font-weight: 300;
-    padding-right: 10px;
-    font-size: 10px;
-    margin: 3px;
-    text-decoration: none;
-}
-
-footer div a {
-    font-weight: 300;
-    padding-right: 10px;
-    font-size: 10px;
-    margin: 3px;
-    text-decoration: none;
-}
-
-div.busqueda {
+header.header-main div.header-busqueda {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: 16px 0px;
     text-align: center;
+    width: 50%;
 }
 
-header button.log-in {
+header.header-main div.header-busqueda form input.header-barra-busqueda{
+    border-radius: 15px;
+    border: 1px solid var(--violeta);
+    text-align: center;
+    width: 50vw;
+    font-family: var(--Milonga);
+}
+header.header-main nav.header-caja-links{
+    display: none;
+}
+
+header.header-main div.header-busqueda nav.header-caja-links ul {
     display: flex;
-    margin-top: 16px;
+    margin-top: 5px;
+    height: 20px;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style: none;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+header.header-main nav.header-caja-links ul li a{
+    background: var(--verde);
+    color: var(--negro);
+    border-bottom: 3px ridge var(--violeta);
+    border-top: 3px groove var(--blanco);
+    border-right: 3px groove var(--blanco);
+    border-left: 3px ridge var(--violeta);
+    border-radius: 5px;
+    font-size: var(--parrafo);
+    text-decoration: none;
+}
+
+header.header-main nav.header-caja-links ul li a:hover{
+    background: var(--negro);
+    color: var(--blanco);
+}
+
+/* BURGER MENU CLOSED */
+
+header.header-main div.header-burger-menu-barra nav{
+    display: none;
+}
+header.header-main div.header-burger-menu-close{
+    display: none;
+    
+}
+
+header.header-main div.header-burger-menu-barra{
+    background-color: var(--blanco);
+    font-size: var(--titulo);
+    border: 2px solid var(--violeta);
+    color: var(--negro);
+    border-radius: 10px;
+    height: 45px;
+}
+header.header-main div.header-burger-menu-barra:hover{
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+header.header-main div.header-burger-menu-barra:active{
+    background-color: var(--naranja);
+    color: var(--negro);
+    
+}
+
+
+
+/*--------------- BURGER MENU OPEN START ---------------*/
+header.header-main div.header-burger-menu-burger{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 20%;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    
+}
+
+header.header-main div.header-burger-menu-burger div.header-burger-menu-barra-burger{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 250px;
+    width: 100%;
+    background-color: var(--naranja);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    border: 1px solid black;
+    transition: all 0.5s;
+}
+
+header.header-main div.header-burger-menu-burger div.header-burger-menu-barra-burger i{
+    display: none;
+}
+
+header.header-main div.header-burger-menu-burger div.header-burger-menu-barra-burger ul{
+    list-style: none;
+}
+
+header.header-main div.header-burger-menu-burger div.header-burger-menu-close-burger{
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 50px;
+    background-color: white;
+    cursor: pointer;
+    
+}
+
+
+
+
+/*--------------- CART AND LOGIN BUTTONS ---------------*/
+header.header-main button.header-log-in-burger{  
+    margin-top: 1rem;
     height: 30px;
     width: 40px;
     box-shadow: inset 7px -7px 16px var(--violeta);
@@ -123,15 +189,13 @@ header button.log-in {
     font-size: 20px;
     cursor: pointer;
     border-radius: 15px;
-    justify-content: center;
-    align-items: center;
-    display: none;
-
-
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    z-index: 999;
 }
-header button.go-cart {
-    display: flex;
-    margin-top: 16px;
+header.header-main button.header-go-cart-burger{ 
+    margin-top: 10rem;
     height: 30px;
     width: 40px;
     box-shadow: inset 7px -7px 16px var(--violeta);
@@ -140,127 +204,136 @@ header button.go-cart {
     font-size: 20px;
     cursor: pointer;
     border-radius: 15px;
-    justify-content: center;
-    align-items: center;
-    display: none;
-
+    position: absolute;
+    top: 0;
+    left: 10px;
+    z-index: 999;
+    
 }
 
-div a:hover {
-    transform: scale(1.2);
-    transition: all 1s;
 
+/* BURGUER MENU BUTTON STYLES */
+
+/*--------------- BURGER MENU END ---------------*/
+
+
+header.header-main button.header-go-cart { 
+   margin-top: 16px;
+   height: 30px;
+   width: 40px;
+   box-shadow: inset 7px -7px 16px var(--violeta);
+   border: 1px solid var(--negro);
+   font-family: var(--Nerko);
+   font-size: 20px;
+   cursor: pointer;
+   border-radius: 15px;
+   display: none;
 }
+header.header-main button.header-log-in{ 
+   margin-top: 16px;
+   height: 30px;
+   width: 40px;
+   box-shadow: inset 7px -7px 16px var(--violeta);
+   border: 1px solid var(--negro);
+   font-family: var(--Nerko);
+   font-size: 20px;
+   cursor: pointer;
+   border-radius: 15px;
+   display: none;
+}
+/*--------------- HEADER END ---------------*/
 
-footer {
+/*--------------- FOOTER START ---------------*/
+
+footer.footer-main {
     width: 100%;
     height: 100%;
-
 }
 
-
-.contenedor__footer {
+footer.footer-main div a {
+    font-weight: 300;
+    padding-right: 10px;
+    font-size: 10px;
+    margin: 3px;
+    text-decoration: none;
+}
+footer.footer-main div.footer-contenedor {
     display: flex;
     border-top: 3px solid var(--negro);
     height: 150px;
     background: linear-gradient(var(--verde), var(--violeta));
-    justify-content: center;
+    justify-content: space-between;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin-top: 15px;
     flex-direction: row;
 }
+footer.footer-main div.footer-contenedor div.footer-logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100px;
+}
+footer.footer-main div.logo img{
 
-.caja__titulo {
+}
+
+footer.footer-main div.footer-contenedor div.footer-caja-titulos {
     display: flex;
     width: 100%;
     flex-direction: column;
-}
-.caja__titulo a{
-    color:black
-}
-
-div h2 {
-    font-size: 12px;
-    margin: 0px;
-
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
 }
 
-.caja__derechos {
+footer.footer-main div.footer-contenedor div.footer-caja-titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer.footer-main div.footer-contenedor div.footer-caja-titulo a{
+    color: var(--negro);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color:black;
+    padding: 2px;
+    margin-left: 5px;
+    justify-content: space-evenly;
+}
+
+footer.footer-main div.footer-contenedor div.footer-caja-titulo ul{
+    list-style: none;
+}
+
+footer.footer-main div.footer-contenedor div.footer-caja-titulo h2{
+    margin-bottom: 10px;
+}
+
+footer.footer-main div.caja__derechos {
     max-width: 100%;
     font-size: 12px;
     text-align: center;
     background: linear-gradient(var(--violeta), var(--blanco));
-    
-
-
 }
 
-div.caja__links {
-    display: flex;
-    margin-top: 5px;
-    height: 20px;
-    justify-content: space-between;
-
-}
-
-.barra {
-    color: var(--violeta);
-    cursor: pointer;
-}
-
-div.sub__menu {
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(var(--violeta), var(--blanco));
-    visibility: hidden;
-
-}
-
-label.barra {
-    visibility: visible;
-    opacity: 1;
-}
-
-footer div.caja__titulos {
-    display: flex;
-    width: 100%;
-       justify-content: center;
-align-items: center;
-margin-left: 10px;
-
-}
-footer div.caja__titulos h2 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-footer div.caja__footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-a.social-icon{
-    display: flex;
-    justify-content: center;
-  
-} 
-div.caja__redes{
+footer.footer-main div.footer-contenedor div.footer-caja-redes{
     display:flex;
     width:50%;
     justify-content: center;
     text-align: center;
-    
 }
-.icon-container{
+footer.footer-main div.footer-contenedor div.footer-caja-redes div.footer-icon-container{
     display:flex;
     justify-content: center;
     flex-direction: column;
-    width: 50%;
+    height: auto;
 }
 /* Social icon */
-.icon-facebook i.fab {
+footer.footer-main div.footer-contenedor div.footer-caja-redes div.footer-icon-container a.footer-icon-facebook i.fab {
     color: blue;
     font-size: 16px;
     background-color: white;
@@ -269,7 +342,7 @@ div.caja__redes{
     border: 1px solid blue;
     width: 30px;
 }
-.icon-twitter i.fab {
+footer.footer-main div.footer-contenedor div.footer-caja-redes div.footer-icon-container a.footer-icon-twitter i.fab {
     color: lightskyblue;
     font-size: 20px;
     background-color: white;
@@ -278,7 +351,7 @@ div.caja__redes{
     border: 1px solid lightskyblue;
     width: 30px;
 }
-.icon-instagram i.fab {
+footer.footer-main div.footer-contenedor div.footer-caja-redes div.footer-icon-container a.footer-icon-instagram i.fab {
     color: rgb(85, 6, 85)6, 4, 126;
     font-size: 20px;
     background-color: white;
@@ -288,7 +361,7 @@ div.caja__redes{
     width: 30px;
 }
 
-.icon-whatsapp i.fab {
+footer.footer-main div.footer-contenedor div.footer-caja-redes div.footer-icon-container a.footer-icon-whatsapp i.fab {
     color: rgb(32, 174, 32);
     font-size: 20px;
     background-color: white;
@@ -297,100 +370,77 @@ div.caja__redes{
     border: 1px solid  rgb(32, 174, 32);
     width: 30px;
 }
-.icon-container a:hover{
+footer.footer-main div.footer-contenedor div.footer-caja-redes div.footer-icon-container a.footer-icon-container a:hover{
     transform: perspective(1.1);
     transition: all 1s;
 }
+/*--------------- FOOTER END ---------------*/
 
 
 
-
-
-
+/*--------------- MEDIAQUERYS START ---------------*/
 @media (min-width: 768px) {
-    header button.log-in{
+    /*--------------- HEADER START ---------------*/
+    header.header-main button.header-go-cart{
         display: flex;
-        
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+        /* margin-left: 2rem; */
     }
-    header button.go-cart{
+    header.header-main button.header-log-in{
         display: flex;
-        
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+        margin-right: 2rem;
     }
-    header{
+    header.header-main {
         justify-content: space-evenly;
-        width: 100%;
     }
-    header div.busqueda{
+    header.header-main div.header-busqueda{
         width: 70%;
         max-width: 800px;
     }
-
-    div.caja__links a.nav-link{
-        padding-right: 20px;
-     
-    }
-    header div a {
-        font-size: 13px;
-    }
-
-    footer div a {
-        font-size: 13px;
-    }
-
-    .barra {
+    header.header-main div.header-burger-menu-barra {
         display: none
     }
-
-    .logo img {
-        height: 160px;
-        margin-left: 15px;
-        margin-right: 60px;
-        max-width: 200px;
+    header.header-main div.header-busqueda form input.header-barra-busqueda{
+        width: 400px;
+     height: 20px;
+     box-shadow: 5px 5px 15px black;
     }
+    /*--------------- HEADER END ---------------*/
 
-    div h2 {
-        font-size: 16px;
-
+    /*--------------- MAIN START ---------------*/
+    /*--------------- MAIN END ---------------*/
+    /*--------------- FOOTER START ---------------*/
+    footer.footer-main div.footer-contenedor div.footer-caja-titulos{
+        justify-content: space-evenly;
     }
-    .contenedor__footer{
+    header.header-main nav.header-caja-links{
         display: flex;
-        justify-content: space-around;
     }
-
-    div.caja__titulos{
-        font-size: var(--subtitulo);
-    }
-    div.caja__titulo {
-        margin-right: 100px;
-    }
+    /*--------------- FOOTER END ---------------*/
 }
 
 @media (min-width: 1024px){
-  input.barra-busqueda{
+    header.header-main div.header-busqueda form input.header-barra-busqueda{
      width: 600px;
      height: 20px;
      box-shadow: 5px 5px 15px black;
     }
-    div.caja__links{
-        width: 70%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        text-align: center;
-    }
-
-    div.caja__links a.nav-link{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 85px;
-        background-color: var(--verde);
-        padding: 2px;
-        border-radius: 8px;
-        box-shadow: 5px 5px 15px black;
-    }
-    div.caja__titulo{
-        margin-left: 80px;
-    }
-
 }
+/*--------------- MEDIAQUERYS END ---------------*/
+
+
+
+
+
+
+
+
+
+
+
+

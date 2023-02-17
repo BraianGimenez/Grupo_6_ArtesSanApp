@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<%-include("./partials/head") %>
+
+<body>
+    <%-include("./partials/header") %> 
+    <main class="products-main">
+        <aside class="products-aside">
+            <div>
+                <ul>
+                    <li>electro</li>
+                    <li>home</li>
+                    <li>cocina</li>
+                </ul>
+            </div>
+        </aside>
+        <section class="products-all-products">
+            <% database.forEach(data => { %>
+            <article class="products-card">
+                    <h2><%= data.name %></h2>
+                    <img src="./images/placeholder.png" alt="imagen">
+                    <p>precio</p>
+                    <p>descuento</p>
+                    <p>descripcion</p>
+                </article>
+                <% }) %>
+        </section>
+    </main>
+    <%-include("./partials/footer") %> 
+</body>
+</html>

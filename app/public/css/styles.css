@@ -1,31 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Libre+Franklin:wght@300&family=Milonga&family=Nerko+One&family=Parisienne&display=swap');
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-    :root{
-        /*colores*/
-        --negro:#000;
-        --blanco:#fff;
-        --verde: #B5D5C5;
-        --violeta: #B08BBB;
-    --naranja:#ECA869;
-    --beige:#f5f5dc;
-    /* fuentes */
-    --Diplomata: "Diplomata SC", cursive;
-    --Franklin:'Libre Franklin', sans-serif;
-    --Milonga: 'Milonga', cursive;
-    --Nerko: 'Nerko One', cursive;
-    --Paris: 'Parisienne', cursive;
-    /* Tamaños tipograficos*/
-    --titulo:36px;
-    --subtitulo:30px;
-    --parrafo:16px;
-    }
-
-
-    body{
-        background: linear-gradient(var(--beige), var(--violeta),var(--beige));
-    
-      }
+@import url("general.css");
+@import url("header-footer.css");
+@import url("home.css");
