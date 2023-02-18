@@ -60,7 +60,6 @@ img {
 }
 
 .container-slider{
-    margin: 60px 0;
     position: relative;
     overflow: hidden;
     box-shadow: 0px 5px 20px white;
@@ -75,14 +74,16 @@ img {
 
 .slider__section {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .slider__img {
     display: block;
-    width: 100%;
+    margin: auto;
+    width: 99%;
     height: 100%;
-    object-fit: cover;
+    object-fit:cover;
+    border-radius: 15px;
 }
 
 .slider__btn {
@@ -113,7 +114,6 @@ img {
     right: 10px;
 }
 
-/**esto es un parto **/
 h2.main-title{
     border: 1px solid white;
     border-radius: 5px;
@@ -195,7 +195,6 @@ div.product:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 120px;
     object-fit: cover;
     max-width: 500px;
 
@@ -204,7 +203,7 @@ div.product:hover {
 
 @media(min-width:768px){
     .container-slider{
-        margin-top: 55px;
+        margin-top: 10px;
         margin-bottom: 40px;
         position: relative;
         overflow: hidden;
