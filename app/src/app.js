@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
-const PORT = 3030;
+const PORT = 3000;
+const methodOverride = require("method-override");
 
 //Template engines
 app.set("view engine","ejs")
@@ -11,6 +12,7 @@ app.use(express.static("public"));
 
 // middlewares
 app.use(express.urlencoded({ extended: false }));
+app.use(methodOverride("_method"));
 
 // routers
 const indexRouter = require("./routes/indexRouter");

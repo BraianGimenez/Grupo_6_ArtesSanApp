@@ -17,24 +17,24 @@
 <body>
     <%-include("./partials/header") %> 
     <main class="product-edit">
-        <form action="" method="" class="product-edit-form">
+        <form action="/products/edit/<%= id %>?_method=PUT" method="POST" class="product-edit-form" enctype="multipart/form-data">
             <label for="">Nombre:
-                <input type="text">
+                <input type="text" name="name" value="<%= name %>">
             </label>
             <label for="">Descripcion:
-                <input type="text">
+                <input type="text" name="description" value="<%= description %>">
             </label>
             <label for="file" class="product-edit-label-file">Subir imagen
-                <input type="file" id="file" class="product-edit-input-file">
+                <input type="file" id="file" name="image" class="product-edit-input-file">
             </label>
             <label for="">Categoria:
-                <input type="text">
+                <input type="text" name="category" value="<%= category %>">
             </label>
             <label for="">Color:
-                <input type="text">
+                <input type="text" name="color" value="<%= color %>">
             </label>
             <label for="">Precio:
-                <input type="number">
+                <input type="number" name="price" value="<%= price %>">
             </label>
             <div class="product-edit-div-button">
                 <button type="reset" class="product-edit-form-reset">Restablecer</button>

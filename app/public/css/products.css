@@ -26,6 +26,13 @@ main.products-main section.products-all-products{
 main.products-main section.products-all-products article.products-card{
     border: 3px solid black;
     margin-top: 0.5rem;
+    background: var(--blanco);
+}
+
+main.products-main section.products-all-products article.products-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
 }
 
 /* MEDIAQUERY START */
