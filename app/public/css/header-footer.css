@@ -2,7 +2,14 @@
 /*--------------- HEADER START ---------------*/
 
 
+header.header-main.header-title{
 
+}
+header.header-main .header-title h1.first-title,h1.secundary-title{
+   display: none;
+   
+
+}
 header.header-main {
     width: 100%;
     display: flex;
@@ -71,6 +78,8 @@ header.header-main div.header-busqueda nav.header-caja-links ul {
     list-style: none;
     gap: 1rem;
     margin-top: 1.5rem;
+    padding: 5px;
+    border-radius:10px;
 }
 
 header.header-main nav.header-caja-links ul li a{
@@ -80,9 +89,11 @@ header.header-main nav.header-caja-links ul li a{
     border-top: 3px groove var(--blanco);
     border-right: 3px groove var(--blanco);
     border-left: 3px ridge var(--violeta);
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: var(--parrafo);
     text-decoration: none;
+    padding: 5px;
+    ;
 }
 
 header.header-main nav.header-caja-links ul li a:hover{
@@ -309,8 +320,12 @@ footer.footer-main div.footer-contenedor div.footer-caja-titulo ul{
     list-style: none;
 }
 
+    footer.footer-main div.footer-contenedor div.footer-caja-titulo h2{
+        font-size: 0.8rem;
+}
+
 footer.footer-main div.footer-contenedor div.footer-caja-titulo h2{
-    margin-bottom: 10px;
+    font-size: 0.8rem;
 }
 
 footer.footer-main div.caja__derechos {
@@ -325,6 +340,10 @@ footer.footer-main div.footer-contenedor div.footer-caja-redes{
     width:50%;
     justify-content: center;
     text-align: center;
+}
+footer.footer-main div.footer-contenedor div.footer-caja-redes div.footer-icon-container h2{
+    font-size: 0.8rem;
+
 }
 footer.footer-main div.footer-contenedor div.footer-caja-redes div.footer-icon-container{
     display:flex;
@@ -381,6 +400,8 @@ footer.footer-main div.footer-contenedor div.footer-caja-redes div.footer-icon-c
 /*--------------- MEDIAQUERYS START ---------------*/
 @media (min-width: 768px) {
     /*--------------- HEADER START ---------------*/
+  
+
     header.header-main button.header-go-cart{
         display: flex;
         align-items: center;
@@ -410,6 +431,8 @@ footer.footer-main div.footer-contenedor div.footer-caja-redes div.footer-icon-c
      height: 20px;
      box-shadow: 5px 5px 15px black;
     }
+
+
     /*--------------- HEADER END ---------------*/
 
     /*--------------- MAIN START ---------------*/
@@ -421,10 +444,37 @@ footer.footer-main div.footer-contenedor div.footer-caja-redes div.footer-icon-c
     header.header-main nav.header-caja-links{
         display: flex;
     }
+    footer.footer-main div.footer-contenedor div.footer-caja-titulo a{
+        font-size: 0.8rem;
+    }
+
+    footer.footer-main div.footer-contenedor div.footer-caja-redes div.footer-icon-container h2{
+            font-size: 1.2rem;
+    }
+    footer.footer-main div.footer-contenedor div.footer-caja-titulo h2{
+        font-size: 1.5rem;
+}
+
+footer.footer-main div.footer-contenedor div.footer-caja-titulo h2{
+    font-size: 1.5rem;
+}
     /*--------------- FOOTER END ---------------*/
 }
 
 @media (min-width: 1024px){
+    header.header-main .header-title{
+        max-width: 80px;
+        margin: 0px 5px;
+    }
+
+    header.header-main .header-title h1.first-title,h1.secundary-title{
+        display: flex;
+        justify-content: center;
+        font-family: var(--Milonga);
+        font-style: italic;
+        font-size: 1.5rem;
+        text-align: center;
+    }
     header.header-main div.header-busqueda form input.header-barra-busqueda{
      width: 600px;
      height: 20px;
