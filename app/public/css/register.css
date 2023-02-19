@@ -1,7 +1,6 @@
 @import url('/css/styles.css');
-@import url('/css/header-footer.css');
 
-body{
+main.register-main {
     font-family: var(--Franklin);
     min-height: 100vh;
     padding: 2rem;
@@ -9,20 +8,29 @@ body{
     justify-content: center;
     align-items: center;  
 }
+<<<<<<< HEAD
 
 div.logo-container{
+=======
+main.register-main .logo-container{
+>>>>>>> eb4583a5247120b0dfa641e9d392679fdf4e7b7c
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 
 }
+<<<<<<< HEAD
 div.home-logo{
+=======
+main.register-main .register-logo{
+>>>>>>> eb4583a5247120b0dfa641e9d392679fdf4e7b7c
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
  }
+<<<<<<< HEAD
  div.home-logo img{
      display: flex;
      justify-content: center;
@@ -33,24 +41,35 @@ div.home-logo{
 }
 
 a {
+=======
+ main.register-main div.register-logo img{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width:60%;
+    max-width: 300px;
+    margin: auto;
+}
+main.register-main a {
+>>>>>>> eb4583a5247120b0dfa641e9d392679fdf4e7b7c
     color: darkblue;
     font-size: 0.8rem;
     text-decoration: none;
 }
 
-h2 {
+main.register-main h2 {
     
     margin-bottom: 1rem;
     text-align: center;
 }
 
-hr {
+main.register-main hr {
     background: linear-gradient(90deg, black, white);
     height: 3px;
     margin-bottom: 3rem; 
 }
 
-.form {
+main.register-main .form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,19 +77,19 @@ hr {
     
 }
 
-.input-container,
-.button-container {
+main.register-main .input-container,
+main.register-main .button-container {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
     width: 80%;
 }
 
-span.error-message {
+main.register-main span.error-message {
     color: var(--negro);
     font-size: 0.7rem;
 }
-input.input-style {
+main.register-main input.input-style {
     border: none;
     border-radius: 0.2rem;
     height: 2rem;
@@ -79,19 +98,19 @@ input.input-style {
     color: black;
 }
 
-input.input-style::placeholder {
+main.register-main input.input-style::placeholder {
     color: rgb(184, 177, 177);
 }
 
-input.input-style:focus {
+main.register-main input.input-style:focus {
     box-shadow: 0 0 6px var(--verde);
 }
 
-label {
+main.register-main label {
     font-size: 0.8rem;
 }
 
-.form-container {
+main.register-main .form-container {
     background: linear-gradient(var(--violeta), var(--naranja));
     padding: 1rem;
     border-radius: 0.9rem;
@@ -100,20 +119,15 @@ label {
     width: 100%;
 }
 
-.check{ 
+main.register-main .check{ 
     flex-direction: column;   
 }
 
-.check label {
+main.register-main .check label {
     margin-right: 0.5rem;   
 }
 
-/* .check div.label {
-    font-size: 13px;
-    
-} */
-
-.error-message {
+main.register-main .error-message {
     
     
     margin-top: 0.5rem;
@@ -122,7 +136,7 @@ label {
 
 /* BUTTONS */
 
-.btn {
+main.register-main .btn {
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
@@ -133,7 +147,7 @@ label {
     margin: 0.5rem;
     
 }
-.btn-submit {
+main.register-main .btn-submit {
     background:  linear-gradient(45deg, rgba(255,255,255,1) 0%,  rgba(106, 219, 140, 0.5) 50%);
     color: rgb(75, 75, 75);
     font-weight: bold;
@@ -141,7 +155,7 @@ label {
     
 }
 
-.btn-submit:hover {
+main.register-main .btn-submit:hover {
     color: rgb(172, 172, 172);
     box-shadow: -5px -5px 10px rgb(255, 255, 255, 0.7);
     background: linear-gradient(285deg, rgba(255,255,255,0.5) 0%,  rgba(39,255,232,0.5) 50%);
@@ -153,7 +167,7 @@ label {
 
 @media screen and (min-width: 768px) {
 
-span.error-message {
+    main.register-main span.error-message {
         font-size: 14px;
         }
 }

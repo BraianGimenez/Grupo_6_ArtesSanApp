@@ -22,7 +22,7 @@
 }
 
 
-*{
+main.cart-main{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -30,50 +30,9 @@
     font-weight: 800;
     
 }
-/* Scrollbar*/
 
-
-::-webkit-scrollbar {
-  width: 7px;
-}
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px var(--negro); 
-  border-radius: 5px;
-  background-color: var(--blanco);
-}
-::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(var(--negro),var(--verde),var(--violeta),var(--verde),var(--negro)); 
-  border-radius: 10px;
-  
-}
-::-webkit-scrollbar-thumb:hover {
-  background-image: linear-gradient(var(--blanco),var(--verde),var(--negro),var(--verde),var(--blanco));
-  
-}
-/* End of Scrollbar*/
-
-
-  
-
-
-/* header img{
-    width: 100%;
-    height: auto;
-    
-}
-
-footer img{
-    width: 100%;
-    vertical-align: middle;
-}
-
-/* body{
-  background: url("../images/background.jpeg");
-  
-} */
- */
 /*TITLE*/
-h1{
+main.cart-main h1{
   text-align: center;
   font-family: var(--Nerko);
   font-size: var(--titulo);
@@ -81,7 +40,7 @@ h1{
   margin-bottom: 1rem;
 }
 
-h1 i{
+main.cart-main h1 i{
   color: var(--violeta);
   text-shadow: 0 0 5px var(--negro);
   font-size: 1.8rem;
@@ -90,7 +49,7 @@ h1 i{
 /* END TITLE*/
 
 /* GENERAL */
-section h2{
+main.cart-main section h2{
   text-align: center;
   text-decoration:underline var(--negro) dotted 2px;
   margin-top: 2.5rem;
@@ -99,14 +58,14 @@ section h2{
   font-size: var(--subtitulo);
 }
 
-section h2 i{
+main.cart-main section h2 i{
   color: var(--violeta);
   text-shadow: 0 0 5px var(--negro);
   padding: 0px 5px;
   font-size: 1.3rem;
 }
 
-button{
+main.cart-main button{
   font-size: 2rem;
   border-radius: 17px;
   box-shadow: 4px 4px 14px var(--negro);
@@ -114,14 +73,14 @@ button{
   border:3px solid var(--negro); 
 }
 
-button:active{
+main.cart-main button:active{
   background-color: var(--negro);
   box-shadow: 4px 4px 5px var(--negro);
   transform: translateY(5px);
   color: var(--naranja);
   border: 3px solid var(--verde);
 }
-main div.cartLine{
+main.cart-main div.cartLine{
   height: 3px;
   background:linear-gradient(var(--naranja),var(--verde),var(--violeta)) ;
 }
@@ -129,7 +88,7 @@ main div.cartLine{
 /* END GENERAL */
 /* MY PRODUCTS */
 
-section article div.cartProduct{
+main.cart-main section article div.cartProduct{
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
@@ -141,16 +100,16 @@ section article div.cartProduct{
   height: 100px;
 }
 
-section div.cartProduct div, 
-section div.toggleCartProduct div{
+main.cart-main section div.cartProduct div, 
+main.cart-main section div.toggleCartProduct div{
   display: flex;
   border-radius: 10px;
   height: 100px;
   margin: 0 0.1rem 0 0;
 }
 
-section div.cartProduct div img, 
-section div.toggleCartProduct div img{
+main.cart-main section div.cartProduct div img, 
+main.cart-main section div.toggleCartProduct div img{
   height: 100%;
   border-radius: 50%;
   object-fit: contain;
@@ -158,34 +117,34 @@ section div.toggleCartProduct div img{
   box-shadow: 15px 5px 20px var(--negro); 
 }
 
-section div.cartProduct button.cartbtn,
-section div.toggleCartProduct button.cartbtn {
+main.cart-main section div.cartProduct button.cartbtn,
+main.cart-main section div.toggleCartProduct button.cartbtn {
   position: absolute;
   top: 25px;
   right: 5px;
   border-radius: 50%;
 }
 
-section div.cartProduct h3, 
-section div.cartProduct p, 
-section div.toggleCartProduct h3, 
-section div.cartProduct p,
-section div.cartProduct button.cartAdd,
-section div.cartProduct button.cartRemove,
-section div.cartProduct div.counter,
-section div.cartProduct span,
-section div.cartProduct div.cartPrice,
-section div.cartProduct button.cartProductDelete,
-section div.cartProduct div.cartPrice{
+main.cart-main section div.cartProduct h3, 
+main.cart-main section div.cartProduct p, 
+main.cart-main section div.toggleCartProduct h3, 
+main.cart-main section div.cartProduct p,
+main.cart-main section div.cartProduct button.cartAdd,
+main.cart-main section div.cartProduct button.cartRemove,
+main.cart-main section div.cartProduct div.counter,
+main.cart-main section div.cartProduct span,
+main.cart-main section div.cartProduct div.cartPrice,
+main.cart-main section div.cartProduct button.cartProductDelete,
+main.cart-main section div.cartProduct div.cartPrice{
   display: none;
 }
 
-.cartPrice{
+main.cart-main div.cartPrice{
   font-size: 2rem;
   height: 0px;
 }
 
-section article div.toggleCartProduct{
+main.cart-main section article div.toggleCartProduct{
   overflow:auto;
   border: 3px solid var(--negro);
   border-radius: 10px;
@@ -195,7 +154,7 @@ section article div.toggleCartProduct{
   height: auto;
 }
 
-section article div.toggleCartProduct div.item{
+main.cart-main section article div.toggleCartProduct div.item{
   flex-direction: column;
   border: 3px solid var(--negro);
   height: auto;
@@ -206,23 +165,23 @@ section article div.toggleCartProduct div.item{
   animation-duration: 2s;
 }
 
-section article div.toggleCartProduct div.item img{
+main.cart-main section article div.toggleCartProduct div.item img{
   width: auto;
   height: 100px;
   margin-bottom: 1rem;
 }
 
-section article div.toggleCartProduct h3,
-section article div.toggleCartProduct img,
-section article div.toggleCartProduct p{
+main.cart-main section article div.toggleCartProduct h3,
+main.cart-main section article div.toggleCartProduct img,
+main.cart-main section article div.toggleCartProduct p{
   display: flex;
   justify-content: center;
 }
 
 
 
-section article div.toggleCartProduct button.cartAdd,
-section article div.toggleCartProduct button.cartRemove
+main.cart-main section article div.toggleCartProduct button.cartAdd,
+main.cart-main section article div.toggleCartProduct button.cartRemove
 {
   align-items: center;
   justify-content: center;
@@ -231,26 +190,26 @@ section article div.toggleCartProduct button.cartRemove
   margin: 0 1rem;
 }
 
-section article div.toggleCartProduct button.cartProductDelete{
+main.cart-main section article div.toggleCartProduct button.cartProductDelete{
   width: 35%;
   max-width: 250px;
   margin-bottom: 1rem;
 }
 
-section article div.toggleCartProduct div.toggleCartProductBtn{
+main.cart-main section article div.toggleCartProduct div.toggleCartProductBtn{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-.cartRemove{
+main.cart-main .cartRemove{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.cartAdd{
+main.cart-main .cartAdd{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -261,9 +220,9 @@ section article div.toggleCartProduct div.toggleCartProductBtn{
 
 /* SHIPPING/PAYMENT OPTIONS */
 
-section.cartShipping article, 
-section.cartPayment article, 
-section.cartResume article{
+main.cart-main section.cartShipping article, 
+main.cart-main section.cartPayment article, 
+main.cart-main section.cartResume article{
   border: 3px solid var(--negro);
   border-radius: 10px;
   margin: 0 0.5rem 1rem;
@@ -276,15 +235,15 @@ section.cartResume article{
   position: relative;
 }
 
-section.cartShipping article label div{
+main.cart-main section.cartShipping article label div{
 display: none;
 }
 
-section article div{
+main.cart-main section article div{
   margin-left: 2rem;
 }
 
-section article button.cartShippingbtn{
+main.cart-main section article button.cartShippingbtn{
   width: 30px;
   height: 30px;
   position: absolute;
@@ -294,151 +253,151 @@ section article button.cartShippingbtn{
   
 }
 
-section.cartShipping article.branchOpen{
+main.cart-main section.cartShipping article.branchOpen{
   height: auto;
   display: block;
   text-align: center;
   position: relative;
 }
 
-section.cartShipping article.branchOpen div{
+main.cart-main section.cartShipping article.branchOpen div{
   /* border: 3px solid red; */
   margin: 1rem 0 1rem 0; 
 }
 
-section.cartShipping article.branchOpen div label div{
+main.cart-main section.cartShipping article.branchOpen div label div{
   margin-top: 2rem;
   display: block;
 }
 
-section.cartShipping article.branchOpen button{
+main.cart-main section.cartShipping article.branchOpen button{
   position: absolute;
   top: 10px;
 }
 
-section.cartShipping article.pickUpOpen{
+main.cart-main section.cartShipping article.pickUpOpen{
   height: auto;
   display: block;
   text-align: center;
   position: relative;
 }
 
-section.cartShipping article.pickUpOpen div{
+main.cart-main section.cartShipping article.pickUpOpen div{
   /* border: 3px solid red; */
   margin: 1rem 0 1rem 0; 
 }
 
-section.cartShipping article.pickUpOpen div label div{
+main.cart-main section.cartShipping article.pickUpOpen div label div{
   margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-section.cartShipping article.pickUpOpen button{
+main.cart-main section.cartShipping article.pickUpOpen button{
   position: absolute;
   top: 10px;
 }
 
-section.cartShipping article.shippingOpen{
+main.cart-main section.cartShipping article.shippingOpen{
   height: auto;
   display: block;
   text-align: center;
   position: relative;
 }
 
-section.cartShipping article.shippingOpen div{
+main.cart-main section.cartShipping article.shippingOpen div{
   /* border: 3px solid red; */
   margin: 1rem 0 1rem 0; 
 }
 
-section.cartShipping article.shippingOpen div label div{
+main.cart-main section.cartShipping article.shippingOpen div label div{
   margin-top: 2rem;
   display: block;
   align-items: center;
   justify-content: center;
 }
 
-section.cartShipping article.shippingOpen button.cartShippingbtn{
+main.cart-main section.cartShipping article.shippingOpen button.cartShippingbtn{
   position: absolute;
   top: 10px;
 }
 
-.shippingSendCostBtn{
+main.cart-main  .shippingSendCostBtn{
   margin-left: 1rem;
   font-family: var(--Milonga);
   padding: 1rem;
 }
 
 
-section.cartPayment article.cartPaymentCash div.p,
-section.cartPayment article.cartPaymentMercadoPago div.p,
-section.cartPayment article.cartPaymentBank div.p,
-section.cartPayment article.cartPaymentCreditCard div.p{
+main.cart-main section.cartPayment article.cartPaymentCash div.p,
+main.cart-main section.cartPayment article.cartPaymentMercadoPago div.p,
+main.cart-main section.cartPayment article.cartPaymentBank div.p,
+main.cart-main section.cartPayment article.cartPaymentCreditCard div.p{
 display: none;
 }
 
-section.cartPayment article.cartPaymentCashOpen div.p{
+main.cart-main section.cartPayment article.cartPaymentCashOpen div.p{
   margin-top: 2rem;
   display: block;
 }
 
-section.cartPayment article.cartPaymentCashOpen{
+main.cart-main section.cartPayment article.cartPaymentCashOpen{
   height: auto;
   display: block;
   text-align: center;
   position: relative;
 }
 
-section.cartPayment article.cartPaymentCashOpen div{
+main.cart-main section.cartPayment article.cartPaymentCashOpen div{
   margin: 1rem 0 1rem 0; 
 }
 
-section.cartPayment article.cartPaymentMercadoPagoOpen div.p{
+main.cart-main section.cartPayment article.cartPaymentMercadoPagoOpen div.p{
   margin-top: 2rem;
   display: block;
 }
 
-section.cartPayment article.cartPaymentMercadoPagoOpen{
+main.cart-main section.cartPayment article.cartPaymentMercadoPagoOpen{
   height: auto;
   display: block;
   text-align: center;
   position: relative;
 }
 
-section.cartPayment article.cartPaymentMercadoPagoOpen div{
+main.cart-main section.cartPayment article.cartPaymentMercadoPagoOpen div{
   margin: 1rem 0 1rem 0; 
 }
 
-section.cartPayment article.cartPaymentBankOpen div.p{
+main.cart-main section.cartPayment article.cartPaymentBankOpen div.p{
   margin-top: 2rem;
   display: block;
 }
 
-section.cartPayment article.cartPaymentBankOpen{
+main.cart-main section.cartPayment article.cartPaymentBankOpen{
   height: auto;
   display: block;
   text-align: center;
   position: relative;
 }
 
-section.cartPayment article.cartPaymentBankOpen div{
+main.cart-main section.cartPayment article.cartPaymentBankOpen div{
   margin: 1rem 0 1rem 0; 
 }
 
-section.cartPayment article.cartPaymentCreditCardOpen div.p form{
+main.cart-main section.cartPayment article.cartPaymentCreditCardOpen div.p form{
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
   height: auto;
 }
 
-section.cartPayment article.cartPaymentCreditCardOpen div label div.p form label{
+main.cart-main section.cartPayment article.cartPaymentCreditCardOpen div label div.p form label{
   margin-bottom: 1rem;
   margin-left:0.5rem;
 }
 
-section.cartPayment article.cartPaymentCreditCardOpen{
+main.cart-main section.cartPayment article.cartPaymentCreditCardOpen{
   height: auto;
   display: flex;
   align-items: center;
@@ -446,7 +405,7 @@ section.cartPayment article.cartPaymentCreditCardOpen{
   position: relative;
 }
 
-section.cartPayment article.cartPaymentCreditCardOpen div{
+main.cart-main section.cartPayment article.cartPaymentCreditCardOpen div{
   margin: 1rem 0 1rem 0; 
 }
 
@@ -455,12 +414,12 @@ section.cartPayment article.cartPaymentCreditCardOpen div{
 
 /* RESUME */
 
-section.cartResume article{
+main.cart-main section.cartResume article{
   flex-direction: column;
   height: auto;
 }
 
-section.cartResume article div{
+main.cart-main section.cartResume article div{
   border: 1.5px solid var(--negro);
   margin: 0;
   height: 55px;
@@ -470,55 +429,55 @@ section.cartResume article div{
   
 }
 
-section.cartResume article div.cartDiscountCode{
+main.cart-main section.cartResume article div.cartDiscountCode{
   width: 100%;
   justify-content: space-between;
   
 }
 
-section.cartResume article div input{
+main.cart-main section.cartResume article div input{
   margin-right:1rem;
   border: none;
   border-radius: 20px;
   
 }
 
-section.cartResume article div input::placeholder{
+main.cart-main section.cartResume article div input::placeholder{
   text-align: center;
 }
 
-section.cartResume article div.cartCalculation{
+main.cart-main section.cartResume article div.cartCalculation{
   width: 100%;
   justify-content: space-between;
 }
 
 
 
-section.cartResume article div.cartCalculationTotal{
+main.cart-main section.cartResume article div.cartCalculationTotal{
   font-size: 2rem;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
 
-section.cartResume article div.cartCalculationTotal span{
+main.cart-main section.cartResume article div.cartCalculationTotal span{
   font-family: var(--Milonga);
 }
 
 
 /* END RESUME */
-.finalBtn{
+main.cart-main  .finalBtn{
   width: 50%;
 }
 
 /* FINAL BUTTONs */
-section.cartResume div.cartFinalBtnDiv{
+main.cart-main section.cartResume div.cartFinalBtnDiv{
   display: flex;
   flex-direction: column;
   margin: 0 0.5rem 1rem;
 }
 
-section.cartResume div button.cartFinalBtn{
+main.cart-main section.cartResume div button.cartFinalBtn{
   height: 100px;
   margin-bottom: 1rem;
   border: 3px solid var(--negro);
@@ -529,12 +488,12 @@ section.cartResume div button.cartFinalBtn{
   font-family: var(--Nerko);
 }
 
-section.cartResume div button.cartFinalBtn:active{
+main.cart-main section.cartResume div button.cartFinalBtn:active{
   color: var(--blanco);
   text-shadow: 1px 1px 1px var(--violeta);
 }
 
-section.cartResume div button.cartDelete{
+main.cart-main section.cartResume div button.cartDelete{
   margin-bottom: 1rem;
   box-shadow: inset 7px -7px 16px var(--violeta);
   border: 3px solid var(--negro);
@@ -543,11 +502,11 @@ section.cartResume div button.cartDelete{
   color: var(--negro);
 }
 
-section.cartResume div button.cartDelete:active{
+main.cart-main section.cartResume div button.cartDelete:active{
   color: var(--blanco);
 }
 
-section.cartResume div.cartFinalBtnDiv button.cartDelete p i{
+main.cart-main section.cartResume div.cartFinalBtnDiv button.cartDelete p i{
   font-size: 4rem;
   color: var(--negro);
   text-shadow: 0px 10px 15px var(--violeta);
@@ -555,11 +514,11 @@ section.cartResume div.cartFinalBtnDiv button.cartDelete p i{
   
 }
 
-section.cartResume div.cartFinalBtnDiv button.cartDelete:active p i{
+main.cart-main section.cartResume div.cartFinalBtnDiv button.cartDelete:active p i{
   color: var(--blanco);
 }
 
-button.cartDelete:active{
+main.cart-main button.cartDelete:active{
   background-color: var(--negro);
   box-shadow: 4px 4px 5px var(--negro);
   transform: translateY(5px);
@@ -570,7 +529,7 @@ button.cartDelete:active{
 
 /* CART OTHER PRODUCTS */
 
-section.cartOtherProducts{
+main.cart-main section.cartOtherProducts{
   border: 3px solid var(--negro);
   border-radius: 10px;
   margin: 0 0.5rem 1rem;
@@ -579,7 +538,7 @@ section.cartOtherProducts{
   height: auto;
 }
 
-section.cartOtherProducts article.cartOtherProductsFlex{
+main.cart-main section.cartOtherProducts article.cartOtherProductsFlex{
   display: flex;
   flex-wrap: nowrap;
   overflow: auto;
@@ -589,7 +548,7 @@ section.cartOtherProducts article.cartOtherProductsFlex{
   justify-content: flex-start;
 }
 
-section.cartOtherProducts article.cartOtherProductsFlex div img{
+main.cart-main section.cartOtherProducts article.cartOtherProductsFlex div img{
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -597,12 +556,12 @@ section.cartOtherProducts article.cartOtherProductsFlex div img{
   box-shadow: 15px 5px 20px var(--negro); 
 }
 
-section.cartOtherProducts article.cartOtherProductsFlex div h4{
+main.cart-main section.cartOtherProducts article.cartOtherProductsFlex div h4{
   font-size: 1.5rem;
   
 }
 
-section.cartOtherProducts article.cartOtherProductsFlex div p{
+main.cart-main section.cartOtherProducts article.cartOtherProductsFlex div p{
   display: none;
 }
 /* END CART OTHER PRODUCTS */
@@ -610,31 +569,27 @@ section.cartOtherProducts article.cartOtherProductsFlex div p{
 /* MEDIAQUERYS */
 
 @media screen and (min-width:768px){
-
-  h1 i{
+main.cart-main h1 i{
     padding: 0px 25px;
   }
-section{
+  main.cart-main section{
   margin:1rem;
 }
-footer{
-  margin: 0;
-}
   /*-------------- SHIPPING --------------*/
-  section.cartShipping{
+  main.cart-main section.cartShipping{
     border: 3px solid black;
     border-radius: 15px;
     background: linear-gradient(var(--verde),var(--naranja),var(--violeta));
     opacity: 0.9;
   }
 
-  section.cartShipping i{
+  main.cart-main section.cartShipping i{
     font-size: 2.5rem;
   }
 
-  section.cartShipping article.branch,
-  section.cartShipping article.pickUp,
-  section.cartShipping article.shipping{
+  main.cart-main section.cartShipping article.branch,
+  main.cart-main section.cartShipping article.pickUp,
+  main.cart-main section.cartShipping article.shipping{
     height: auto;
     display: block;
     text-align: center;
@@ -642,31 +597,31 @@ footer{
     border: 1px solid var(--blanco);
   }
   
-  section.cartShipping article.branch div,
-  section.cartShipping article.pickUp div,
-  section.cartShipping article.shipping div{
+  main.cart-main section.cartShipping article.branch div,
+  main.cart-main section.cartShipping article.pickUp div,
+  main.cart-main section.cartShipping article.shipping div{
     margin: 1rem 0 1rem 0; 
   }
   
-  section.cartShipping article.branch div label div{
+  main.cart-main section.cartShipping article.branch div label div{
     margin-top: 2rem;
     display: block;
   }
   
-  section.cartShipping article.branch button,
-  section.cartShipping article.pickUp button,
-  section.cartShipping article.shipping button.cartShippingbtn{
+  main.cart-main section.cartShipping article.branch button,
+  main.cart-main section.cartShipping article.pickUp button,
+  main.cart-main section.cartShipping article.shipping button.cartShippingbtn{
     display: none;
   }
   
-  section.cartShipping article.pickUp div label div{
+  main.cart-main section.cartShipping article.pickUp div label div{
     margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
   }
   
-  section.cartShipping article.shipping div label div{
+  main.cart-main section.cartShipping article.shipping div label div{
     margin-top: 2rem;
     display: block;
     align-items: center;
@@ -676,19 +631,19 @@ footer{
   /*-------------- END SHIPPING --------------*/
 
   /*-------------- PAYMENT --------------*/
-  section.cartPayment{
+  main.cart-main  section.cartPayment{
     border: 3px solid var(--negro);
     border-radius: 15px;
     background: linear-gradient(var(--verde),var(--naranja),var(--violeta));
     opacity: 0.9;
   
   }
-  section.cartPayment i{
+  main.cart-main  section.cartPayment i{
     font-size: 2.5rem;
   }
-  section.cartPayment article.cartPaymentCash,
-  section.cartPayment article.cartPaymentMercadoPago,
-  section.cartPayment article.cartPaymentBank{
+  main.cart-main section.cartPayment article.cartPaymentCash,
+  main.cart-main section.cartPayment article.cartPaymentMercadoPago,
+  main.cart-main section.cartPayment article.cartPaymentBank{
     height: auto;
     display: block;
     text-align: center;
@@ -696,33 +651,33 @@ footer{
     border: 1px solid var(--blanco);
   }
   
-  section.cartPayment article.cartPaymentCash div,
-  section.cartPayment article.cartPaymentMercadoPago div,
-  section.cartPayment article.cartPaymentBank div{
+  main.cart-main section.cartPayment article.cartPaymentCash div,
+  main.cart-main section.cartPayment article.cartPaymentMercadoPago div,
+  main.cart-main section.cartPayment article.cartPaymentBank div{
     margin: 1rem 0 1rem 0; 
   }
   
-  section.cartPayment article.cartPaymentMercadoPago div.p,
-  section.cartPayment article.cartPaymentBank div.p,
-  section.cartPayment article.cartPaymentCash div.p,
-  section.cartPayment article.cartPaymentCreditCard div
+  main.cart-main section.cartPayment article.cartPaymentMercadoPago div.p,
+  main.cart-main section.cartPayment article.cartPaymentBank div.p,
+  main.cart-main section.cartPayment article.cartPaymentCash div.p,
+  main.cart-main section.cartPayment article.cartPaymentCreditCard div
   {
     margin-top: 2rem;
     display: block;
   }
   
-  section.cartPayment article.cartPaymentCreditCard div.p form{
+  main.cart-main section.cartPayment article.cartPaymentCreditCard div.p form{
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
     height: auto;
   }
-  section.cartPayment article.cartPaymentCreditCard div label div.p form label{
+  main.cart-main section.cartPayment article.cartPaymentCreditCard div label div.p form label{
     margin-bottom: 1rem;
     margin-left:0.5rem;
     display: block;
   }
-  section.cartPayment article.cartPaymentCreditCard{
+  main.cart-main  section.cartPayment article.cartPaymentCreditCard{
     height: auto;
     display: flex;
     align-items: center;
@@ -732,16 +687,16 @@ footer{
 
   }
 
-  section.cartPayment article.cartPaymentCreditCard div label div.p{
+  main.cart-main section.cartPayment article.cartPaymentCreditCard div label div.p{
     display: block;
   }
-  section.cartPayment article button{
+  main.cart-main  section.cartPayment article button{
     display: none;
   }
   /*-------------- END PAYMENT --------------*/
 
   /*-------------- Cart Resume --------------*/
-  section.cartResume{
+  main.cart-main section.cartResume{
     border: 3px solid black;
     border-radius: 15px;
     background: linear-gradient(var(--verde),var(--naranja),var(--violeta));
@@ -749,122 +704,123 @@ footer{
     
   }
 
-  section.cartResume i{
+  main.cart-main section.cartResume i{
     font-size: 2.5rem;
   }
-  section.cartResume article{
+  main.cart-main section.cartResume article{
     border: 1px solid var(--blanco);
     background: none;
   }
 
-  section.cartResume article div{
+  main.cart-main  section.cartResume article div{
     border: 1px solid var(--blanco);
   }
   /*-------------- END Cart Resume --------------*/
 
   /* CART OTHER PRODUCTS */
-  section.cartOtherProducts article.cartOtherProductsFlex div p{
+  main.cart-main section.cartOtherProducts article.cartOtherProductsFlex div p{
     display: block;
   }
-  section.cartOtherProducts{
+  main.cart-main  section.cartOtherProducts{
     margin: 0 1rem 1rem;
   }
   /* END CART OTHER PRODUCTS */
 
-  section article button.cartShippingbtn{
+  main.cart-main section article button.cartShippingbtn{
     display: none;
   }
 }
 
 @media screen and (min-width:1024px){
   
-  main{
+  main.cart-main {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }
-  h1{
+  main.cart-main  h1{
     font-size: 4rem;
   }
-  h1 i{
+  main.cart-main  h1 i{
     font-size: 4rem;
   }
-  section h2{
+  main.cart-main section h2{
     font-size: 3rem;
   }
-  section h2 i{
+  main.cart-main section h2 i{
     font-size: 3rem;
   }
-  section article div.toggleCartProduct div.item{
+  main.cart-main section article div.toggleCartProduct div.item{
     width: 95%;
     margin: 1rem;
     border: 1px solid var(--blanco);
     flex-direction: row;
     
   }
-  section article div.toggleCartProduct{
+  main.cart-main section article div.toggleCartProduct{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content:space-evenly;
     align-items: center;
   }
-section article div.toggleCartProduct button.cartProductDelete{
+  main.cart-main section article div.toggleCartProduct button.cartProductDelete{
   width: 20%;
   margin:1rem;
 }
-section article div.toggleCartProduct div.cartPrice{
+main.cart-main section article div.toggleCartProduct div.cartPrice{
   height: 50%;
   
 }
-section article div.toggleCartProduct div.item h3{
+main.cart-main section article div.toggleCartProduct div.item h3{
   margin: 0 0 0 5rem;
 }
-section article div.toggleCartProduct div.item img{
+main.cart-main section article div.toggleCartProduct div.item img{
   width: auto;
   margin: 0 1rem;
   height: 90px;
 }
-  section#product{
+main.cart-main section#product{
     width: 95%;
   }
-  section.cartShipping{
+  main.cart-main section.cartShipping{
     width: 45%;
+    height: 829px;
   }
-  section.cartPayment{
+  main.cart-main section.cartPayment{
     width: 47%; 
-    height: auto;
+    height: 829px;
   }
-  section.cartPayment article.cartPaymentCash,
-  section.cartPayment article.cartPaymentMercadoPago,
-  section.cartPayment article.cartPaymentBank,
-  section.cartPayment article.cartPaymentCreditCard
+  main.cart-main section.cartPayment article.cartPaymentCash,
+  main.cart-main section.cartPayment article.cartPaymentMercadoPago,
+  main.cart-main section.cartPayment article.cartPaymentBank,
+  main.cart-main section.cartPayment article.cartPaymentCreditCard
   {
     display: flex;
     justify-content: space-evenly;
   }
 
-  section.cartResume{
+  main.cart-main section.cartResume{
     width: 94%;
     
   }
 
-  section.cartResume div.cartFinalBtnDiv{
+  main.cart-main section.cartResume div.cartFinalBtnDiv{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  section.cartResume div button.cartFinalBtn{
+  main.cart-main section.cartResume div button.cartFinalBtn{
     width: 50%;
 
   }
-  section.cartResume div button.cartDelete{
+  main.cart-main section.cartResume div button.cartDelete{
     width: 50%;
     
   }
-  section.cartOtherProducts{
+  main.cart-main  section.cartOtherProducts{
     width: 94%;
   }
 }

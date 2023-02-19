@@ -17,18 +17,17 @@ module.exports = {
     },
     storage:(req,res) => {
         let data = req.body;
+        let database = readJSON("products.json")
 
         let newProduct = {
-            id:1,
+            id:database.length ? database[database.length - 1].id + 1 : 1,
             name:data.name,
             description:data.description,
-            image:"",
+            image: req.file ? req.file.filename : "placeholder.png",
             category:data.category,
             color:data.color,
             price:data.price,
         }
-
-        let database = readJSON("products.json")
 
         database.push(newProduct)
 
@@ -36,7 +35,38 @@ module.exports = {
         res.redirect("/products")
     },
     edit: (req,res) => {
-        res.render("product-edit")
+
+        let database = readJSON("products.json")
+
+        let ID = +req.params.id;
+
+        let product = database.find(x => x.id === ID)
+
+        res.render("product-edit", {
+            ...product
+        })
+    },
+    update:(req,res) => {
+         let id = +req.params.id;
+        const database = readJSON("products.json")
+
+        const {name, description,category,color,price} = req.body
+
+        database.map(x => {
+            if(id === x.id){
+                x.name = name;
+				x.description = description;
+				x.image = req.file ? req.file.filename : x.image
+				x.category = category;
+				x.color = color;
+				x.price = price;
+            } 
+        });
+        writeJSON("products.json", database);
+
+        res.redirect("/products") 
+
+        
     }
     
 }
