@@ -228,7 +228,7 @@ header.header-main button.header-go-cart-burger{
 /*--------------- BURGER MENU END ---------------*/
 
 
-header.header-main button.header-go-cart { 
+header.header-main button.header-go-cart{ 
    margin-top: 16px;
    height: 30px;
    width: 40px;
@@ -239,6 +239,9 @@ header.header-main button.header-go-cart {
    cursor: pointer;
    border-radius: 15px;
    display: none;
+}
+header.header-main button.header-log-in a i{
+    text-decoration: none;
 }
 header.header-main button.header-log-in{ 
    margin-top: 16px;
@@ -286,8 +289,9 @@ footer.footer-main div.footer-contenedor div.footer-logo{
     justify-content: center;
     max-width: 100px;
 }
-footer.footer-main div.logo img{
 
+footer.footer-main div.footer-logo img{
+    width: 100%;
 }
 
 footer.footer-main div.footer-contenedor div.footer-caja-titulos {
@@ -320,7 +324,7 @@ footer.footer-main div.footer-contenedor div.footer-caja-titulo ul{
     list-style: none;
 }
 
-    footer.footer-main div.footer-contenedor div.footer-caja-titulo h2{
+footer.footer-main div.footer-contenedor div.footer-caja-titulo h2{
         font-size: 0.8rem;
 }
 
@@ -409,6 +413,9 @@ footer.footer-main div.footer-contenedor div.footer-caja-redes div.footer-icon-c
         padding: 1.5rem;
         /* margin-left: 2rem; */
     }
+    header.header-main button.header-go-cart:hover{
+        background-color: var(--blanco);
+    }
     header.header-main button.header-log-in{
         display: flex;
         align-items: center;
@@ -435,8 +442,6 @@ footer.footer-main div.footer-contenedor div.footer-caja-redes div.footer-icon-c
 
     /*--------------- HEADER END ---------------*/
 
-    /*--------------- MAIN START ---------------*/
-    /*--------------- MAIN END ---------------*/
     /*--------------- FOOTER START ---------------*/
     footer.footer-main div.footer-contenedor div.footer-caja-titulos{
         justify-content: space-evenly;

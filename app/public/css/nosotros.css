@@ -1,32 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Libre+Franklin:wght@300&family=Milonga&family=Nerko+One&family=Parisienne&display=swap');
 @import url("/css.style.css");
 
-h1.titles{
+main.about-main h1.titles{
     font-size: 2.5rem;
     font-family:var(--Paris) ;
 }
-h2.subtitles{
+main.about-main h2.subtitles{
     font-size: 2.5rem;
     font-family:var(--Paris)
 }
-p {
+main.about-main p{
     font-size: 2rem;
     font-family: var(--Paris);
 }
-div.logo-container{
+main.about-main div.logo-container{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 
 }
-div.home-logo{
+main.about-main div.home-logo{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
  }
- div.home-logo img{
+main.about-main div.home-logo img{
      display: flex;
      justify-content: center;
      justify-items: center;
@@ -35,7 +35,7 @@ div.home-logo{
      margin: auto;
 }
 
-.content_s{
+main.about-main .content_s{
     display: inline-block;
     text-align: center;
     display: flex;
@@ -47,14 +47,14 @@ div.home-logo{
     border-radius: 10px ;
 }
 
-.content_s{
+main.about-main .content_s{
    border-color: var(--blanco);
    box-shadow: 5px 5px 25px white;
    display: block;
   
 }
 
-.content_s:hover{
+main.about-main .content_s:hover{
     background: var(--violeta);
     transform: scale(1.030);
 }

@@ -52,8 +52,6 @@ module.exports = {
 
         const {name, description,category,color,price} = req.body
 
-
-
         database.map(x => {
             if(id === x.id){
                 x.name = name;
