@@ -9,12 +9,7 @@ main.login-main{
     justify-content: center;
     align-items: center;
 }
-<<<<<<< HEAD
-
-div.logo-container{
-=======
 main.login-main div.logo-container{
->>>>>>> eb4583a5247120b0dfa641e9d392679fdf4e7b7c
     display: flex;
     justify-content: center;
     align-items: center;
