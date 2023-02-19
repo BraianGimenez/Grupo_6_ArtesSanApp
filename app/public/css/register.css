@@ -7,17 +7,17 @@ body{
     padding: 2rem;
     display: flex;
     justify-content: center;
-    align-items: center;
-   
+    align-items: center;  
 }
-.logo-container{
+
+div.logo-container{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 
 }
-.home-logo{
+div.home-logo{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,9 +27,11 @@ body{
      display: flex;
      justify-content: center;
      justify-items: center;
-     width: 50%;
+     width:60%;
      max-width: 300px;
+     margin: auto;
 }
+
 a {
     color: darkblue;
     font-size: 0.8rem;
