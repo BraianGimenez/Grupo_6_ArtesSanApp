@@ -1,0 +1,10 @@
+<section class="container-products">
+    <div class="product">
+        <a href="/products/detail/<%- antiguedades.id  %>"><img src="/images/products/<%= antiguedades.image ? antiguedades.image : "default-image.png" %>" alt="" class="product__img"></a>
+        <div class="product__description">
+            <h3 class="product__title"><%= antiguedades.name %></h3>
+            <span class="product__price">$<%= antiguedades.price %></span>
+        </div>
+            <i class="product__icon fa-sharp fa-solid fa-cart-plus"></i>
+    </div>
+</section>

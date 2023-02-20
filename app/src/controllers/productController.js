@@ -1,5 +1,8 @@
 const fs = require("fs");
-const {readJSON, writeJSON} = require("../database")
+const {readJSON, writeJSON} = require("../database/products.json")
+const path = require('path');
+
+
 
 module.exports = {
     all: (req,res) => {
@@ -10,7 +13,11 @@ module.exports = {
         })
     },
     detail: (req, res) => {
-        res.render("productDetail")
+        let productId = +req.params.id;
+
+        let productDetail = products.find(product => product.id === productId)
+        res.render("productDetail",{productDetail
+        })
     },
     create:(req,res) => {
         res.render("product-create")
