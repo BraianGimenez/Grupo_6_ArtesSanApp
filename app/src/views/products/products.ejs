@@ -18,10 +18,10 @@
             <% database.forEach(data => { %>
             <article class="products-card">
                     <h2><%= data.name %></h2>
-                    <img src="./images/placeholder.png" alt="imagen">
-                    <p>precio</p>
-                    <p>descuento</p>
-                    <p>descripcion</p>
+                    <img src="/images/products/<%= data.image %>" alt="image">
+                    <p>$<%= data.price %></p>
+                    <p><%= data.description %></p>
+                    <p><a href="/products/edit/<%= data.id %>">editar</a></p>
                 </article>
                 <% }) %>
         </section>

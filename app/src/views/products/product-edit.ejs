@@ -1,40 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar producto</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/header-footer.css">
-    <link rel="stylesheet" href="/css/product-edit.css">
-    
-
-    
-    
-</head>
+    <%-include("./partials/head") %> 
 <body>
     <%-include("./partials/header") %> 
     <main class="product-edit">
-        <form action="" method="" class="product-edit-form">
+        <form action="/products/edit/<%= id %>?_method=PUT" method="POST" class="product-edit-form" enctype="multipart/form-data">
             <label for="">Nombre:
-                <input type="text">
+                <input type="text" name="name" value="<%= name %>">
             </label>
             <label for="">Descripcion:
-                <input type="text">
+                <input type="text" name="description" value="<%= description %>">
             </label>
             <label for="file" class="product-edit-label-file">Subir imagen
-                <input type="file" id="file" class="product-edit-input-file">
+                <input type="file" id="file" name="image" class="product-edit-input-file">
             </label>
             <label for="">Categoria:
-                <input type="text">
+                <input type="text" name="category" value="<%= category %>">
             </label>
             <label for="">Color:
-                <input type="text">
+                <input type="text" name="color" value="<%= color %>">
             </label>
             <label for="">Precio:
-                <input type="number">
+                <input type="number" name="price" value="<%= price %>">
             </label>
             <div class="product-edit-div-button">
                 <button type="reset" class="product-edit-form-reset">Restablecer</button>
