@@ -6,17 +6,31 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 module.exports = {
     index: (req, res) => {
-        let antiguedades = products.filter(product => {
-            return product.category == "antigüedades"
+        let special = products.filter(products => {
+            return products.category == "destacado"
         });
-        let zapatos = products.filter(product => {
-            return product.category == "zapatos"
+        let inSale = products.filter(products => {
+            return products.category == "oferta"
+        });
+        let normalProduct = products.filter(products => {
+            return products.category == "producto"
         });
         res.render("index", {
-            antiguedades , zapatos
+            products,special , inSale , normalProduct
         })
     },
+    search: (req, res) => {
+        let {productSearch} = req.query
+        let searchResult = products.filter(product => product.name == productSearch)
+        res.render("search",{
+            productSearch,
+            searchResult
+            
+        });
+
+    },
+  
     about: (req, res) => {
-        res.redirect("/nosotros")
+        res.render("nosotros")
     }
 }

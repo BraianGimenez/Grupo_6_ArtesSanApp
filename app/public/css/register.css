@@ -8,40 +8,19 @@ main.register-main {
     justify-content: center;
     align-items: center;  
 }
-<<<<<<< HEAD
-
-div.logo-container{
-=======
 main.register-main .logo-container{
->>>>>>> eb4583a5247120b0dfa641e9d392679fdf4e7b7c
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 
 }
-<<<<<<< HEAD
-div.home-logo{
-=======
 main.register-main .register-logo{
->>>>>>> eb4583a5247120b0dfa641e9d392679fdf4e7b7c
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
  }
-<<<<<<< HEAD
- div.home-logo img{
-     display: flex;
-     justify-content: center;
-     justify-items: center;
-     width:60%;
-     max-width: 300px;
-     margin: auto;
-}
-
-a {
-=======
  main.register-main div.register-logo img{
     display: flex;
     justify-content: center;
@@ -51,7 +30,6 @@ a {
     margin: auto;
 }
 main.register-main a {
->>>>>>> eb4583a5247120b0dfa641e9d392679fdf4e7b7c
     color: darkblue;
     font-size: 0.8rem;
     text-decoration: none;

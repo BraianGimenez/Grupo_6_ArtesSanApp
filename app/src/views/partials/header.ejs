@@ -9,8 +9,9 @@
       </a>
     </div>
     <div class="header-busqueda">
-        <form action="search" method="post">
-            <input class="header-barra-busqueda" type="text" placeholder="Buscar productos, Marcas...">
+        <form action="/search" method="GET">
+            <input class="header-barra-busqueda" type="text" name="productSearch" placeholder="Buscar productos, Marcas..."  required>
+            <button class="header__search-button" type="submit">Buscar</button>
         </form>
         <nav class="header-caja-links">
           <ul>
@@ -18,7 +19,7 @@
               <a href="/products" class="header-nav-link">Productos</a>
             </li>
             <li>
-              <a href="" class="header-nav-link">Ofertas</a>
+              <a href="/products" class="header-nav-link">Ofertas</a>
             </li>
             <li>
               <a href="/products/create" class="header-nav-link">Vender</a>

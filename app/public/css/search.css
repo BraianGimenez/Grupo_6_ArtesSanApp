@@ -1,0 +1,22 @@
+/* Generals */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+div.not-found{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 60px;
+    margin-top: 50px;
+    margin-bottom: 30vh;
+
+}
+div.not-found h2.error-msg{
+    font-size: 1.5rem;
+    font-family: var(--Franklin);
+    font-style: italic;
+}
