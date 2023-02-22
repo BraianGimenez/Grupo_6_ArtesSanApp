@@ -27,6 +27,9 @@
                             <i class="product__icon fa-sharp fa-solid fa-cart-plus"></i>
                             <div class="edit-btn"><a href="/products/edit/<%= id %>">Editar</a> </div>
                     </div>
+                    <form action="/products/delete/<%- id %>?_method=DELETE" method="POST" style="display: inline-flex">
+                        <button type="submit" class="action-button delete">Eliminar</button>
+                    </form>
                 </section>
             <% }) %>
         </main>
