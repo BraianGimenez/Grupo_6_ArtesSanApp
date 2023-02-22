@@ -292,8 +292,7 @@ div.product__description {
 
     }
     .product__img{
-        width: 120px;
-        min-width: 120px;
+        width: 100%;
         max-width: 250px;
     }
 }

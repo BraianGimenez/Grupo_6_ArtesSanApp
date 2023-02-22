@@ -94,25 +94,6 @@ module.exports = {
 		res.redirect("/products");
 	
 	},
-    },
-    // DELETE
-	destroy : (req, res) => {
-
-		let productId = Number(req.params.id);
-        const database = readJSON("products.json")
-
-		database.forEach( product => {
-			if(product.id === productId){
-				let productToDestroy = database.indexOf(product);
-				database.splice(productToDestroy, 1)
-			}
-		});
-		
-		writeJSON("products.json", database);
-
-		res.redirect("/products");
-	
-	},
-
+    
     
 }

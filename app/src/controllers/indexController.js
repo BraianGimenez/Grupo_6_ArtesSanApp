@@ -21,9 +21,10 @@ module.exports = {
     },
     search: (req, res) => {
         let {productSearch} = req.query
-        let searchResult = products.filter(product => product.name.toLowerCase().includes(productSearch) == productSearch)
 
-        res.render("search",{
+        let searchResult = products.filter(product  => product.name.toLowerCase().includes(productSearch));
+
+       res.render("search",{
             productSearch,
             searchResult
             
