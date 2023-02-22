@@ -15,7 +15,7 @@
       "image": "2.jpg",
       "category": "oferta",
       "color": "varios",
-      "price": "$2500"
+      "price": "76000"
    },
    {
       "id": 5,
@@ -70,17 +70,6 @@
       "category": "producto",
       "color": "negro",
       "price": "$1000"
-   },
-   {
-      "id": 11,
-      "name": "Sea Bass - Whole",
-      "description": "Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc.",
-      "image": "http://dummyimage.com/229x100.png/5fa2dd/ffffff",
-      "category": "Electrical and Fire Alarm",
-      "size": "3XL",
-      "color": "Pink",
-      "price": "$9.18",
-      "discount": 92
    },
    {
       "id": 12,
@@ -1060,5 +1049,14 @@
       "color": "Blue",
       "price": "$1.63",
       "discount": 70
+   },
+   {
+      "id": 101,
+      "name": "ya basta multeeeer",
+      "description": "NOOOOO!!!",
+      "image": "1677108484161_products_.png",
+      "category": "delfin",
+      "color": "negro",
+      "price": "76000"
    }
 ]
