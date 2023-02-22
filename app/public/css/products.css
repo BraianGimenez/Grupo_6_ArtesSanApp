@@ -8,8 +8,9 @@
 main.products-main{
     display: flex;
     flex-direction: column;
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0px auto;
+    padding: 5px;
 }
 
 main.products-main aside.products-aside{
@@ -50,20 +51,20 @@ main div.edit-btn{
     justify-content: center;
     align-items: center;
     margin: auto;
-    margin-top: 15px;
-    width: 50%;
-    height: 30px;
+    margin-top: 5px;
+    width: 60px;
+    height: 20px;
     cursor: pointer;
     
 }
 main div.edit-btn:hover{
-    transform: scale(1.3);
+    transform: scale(1.1);
     transition: all 1s;
 
 }
 main div.edit-btn a{
 color: black;
-font-size: 1.2rem;
+font-size: 0.8rem;
 text-align: center;
 font-family: var(--Milonga);
 font-style: italic;
