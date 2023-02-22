@@ -97,7 +97,7 @@
       "category": "Electrical and Fire Alarm",
       "size": "3XL",
       "color": "Pink",
-      "price": "$9.18",
+      "price": "9.18",
       "discount": 92
    },
    {
@@ -108,7 +108,7 @@
       "category": "Hard Tile & Stone",
       "size": "3XL",
       "color": "Violet",
-      "price": "$2.71",
+      "price": "2.71",
       "discount": 80
    },
    {
@@ -119,7 +119,7 @@
       "category": "Electrical and Fire Alarm",
       "size": "2XL",
       "color": "Purple",
-      "price": "$3.09",
+      "price": "3.09",
       "discount": 69
    },
    {
@@ -130,7 +130,7 @@
       "category": "Plumbing & Medical Gas",
       "size": "XL",
       "color": "Red",
-      "price": "$1.87",
+      "price": "1.87",
       "discount": 99
    },
    {
@@ -141,7 +141,7 @@
       "category": "Masonry",
       "size": "M",
       "color": "Turquoise",
-      "price": "$7.69",
+      "price": "7.69",
       "discount": 18
    },
    {
@@ -152,7 +152,7 @@
       "category": "Soft Flooring and Base",
       "size": "3XL",
       "color": "Orange",
-      "price": "$8.06",
+      "price": "8.06",
       "discount": 7
    },
    {
@@ -163,7 +163,7 @@
       "category": "Doors, Frames & Hardware",
       "size": "S",
       "color": "Orange",
-      "price": "$9.97",
+      "price": "9.97",
       "discount": 95
    },
    {
@@ -185,7 +185,7 @@
       "category": "Landscaping & Irrigation",
       "size": "M",
       "color": "Maroon",
-      "price": "$5.35",
+      "price": "5.35",
       "discount": 62
    },
    {
