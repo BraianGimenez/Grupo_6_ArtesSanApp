@@ -1,4 +1,5 @@
 const express = require("express");
+const productController = require("../controllers/productController");
 const router = express.Router();
 
 // controller
@@ -6,8 +7,13 @@ const controller = require("../controllers/productController");
 const { uploadImageProduct } = require("../middlewares/upload");
 
 // route
-router.get("/" , controller.all)
-router.get("/detail" , controller.detail)
+
+//detail
+router.get("/" , productController.all)
+router.get("/detail/" , productController.detail)
+router.get("/detail/:id" , productController.detail)
+
+
 
 // create
 router.get("/create",controller.create)

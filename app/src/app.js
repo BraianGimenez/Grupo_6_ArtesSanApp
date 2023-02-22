@@ -24,6 +24,7 @@ const cartRouter = require("./routes/cartRouter");
 app.use("/", indexRouter);
 app.use("/productCart", cartRouter);
 app.use("/products", productRouter);
+app.use("/results", indexRouter);
 app.use("/user", usersRouter);
 
 // ejs engine

@@ -8,65 +8,71 @@
         
         <div class="slider" id="slider">
             <div class="slider__section">
-                <img src="/images/img1.jpg" alt="" class="slider__img">
+                <img src="/images/products/img1.jpg" alt="" class="slider__img">
             </div>
             <div class="slider__section">
-                <img src="images/img2.jpg" alt="" class="slider__img">
+                <img src="images/products/img2.jpg" alt="" class="slider__img">
             </div>
             <div class="slider__section">
-                <img src="images/img3.jpg" alt="" class="slider__img">
+                <img src="images/products/img3.jpg" alt="" class="slider__img">
             </div>
             <div class="slider__section">
-                <img src="images/img4.jpg" alt="" class="slider__img">
+                <img src="images/products/img4.jpg" alt="" class="slider__img">
             </div>
             <div class="slider__section">
-                <img src="images/img5.jpg" alt="" class="slider__img">
+                <img src="images/products/img5.jpg" alt="" class="slider__img">
             </div>
         </div>
         <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
         <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
     </div>
     
+    <h2 class="main-title"> Seleccion de Destacados</h2>
     <main class="special-products">
-        <h2 class="main-title"> Seleccion de Destacados</h2>
-        <section class="container-products">
-            <div class="product">
-                <a href="/product/detail"><img src="/images/products/1.jpg" alt="" class="product__img"></a>
-                <div class="product__description">
-                    <h3 class="product__title">Aguadeño</h3>
-                    <span class="product__price">$50</span>
+        <% special.forEach(({image,name,description,id,price}) => { %>
+            <section class="container-products">
+                <div class="product">
+                    <a href="/products/detail/<%- id  %>"><img src="/images/products/<%=image ? image : 'default-image.png' %>"></a>
+                    <div class="product__description">
+                        <h3 class="product__title"><%= name %></h3>
+                        <span class="product__price">$<%= price %></span>
+                    </div>
+                        <i class="product__icon fa-sharp fa-solid fa-cart-plus"></i>
                 </div>
-                    <i class="product__icon fa-sharp fa-solid fa-cart-plus"></i>
-            </div>
-            <div class="product">
-                <a href="/product/detail"></a><img src="/images/products/2.jpg" alt="" class="product__img"></a>
-                <div class="product__description">
-                    <h3 class="product__title">Mexicano</h3>
-                    <span class="product__price">$67</span>
-                </div>
-                <i class="product__icon fa-sharp fa-solid fa-cart-plus"></i>
-            </div>
-            <div class="product">
-                <a href="/product/detail"><img src="/images/products/3.jpg" alt="" class="product__img"></a>
-                <div class="product__description">
-                    <h3 class="product__title">Abanero</h3>
-                    <span class="product__price">$90</span>
-                </div>
-                <i class="product__icon fa-sharp fa-solid fa-cart-plus"></i>
-            </div>
-            <div class="product">
-                <a href="/product/detail"><img src="/images/products/4.jpg" alt="" class="product__img"></a>
-                <div class="product__description">
-                    <h3 class="product__title">Volteao</h3>
-                    <span class="product__price">$71</span>
-                </div>
-                <i class="product__icon fa-sharp fa-solid fa-cart-plus"></i>
-            </div>
-
-        </section>
-
+            </section>
+        <% }) %>
     </main>
+    <h2 class="main-title"> Ofertas Imperdibles</h2>
     <main class="in-sale-products">
+        <% inSale.forEach(({image,name,description,id,price}) => { %>
+            <section class="container-products">
+                <div class="product">
+                    <a href="/products/detail/<%- id  %>"><img src="/images/products/<%=image ? image : 'default-image.png'%>" alt="" class="product__img"></a>
+                    <div class="product__description">
+                        <h3 class="product__title"><%= name %></h3>
+                        <span class="product__price">$<%= price %></span>
+                    </div>
+                        <i class="product__icon fa-sharp fa-solid fa-cart-plus"></i>
+                </div>
+            </section>
+        <% }) %>
+    </main>
+    <h2 class="main-title"> Nuestros Productos</h2>
+    <main class="normal-products">
+        <% normalProduct.forEach(({image,name,description,id,price}) => { %>
+            <section class="container-products">
+                <div class="product">
+                    <a href="/products/detail/<%- id  %>"><img src="/images/products/<%=image ? image : 'default-image.png'%>" alt="" class="product__img"></a>
+                    <div class="product__description">
+                        <h3 class="product__title"><%= name %></h3>
+                        <span class="product__price">$<%= price %></span>
+                    </div>
+                        <i class="product__icon fa-sharp fa-solid fa-cart-plus"></i>
+                </div>
+            </section>
+        <% }) %>
+    </main>
+  <!--   <main class="in-sale-products">
         <h2 class="main-title"> Ofertas</h2>
         <section class="container-products">
             <div class="product">
@@ -143,14 +149,14 @@
 
         </section>
 
-    </main>
+    </main> -->
     
     
     <%-include("./partials/footer") %> 
 
     
 
-<!--     <script src="/js/slider.js"></script> -->
+   <script src="/js/slider.js"></script>
     <script src="/js/burger.js"></script>
 </body>
 </html>

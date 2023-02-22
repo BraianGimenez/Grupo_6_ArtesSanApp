@@ -6,26 +6,42 @@
     <%-include("./partials/header") %> 
     <main class="products-main">
         <aside class="products-aside">
-            <div>
+      <!--       <div>
                 <ul>
                     <li>electro</li>
                     <li>home</li>
                     <li>cocina</li>
                 </ul>
-            </div>
+            </div> -->
         </aside>
-        <section class="products-all-products">
+        <h2 class="main-title"> Listado de productos</h2>
+        <main class="special-products">
+            <% database.forEach(({image,name,description,id,price}) => { %>
+                <section class="container-products">
+                    <div class="product">
+                        <a href="/products/detail/<%- id  %>"><img src="/images/products/<%=image ? image : 'default-image.png' %>"></a>
+                        <div class="product__description">
+                            <h3 class="product__title"><%= name %></h3>
+                            <span class="product__price">$<%= price %></span>
+                        </div>
+                            <i class="product__icon fa-sharp fa-solid fa-cart-plus"></i>
+                            <div class="edit-btn"><a href="/products/edit/<%= id %>">Editar</a> </div>
+                    </div>
+                </section>
+            <% }) %>
+        </main>
+        <!-- <section class="products-all-products">
             <% database.forEach(data => { %>
             <article class="products-card">
                     <h2><%= data.name %></h2>
                     <img src="/images/products/<%= data.image %>" alt="image">
                     <p>$<%= data.price %></p>
                     <p><%= data.description %></p>
-                    <p><a href="/products/edit/<%= data.id %>">editar</a></p>
                 </article>
                 <% }) %>
-        </section>
-    </main>
+            </section>
+        </main>
+       
     <%-include("./partials/footer") %> 
 </body>
 </html>

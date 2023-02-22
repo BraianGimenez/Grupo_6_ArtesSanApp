@@ -1,28 +1,91 @@
 [
    {
       "id": 1,
-      "name": "Marioneta de porcelana china",
+      "name": "Marioneta",
       "description": "marioneta de porcelana de 1970, hecho en India",
-      "category": "antigüedades",
+      "category": "destacado",
       "color": "blanco",
-      "price": "2500",
-      "image": "1676753732129_products_.jpg"
+      "price": "2700",
+      "image": "img1.jpg"
    },
    {
       "id": 2,
-      "name": "MOTO G42",
-      "description": "NOOOOO!!!",
-      "image": "1676677034973_products_.webp",
-      "category": "celular",
+      "name": "Bijouterie",
+      "description": "Lote de bijou variada, por menor o mayor , de distintos diseños, precio por 10 unidades ",
+      "image": "img4.jpg",
+      "category": "destacado",
       "color": "rojo",
-      "price": "76000"
+      "price": "1500"
    },
    {
       "id": 3,
-      "name": "MOTO G42",
-      "description": "el mejor celular",
-      "image": "MOTO G42.webp",
-      "category": "celular",
+      "name": "Sombrero",
+      "description": "sombrero de tela, con diseño de flores ",
+      "image": "1.jpg",
+      "category": "oferta",
+      "color": "marron",
+      "price": "7600"
+   },
+   {
+      "id": 4,
+      "name": "Sombreros",
+      "description": "Sombreros de distintos colores, variedad de diseño y colores por mayor",
+      "image": "2.jpg",
+      "category": "oferta",
+      "color": "varios",
+      "price": "2500"
+   },
+   {
+      "id": 5,
+      "name": "Colgantes",
+      "description": "Colgantes de varios estilos, ideal para colgar en el hogar",
+      "image": "img8.jpg",
+      "category": "destacado",
+      "color": "varios",
+      "price": "5000"
+   },
+   {
+      "id": 6,
+      "name": "Macrame",
+      "description": "Productos de Macrame, diseños a pedido, presupuesto a partir de 1200",
+      "image": "img6.jpg",
+      "category": "destacado",
+      "color": "varios",
+      "price": "1200"
+   },
+   {
+      "id": 7,
+      "name": "Pulseras",
+      "description": "Pulseras y Colgantes hecho a mano, tienen muchas variedades y colores, se vende por mayor",
+      "image": "img5.jpg",
+      "category": "producto",
+      "color": "negro",
+      "price": "1000"
+   },
+   {
+      "id": 8,
+      "name": "Pulseras ",
+      "description": "Pulseras y Colgantes hecho a mano, tienen muchas variedades y colores, se vende por mayor",
+      "image": "img5.jpg",
+      "category": "producto",
+      "color": "negro",
+      "price": "1000"
+   },
+   {
+      "id": 9,
+      "name": "Pulseras",
+      "description": "Pulseras y Colgantes hecho a mano, tienen muchas variedades y colores, se vende por mayor",
+      "image": "img5.jpg",
+      "category": "producto",
+      "color": "negro",
+      "price": "1000"
+   },
+   {
+      "id": 10,
+      "name": "Pulseras y Colgantes",
+      "description": "Pulseras y Colgantes hecho a mano, tienen muchas variedades y colores, se vende por mayor",
+      "image": "img5.jpg",
+      "category": "producto",
       "color": "negro",
       "price": "1000"
    }

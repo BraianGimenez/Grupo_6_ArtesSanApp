@@ -1,6 +1,7 @@
 @import url("/css/styles.css");
 @import url("/css/header-footer.css");
 
+
 *{
     padding: 0;
     margin: 0;
@@ -11,7 +12,7 @@
 img {
     display: block;
     width: 100%;
-}
+} 
 
 /**.main-header {
     padding: 0 20px;
@@ -136,11 +137,11 @@ div.product {
     width: 90%;
     border: 2px  solid rgb(255, 255, 255);
     box-shadow: 5px 10px 10px white;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     margin: 8px;
     border-radius: 10px;
-    max-width: 500px;
+    max-width: 200px;
 
 }
 div.product:hover {
@@ -148,8 +149,16 @@ div.product:hover {
     transform: scale(1.05);
     box-shadow: 5px 5px 15px black;
     transition: all 1s;
+    
 }
 
+div.product__description {
+  
+    display: flex;
+    justify-content: baseline;
+    align-items:center;
+    flex-direction: column;
+}
 
 .product__title{
     text-align: center;
@@ -184,11 +193,7 @@ div.product:hover {
 
 
 }
-.product__icon:hover{
-    transform: rotateY(360deg);
-    transition: all 1.2s;
 
-}
 
 .product__img{
     display: flex;
@@ -197,17 +202,30 @@ div.product:hover {
     width: 100%;
     object-fit: cover;
     max-width: 500px;
+    margin: auto;
 
     
 }
 
 @media(min-width:768px){
+
+
+    main.special-products,
+    .in-sale-products,
+    .normal-products{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     .container-slider{
         margin-top: 10px;
         margin-bottom: 40px;
         position: relative;
         overflow: hidden;
         box-shadow: 0px 5px 20px white;
+        
     }
 
     div.product{
@@ -218,6 +236,9 @@ div.product:hover {
        
     }
     .container-products{
+        display: flex;
+        max-width: 250px;
+        flex-wrap: wrap;
         flex-direction: row;
 
     }

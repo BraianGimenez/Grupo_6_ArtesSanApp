@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<%-include("./partials/head")  %>
+<body>
+    <%-include("./partials/header")  %>
+
+    <h2 class="main-title"> Resultados de la busqueda : <%= productSearch %></h2>
+    <main class="special-products">
+        <% if (searchResult.length != 0 ) { %>
+            <% searchResult.forEach(product => { %>
+                <section class="container-products">
+                    <div class="product">
+                        <a href="/products/detail/<%- product.id  %>"><img src="/images/products/<%=product.image ? product.image : 'default-image.png' %>"></a>
+                        <div class="product__description">
+                            <h3 class="product__title"><%= product.name %></h3>
+                            <span class="product__price">$<%= product.price %></span>
+                        </div>
+                            <i class="product__icon fa-sharp fa-solid fa-cart-plus"></i>
+                    </div>
+                </section>
+                <% }) %>
+                <% } else { %>
+                    <div class="not-found">
+                    <h2 class="error-msg">No existe el producto que coincida con la búsqueda<h2>
+                    </div>
+                <% } %>
+         
+        
+    </main>
+
+    <%-include("./partials/footer")  %>
+</body>
+</html>

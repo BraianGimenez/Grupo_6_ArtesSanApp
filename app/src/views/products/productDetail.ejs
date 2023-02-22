@@ -11,7 +11,7 @@
     <!--PRODUCTOS-->
     <section class="detail-products">
       <article class="product">
-          <img src="/productos/indumentaria/sombrero3.jpg">
+          <img src="/images/products/<%= image ? image : "default-image.png"  %>">
           <div class="btn-left">
             <i class="fa-solid fa-less-than"></i>
           </div>
@@ -23,12 +23,10 @@
         <div class="photo-container"><img src="/productos/indumentaria/sombrero3-vista1.png" alt=""></div>
       <div class="photo-container" ><img src="/productos/indumentaria/sombrero3-vista2.png" alt=""></div>
     </div>
-      <div><h2>Sombrero Tela con Diseño de Flor</h2></div>
+      <div><h2><%= name %></h2></div>
       <div class="product--description">
-        <p>Sombrero hecho en tela regional,con un diseño de flor.
-          Realizado por artesanos de primer nivel, de calidad superior.
+        <p><%= description %>
         </p>
-        <a class="more" href="#">Ver más >></a></div>
         <!-- PRODUCTOS SIMILARES -->
 
 <!-- INFORMACION RELACIONADA AL PRODUCTO -->
@@ -37,7 +35,7 @@
           <h5>Unidades disponibles : </h5>
         </div>
         <div class="price">
-          <p>$ 1000.00 </p>
+          <p>$<%= price  %></p>
         </div>
         <div class="discount">
           <span>% 30</span><span> Descuento</span>
@@ -61,7 +59,8 @@
         </div>
       </div>
 </section>
-<div class="title-similar-products"><h4>Productos similares</h4></div>
+<div class="title-similar-products"><h4>Productos Destacados</h4></div>
+
 <section class="similar-products">
   <div class="photo-container"><img src="/productos/indumentaria/sombrero1.jpg" alt=""></div>
   <div class="photo-container"><img src="/productos/indumentaria/sombrero2.jpg" alt=""></div>
