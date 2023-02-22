@@ -15,7 +15,7 @@
       "image": "img4.jpg",
       "category": "destacado",
       "color": "rojo",
-      "price": "1500"
+      "price": "$1500"
    },
    {
       "id": 3,
@@ -24,7 +24,7 @@
       "image": "1.jpg",
       "category": "oferta",
       "color": "marron",
-      "price": "7600"
+      "price": "$7600"
    },
    {
       "id": 4,
@@ -33,7 +33,7 @@
       "image": "2.jpg",
       "category": "oferta",
       "color": "varios",
-      "price": "2500"
+      "price": "$2500"
    },
    {
       "id": 5,
@@ -42,7 +42,7 @@
       "image": "img8.jpg",
       "category": "destacado",
       "color": "varios",
-      "price": "5000"
+      "price": "$5000"
    },
    {
       "id": 6,
@@ -51,7 +51,7 @@
       "image": "img6.jpg",
       "category": "destacado",
       "color": "varios",
-      "price": "1200"
+      "price": "$1200"
    },
    {
       "id": 7,
@@ -60,7 +60,7 @@
       "image": "img5.jpg",
       "category": "producto",
       "color": "negro",
-      "price": "1000"
+      "price": "$1000"
    },
    {
       "id": 8,
@@ -69,7 +69,7 @@
       "image": "img5.jpg",
       "category": "producto",
       "color": "negro",
-      "price": "1000"
+      "price": "$1000"
    },
    {
       "id": 9,
@@ -78,7 +78,7 @@
       "image": "img5.jpg",
       "category": "producto",
       "color": "negro",
-      "price": "1000"
+      "price": "$1000"
    },
    {
       "id": 10,

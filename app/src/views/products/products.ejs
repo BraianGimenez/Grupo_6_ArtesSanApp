@@ -22,10 +22,14 @@
                         <a href="/products/detail/<%- id  %>"><img src="/images/products/<%=image ? image : 'default-image.png' %>"></a>
                         <div class="product__description">
                             <h3 class="product__title"><%= name %></h3>
-                            <span class="product__price">$<%= price %></span>
+                            <span class="product__price"><%= price %></span>
                         </div>
                             <i class="product__icon fa-sharp fa-solid fa-cart-plus"></i>
-                            <div class="edit-btn"><a href="/products/edit/<%= id %>">Editar</a> </div>
+                            <div class="edit-btn"><a href="/products/edit/<%= id %>">Editar</a> 
+                                <form action="/products/delete/<%- id %>?_method=DELETE" method="POST" style="display: inline-flex">
+                                    <button type="submit" class="action-button delete">Eliminar</button>
+                                </form>
+                            </div>
                     </div>
                     <form action="/products/delete/<%- id %>?_method=DELETE" method="POST" style="display: inline-flex">
                         <button type="submit" class="action-button delete">Eliminar</button>
@@ -33,18 +37,7 @@
                 </section>
             <% }) %>
         </main>
-        <!-- <section class="products-all-products">
-            <% database.forEach(data => { %>
-            <article class="products-card">
-                    <h2><%= data.name %></h2>
-                    <img src="/images/products/<%= data.image %>" alt="image">
-                    <p>$<%= data.price %></p>
-                    <p><%= data.description %></p>
-                </article>
-                <% }) %>
-            </section>
-        </main>
-       
+        
     <%-include("./partials/footer") %> 
 </body>
 </html>

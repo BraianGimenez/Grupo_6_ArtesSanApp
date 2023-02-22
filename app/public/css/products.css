@@ -8,8 +8,9 @@
 main.products-main{
     display: flex;
     flex-direction: column;
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0px auto;
+    padding: 5px;
 }
 
 main.products-main aside.products-aside{
@@ -43,32 +44,40 @@ main.products-main section.products-all-products article.products-card img{
 }
 
 main div.edit-btn{
-    background-color: white;
     box-shadow: 3px 3px 15px white;
     border-radius: 13px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin: auto;
-    margin-top: 15px;
-    width: 50%;
-    height: 30px;
+    margin-top: 5px;
+    width: 100%;
+    height: 20px;
     cursor: pointer;
     
 }
 main div.edit-btn:hover{
-    transform: scale(1.3);
+    transform: scale(1.1);
     transition: all 1s;
 
 }
 main div.edit-btn a{
-color: black;
-font-size: 1.2rem;
-text-align: center;
-font-family: var(--Milonga);
-font-style: italic;
-text-decoration: none;
+    border-radius: 15px;
+    width: 50px;
+    height: 20px;
+    background-color: white;
+    color: black;
+    font-size: 0.8rem;
+    text-align: center;
+    font-family: var(--Milonga);
+    font-style: italic;
+    text-decoration: none;
 
+}
+main div.edit-btn button {
+    border-radius: 15px;
+    width: 60px;
+    height: 20px;
 }
 
 /* MEDIAQUERY START */
