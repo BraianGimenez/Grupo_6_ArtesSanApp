@@ -19,7 +19,7 @@
             <% database.forEach(({image,name,description,id,price}) => { %>
                 <section class="container-products">
                     <div class="product">
-                        <a href="/products/detail/<%- id  %>"><img src="/images/products/<%=image ? image : 'default-image.png' %>"></a>
+                        <a href="/products/detail/<%- id  %>"><img src="/images/products/<%=image ? image : "default-image.png" %>"></a>
                         <div class="product__description">
                             <h3 class="product__title"><%= name %></h3>
                             <span class="product__price"><%= price %></span>
