@@ -1,10 +1,6 @@
 @import url("general.css");
 /*--------------- HEADER START ---------------*/
 
-
-header.header-main.header-title{
-
-}
 header.header-main .header-title h1.first-title,h1.secundary-title{
    display: none;
    
@@ -281,6 +277,7 @@ footer.footer-main div.footer-contenedor {
     border-top-right-radius: 10px;
     margin-top: 15px;
     flex-direction: row;
+    width: 100%;
 }
 footer.footer-main div.footer-contenedor div.footer-logo{
     width: 100%;

@@ -33,14 +33,15 @@
             <section class="container-products">
                 <div class="product">
                     <a href="/products/detail/<%- id  %>"><img src="/images/products/<%=image ? image : 'default-image.png' %>"></a>
+                    <div class="show-more"><a href="/products/detail/<%- id  %>">Ver Más</a></div>
                     <div class="product__description">
                         <h3 class="product__title"><%= name %></h3>
-                        <span class="product__price">$<%= price %></span>
+                        <span class="product__price"><%= price %></span>
                     </div>
                         <i class="product__icon fa-sharp fa-solid fa-cart-plus"></i>
                 </div>
             </section>
-        <% }) %>
+                <% }) %>
     </main>
     <h2 class="main-title"> Ofertas Imperdibles</h2>
     <main class="in-sale-products">
@@ -48,9 +49,10 @@
             <section class="container-products">
                 <div class="product">
                     <a href="/products/detail/<%- id  %>"><img src="/images/products/<%=image ? image : 'default-image.png'%>" alt="" class="product__img"></a>
+                    <div class="show-more"><a href="/products/detail/<%- id  %>">Ver Más</a></div>
                     <div class="product__description">
                         <h3 class="product__title"><%= name %></h3>
-                        <span class="product__price">$<%= price %></span>
+                        <span class="product__price"><%= price %></span>
                     </div>
                         <i class="product__icon fa-sharp fa-solid fa-cart-plus"></i>
                 </div>
@@ -62,100 +64,21 @@
         <% normalProduct.forEach(({image,name,description,id,price}) => { %>
             <section class="container-products">
                 <div class="product">
-                    <a href="/products/detail/<%- id  %>"><img src="/images/products/<%=image ? image : 'default-image.png'%>" alt="" class="product__img"></a>
+                    <img src="/images/products/<%=image ? image : 'default-image.png'%>" alt="" class="product__img">
+                    <div class="show-more"><a href="/products/detail/<%- id  %>">Ver Más</a></div>
                     <div class="product__description">
                         <h3 class="product__title"><%= name %></h3>
-                        <span class="product__price">$<%= price %></span>
+                        <span class="product__price"><%= price %></span>
                     </div>
                         <i class="product__icon fa-sharp fa-solid fa-cart-plus"></i>
                 </div>
             </section>
         <% }) %>
     </main>
-  <!--   <main class="in-sale-products">
-        <h2 class="main-title"> Ofertas</h2>
-        <section class="container-products">
-            <div class="product">
-                <a href="/product/detail"><img src="/images/products/1.jpg" alt="" class="product__img"></a>
-                <div class="product__description">
-                    <h3 class="product__title">Aguadeño</h3>
-                    <span class="product__price">$50</span>
-                </div>
-                    <i class="product__icon fa-sharp fa-solid fa-cart-plus"></i>
-            </div>
-            <div class="product">
-                <a href="/product/detail"><img src="/images/products/2.jpg" alt="" class="product__img"></a>
-                <div class="product__description">
-                    <h3 class="product__title">Mexicano</h3>
-                    <span class="product__price">$67</span>
-                </div>
-                <i class="product__icon fa-sharp fa-solid fa-cart-plus"></i>
-            </div>
-            <div class="product">
-                <a href="/product/detail"><img src="/images/products/3.jpg" alt="" class="product__img"></a>
-                <div class="product__description">
-                    <h3 class="product__title">Abanero</h3>
-                    <span class="product__price">$90</span>
-                </div>
-                <i class="product__icon fa-sharp fa-solid fa-cart-plus"></i>
-            </div>
-            <div class="product">
-                <a href="/product/detail"><img src="/images/products/4.jpg" alt="" class="product__img"></a>
-                <div class="product__description">
-                    <h3 class="product__title">Volteao</h3>
-                    <span class="product__price">$71</span>
-                </div>
-                <i class="product__icon fa-sharp fa-solid fa-cart-plus"></i>
-            </div>
 
-        </section>
-
-    </main>
-    <main class="imperdible-products">
-        <h2 class="main-title">Productos Imperdibles</h2>
-        <section class="container-products">
-            <div class="product">
-                <a href="/product/detail"><img src="/images/products/1.jpg" alt="" class="product__img"></a>
-                <div class="product__description">
-                    <h3 class="product__title">Aguadeño</h3>
-                    <span class="product__price">$50</span>
-                </div>
-                    <i class="product__icon fa-sharp fa-solid fa-cart-plus"></i>
-            </div>
-            <div class="product">
-                <a href="/product/detail"><img src="/images/products/2.jpg" alt="" class="product__img"></a>
-                <div class="product__description">
-                    <h3 class="product__title">Mexicano</h3>
-                    <span class="product__price">$67</span>
-                </div>
-                <i class="product__icon fa-sharp fa-solid fa-cart-plus"></i>
-            </div>
-            <div class="product">
-                <a href="/product/Detail"><img src="/images/products/3.jpg" alt="" class="product__img"></a>
-                <div class="product__description">
-                    <h3 class="product__title">Abanero</h3>
-                    <span class="product__price">$90</span>
-                </div>
-                <i class="product__icon fa-sharp fa-solid fa-cart-plus"></i>
-            </div>
-            <div class="product">
-                <a href="/product/detail"></a><img src="/images/products/4.jpg" alt="" class="product__img"></a>
-                <div class="product__description">
-                    <h3 class="product__title">Volteao</h3>
-                    <span class="product__price">$71</span>
-                </div>
-                <i class="product__icon fa-sharp fa-solid fa-cart-plus"></i>
-            </div>
-
-        </section>
-
-    </main> -->
-    
-    
     <%-include("./partials/footer") %> 
 
     
-
    <script src="/js/slider.js"></script>
     <script src="/js/burger.js"></script>
 </body>

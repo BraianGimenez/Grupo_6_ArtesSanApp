@@ -12,6 +12,7 @@
 img {
     display: block;
     width: 100%;
+    
 } 
 
 /**.main-header {
@@ -131,9 +132,11 @@ h2.main-title{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    cursor: pointer;
 }
 
 div.product {
+
     width: 90%;
     border: 2px  solid rgb(255, 255, 255);
     box-shadow: 5px 10px 10px white;
@@ -142,6 +145,7 @@ div.product {
     margin: 8px;
     border-radius: 10px;
     max-width: 200px;
+    position: relative;
 
 }
 div.product:hover {
@@ -149,7 +153,48 @@ div.product:hover {
     transform: scale(1.05);
     box-shadow: 5px 5px 15px black;
     transition: all 1s;
-    
+
+}
+div.product:hover h3,
+div.show-more:hover {
+    display: flex;
+    transition: all 2s;
+}
+
+div.product:hover i.product__icon {
+    transform:rotateY(360deg);
+    transition: all 1s;
+
+}
+div.product:hover div.show-more{
+    display: flex;
+    transition: all 2s;
+}
+div.product a img{
+    width: 100%;
+    max-width:250px ;
+    max-height: 140px;
+}
+
+div.show-more {
+    justify-content: center;
+    align-items: center;
+    width: 92%;
+    height: 40px;
+    position: absolute;
+    top: 70px;
+    opacity: 0.8;
+    background-color:var(--violeta);
+    display: none;
+}
+div.show-more a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: var(--Franklin);
+    font-weight: bold;
+   
+   
 }
 
 div.product__description {
@@ -158,13 +203,17 @@ div.product__description {
     justify-content: baseline;
     align-items:center;
     flex-direction: column;
+   
 }
 
 .product__title{
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.3rem;
     color:purple;
     font-style: oblique;
+    display: none;
+    max-width: 200px;
+   
 }
 
 .product__price{
@@ -182,12 +231,13 @@ div.product__description {
     justify-content: center;
     align-items: center;
     background-color: white;
-    width: 55px;
-    height: 50px;
+    width: 40px;
+    height: 30px;
     border-radius: 50%;
     color: var(--violeta);
-    margin-top: 10px;
-    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
     margin: auto;
     box-shadow: 3px 3px 15px white;
 
@@ -229,7 +279,8 @@ div.product__description {
     }
 
     div.product{
-        width: 100%;
+        width: 230px;
+        max-height: 300px;
         flex-direction: row;
         flex-wrap: nowrap;
         max-width: 700px;
@@ -237,9 +288,13 @@ div.product__description {
     }
     .container-products{
         display: flex;
-        max-width: 250px;
+        max-width: 280px;
         flex-wrap: wrap;
         flex-direction: row;
 
+    }
+    .product__img{
+        width: 100%;
+        max-width: 250px;
     }
 }
