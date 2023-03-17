@@ -10,32 +10,44 @@
             <div class="logo-container">
             <a href="/"><img src="/images/logo.png" alt="logo ArtesApp"></a></div>
          </div>
-        <form action="" method="POST">
+        <form action="/user/register" method="POST">
             <div class="form">
             <div class="input-container">
-                <input class="input-style" type="name" name="name" placeholder="Ingrese su nombre y apellido">
-                <span class="error-message">Debe ingresar su nombre y apellido</span>
+                <input class="input-style" type="name" name="name" placeholder="Ingrese su nombre y apellido" value="<%= locals.old && old.name %>">
+                <% if (locals.errors && errors.name) { %>
+                    <span class="error-message"><%= errors.name.msg %></span>
+                <% } %>
             </div>
             <div class="input-container">
-                <input class="input-style" type="email" name="email" placeholder="Ingrese su email">
-                <span class="error-message">Debe ingresar su email</span>
+                <input class="input-style" type="email" name="email" placeholder="Ingrese su email" value="<%= locals.old && old.email %>">
+                <% if (locals.errors && errors.email) { %>
+                    <span class="error-message"><%= errors.email.msg %></span>
+                <% } %>
             </div>
             <div class="input-container">
                 <input class="input-style" type="password" name="pass" placeholder="Ingrese su contraseña">
-                <span class="error-message">Debe ingresar su contraseña</span>
+                <% if (locals.errors && errors.pass) { %>
+                    <span class="error-message"><%= errors.pass.msg %></span>
+                <% } %>
             </div>
             <div class="input-container">
                 <input class="input-style" type="password" name="pass2" placeholder="Re-ingrese su contraseña">
-                <span class="error-message">Debe re-ingresar su contraseña</span>
+                <% if (locals.errors && errors.pass2) { %>
+                    <span class="error-message"><%= errors.pass2.msg %></span>
+                <% } %>
             </div>
             <div class="check">
             <div class="ter">
                 <label for="recordar">  Acepto los <a href="">términos y condiciones</a> </label>
                 <input type="checkbox" name="terms" id="recordar"> 
+                <% if (locals.errors && errors.terms) { %>
+                    <span class="error-message"><%= errors.terms.msg %></span>
+                <% } %>
             </div>
-                <span class="error-message">Debe aceptar los términos y condiciones</span>
+            <% if (locals.errors && errors.name) { %>
+                <span class="error-message"><%= errors.name.msg %></span>
+            <% } %>
             </div>
-            <span class="error-message">Credenciales inválidas</span>
             <div class="button-container">        
                 <button type="submit" class="btn btn-submit">Registrarme</button>
             </div> 

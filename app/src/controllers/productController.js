@@ -8,7 +8,8 @@ module.exports = {
 
         let database = readJSON("products.json")
         res.render("products",{
-            database
+            database,
+            session: req.session
         })
     },
     detail: (req, res) => {
@@ -18,11 +19,14 @@ module.exports = {
     
         return res.render("productDetail", {
           ...product,
+          session: req.session
         });
     },
 
     create:(req,res) => {
-        res.render("product-create")
+        res.render("product-create",{
+            session: req.session
+        })
     },
     storage:(req,res) => {
         let data = req.body;
@@ -52,11 +56,12 @@ module.exports = {
         let product = database.find(x => x.id === ID)
 
         res.render("product-edit", {
-            ...product
+            ...product,
+            session: req.session
         })
     },
     update:(req,res) => {
-         let id = +req.params.id;
+        let id = +req.params.id;
         const database = readJSON("products.json")
 
         const {name, description,category,color,price} = req.body

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/adminHead') %>
+<body>
+    <%- include('./partials/adminHeader') %>
+
+    <main class="admin-main">
+        <%- include('./partials/adminSidebar') %>
+
+        <section class="admin-main-panel">
+            <p class="admin-main-panel-title">DASHBOARD 
+                <div class="admin-add-product">
+                    <a href="/admin/products/add">
+                        <button class="main-add-button">
+                            agregar producto
+                        </button>
+                    </a>
+                </div>
+            </p>
+            
+            <article>
+                <table class="admin-main-table">
+                    <thead class="admin-main-table-head">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Categoria</th>
+                            <th>Color</th>
+                            <th>Precio</th>
+                            <th>Editar</th>
+                        </tr>
+                    </thead>
+                    <tbody class="admin-main-table-body">
+                        <% productsDB.forEach(product => { %>
+                        <tr>
+                             
+                                <td><%= product.id %></td>
+                                <td>
+                                    <a href="/admin/products">
+                                        <%= product.name %>
+                                    </a>
+                                </td>
+                                <td><%= product.category %></td>
+                                <td><%= product.color %></td>
+                                <td><%= product.price %></td>
+                                <td class="button-column">
+                                    <a href="/admin/products/detail/<%= product.id %>">
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </a>
+                                    <form action="/admin/products/delete/<%= product.id %>?_method=DELETE" method="post">
+                                        <button type="submit"><i class="fa-solid fa-trash"></i></button>
+                                    </form>
+                                </td>
+                            </tr>
+                            
+                            <% }) %>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

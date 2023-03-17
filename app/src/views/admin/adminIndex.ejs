@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/adminHead') %>
+<body>
+    <%- include('./partials/adminHeader') %>
+
+    <main class="admin-main">
+        <%- include('./partials/adminSidebar') %>
+
+        <section class="admin-main-panel">
+            <p class="admin-main-panel-title">DASHBOARD</p>
+            <article>
+                <table class="admin-main-table">
+                    <thead class="admin-main-table-head">
+                        <tr>
+                            <th>ID</th>
+                            <th>NOMBRE</th>
+                            <th>TIPO DE ARCHIVO</th>
+                            <th>Descripcion</th>
+                        </tr>
+                    </thead>
+                    <tbody class="admin-main-table-body">
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <a href="/admin/products">
+                                    Products.json
+                                </a>
+                            </td>
+                            <td>Base de datos JSON</td>
+                            <td>datos de productos</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><a href="/admin/users">
+                                users.json
+                            </a></td>
+                            <td>Base de datos JSON</td>
+                            <td>datos de usuarios</td>
+                        </tr>
+                        <tr>
+                            <td>?</td>
+                            <td><a href="/admin/users">
+                                placeholder.json
+                            </a></td>
+                            <td>Base de datos placholder</td>
+                            <td>placeholder</td>
+                        </tr>
+                        <tr>
+                            <td>?</td>
+                            <td><a href="/admin/users">
+                                placeholder.json
+                            </a></td>
+                            <td>Base de datos placholder</td>
+                            <td>placeholder</td>
+                        </tr>
+                        <tr>
+                            <td>?</td>
+                            <td><a href="/admin/users">
+                                placeholder.json
+                            </a></td>
+                            <td>Base de datos placholder</td>
+                            <td>placeholder</td>
+                        </tr>
+                        <tr>
+                            <td>?</td>
+                            <td><a href="/admin/users">
+                                placeholder.json
+                            </a></td>
+                            <td>Base de datos placholder</td>
+                            <td>placeholder</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

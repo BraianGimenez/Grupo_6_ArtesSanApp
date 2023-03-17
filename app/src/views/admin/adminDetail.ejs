@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/adminHead') %>
+<body>
+    <%- include('./partials/adminHeader') %>
+
+    <main class="admin-main">
+        <%- include('./partials/adminSidebar') %>
+
+        <section class="admin-product-detail">
+            <main class="">
+                <form action="/admin/products/detail/edit/<%= product.id %>?_method=PUT" method="POST" class="product-edit-form" enctype="multipart/form-data">
+                    <label for="">Nombre:
+                        <input type="text" name="name" value="<%= product.name %>">
+                    </label>
+                    <label for="">Descripcion:
+                        <input type="text" name="description" value="<%= product.description %>">
+                    </label>
+                    <label for="file" class="">Subir imagen
+                        <input type="file" id="file" name="image" class="">
+                    </label>
+                    <label for="">Categoria:
+                        <input type="text" name="category" value="<%= product.category %>">
+                    </label>
+                    <label for="">Color:
+                        <input type="text" name="color" value="<%= product.color %>">
+                    </label>
+                    <label for="">Precio:
+                        <input type="number" name="price" value="<%= product.price %>">
+                    </label>
+                    <div class="">
+                        <button type="reset" class="">Restablecer</button>
+                        <button type="submit" class="">Grabar</button>
+                    </div>
+                    
+                </form>
+        </section>
+    </main>
+</body>
+</html>

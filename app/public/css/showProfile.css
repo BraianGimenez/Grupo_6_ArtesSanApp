@@ -1,0 +1,53 @@
+main.show-profile-main{
+    border: 3px solid black;
+    padding: 3rem;
+    background: rgba(181, 213, 197, 0.7);
+    margin: 1rem auto;
+    border-radius: 15px;
+}
+main.show-profile a{
+    display: inline-block;
+}
+main.show-profile-main p.show-profile-center{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+
+main.show-profile-main section.show-profile{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin: 1rem;
+    justify-content: space-evenly;
+}
+main.show-profile-main article.show-profile{
+    border: 2px solid var(--negro);
+    background: var(--negro);
+    color: var(--blanco);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+main.show-profile-main button.show-profile-update-button{
+    width: 50%;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+
+main.show-profile-main button.show-profile-delete-button{
+    width: 50%;
+    padding: 1rem;
+    margin: 0 auto;
+    
+}
+
+main.show-profile-main div.show-profile-center-button{
+    text-align: center;
+}
+
+main.show-profile-main form.show-profile-form-main{
+    text-align: center;
+}

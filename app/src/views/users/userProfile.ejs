@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include("./partials/head") %> 
+<body>
+    <%-include("./partials/header") %> 
+    
+    <main class="profile-main">
+        <form action="/user/update?_method=PUT" method="post" class="profile-form-main">
+            <div class="profile-div">
+                <label for="name">nombre
+                    <input type="text" name="name">
+                </label>
+            </div>
+            <div class="profile-div">
+                <label for="email">email
+                    <input type="email" name="email">
+                </label>
+            </div>
+            <div class="profile-div">
+                <label for="pass">password
+                    <input type="password" name="pass">
+                </label>
+            </div>
+            <button type="submit" class="profile-update-button">Actualizar</button>
+        </form>
+            
+            </article>
+    </form>
+    <div class="profile-center-button">
+        <a href="/user/showProfile">
+            <button class="profile-go-back-button">
+                volver al inicio
+
+            </button>
+          </a>
+    </div>
+    </main>
+
+    <%-include("./partials/footer") %> 
+</body>
+</html>

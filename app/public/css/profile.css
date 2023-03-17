@@ -1,0 +1,58 @@
+main.profile-main{
+    border: 3px solid black;
+    padding: 3rem;
+    background: rgba(181, 213, 197, 0.7);
+    margin: 1rem;
+    border-radius: 15px;
+    
+}
+
+main.profile-main form.profile-form-main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin: 1rem;
+    justify-content: space-evenly;
+}
+
+main.profile-main form.profile-form-main label{
+    border: 2px solid var(--negro);
+    background: var(--negro);
+    color: var(--blanco);
+    padding: 1rem;
+    border-radius: 5px;
+}
+main.profile-main button.profile-delete-button{
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+    
+}
+main.profile-main form.profile-form-main div.profile-div{
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: center;
+    
+    padding: 1rem;
+    margin: 1rem;
+}
+
+main.profile-main button.profile-update-button{
+    width: 50%;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.profile-center-button{
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.profile-go-back-button{
+    width: 50%;
+    padding: 1rem;
+    
+}

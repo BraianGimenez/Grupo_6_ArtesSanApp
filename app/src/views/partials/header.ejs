@@ -30,16 +30,83 @@
           </ul>
         </nav>
       </div>
-   <button class="header-log-in"> 
+  <% if ( session.user && session.user.rol === "admin") { %>
+   <!-- <div class="header-flex-buttons"> -->
+
+   
+  <div>
+    <button class="header-log-in"> 
+      <p>sesion iniciada</p>
+    </button>
+  </div>
+
+  <div>
+    <button class="header-log-in"> 
+      <p>
+      <a href="/user/showProfile">
+        Profile
+      </a>
+    </p>
+  </button>
+</div>
+
+<div class="header-log-in">
+  <button >  
+    <a href="/admin">
+      ADMIN
+    </a>
+  </button>
+</div>
+
+<div class="header-log-in">
+  <form action="/user/destroy" method="post">
+    <button type="submit" >
+      Log out
+    </button>
+  </form>
+</div>
+
+<!-- </div> -->
+
+    <% } else if (typeof session.user != "undefined"){ %>
+      <div>
+        <button class="header-log-in"> 
+           <p>sesion iniciada</p>
+         </button>
+       </div>
+
+       <div>
+         <button class="header-log-in"> 
+           <p>
+           <a href="/user/showProfile">
+             Profile
+           </a>
+         </p>
+       </button>
+     </div>
+     
+     <div>
+       <form action="/user/destroy" method="post">
+         <button type="submit" class="header-log-in">
+          Log out
+
+         </button>
+       </form>
+     </div>
+
+
+      <% } else { %>
+      <button class="header-log-in"> 
      <a href="/user/login">
       <i class="fa-regular fa-user"></i>
     </a>
-   </button>
+  </button>
    <button class="header-go-cart"> 
      <a href="/productCart">
       <i class="fa-solid fa-cart-shopping"></i>
     </a>
    </button>
+   <% } %>
    <div class="header-burger-menu" >
     <div class="header-burger-menu-close">X</div>
     <div class="header-burger-menu-barra">

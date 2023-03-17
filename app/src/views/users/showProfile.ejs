@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include("./partials/head") %> 
+<body>
+    <%-include("./partials/header") %> 
+    
+    <main class="show-profile-main">
+        
+        <section class="show-profile">
+            <p class="show-profile-center"> mis datos</p>
+            <article class="show-profile">
+                <p> <%= session.user.name %></p>
+            </article>
+            <article class="show-profile">
+                <p> <%= session.user.email %></p>
+            </article>
+        </section>
+        <div class="show-profile-center-button">
+            <a href="/user/profile">
+                <button class="show-profile-update-button">
+                    editar perfil
+
+                </button>
+              </a>
+        </div>
+                
+          
+    <form action="/user/delete/<%= session.user.id %>?_method=DELETE" method="post" class="show-profile-form-main">
+        <button type="submit" class="show-profile-delete-button">borrar</button>
+    </form>
+
+    <div class="show-profile-center-button">
+        <a href="/">
+            <button class="show-profile-update-button">
+                Volver al Home
+
+            </button>
+          </a>
+    </div>
+</main>
+
+    <%-include("./partials/footer") %> 
+</body>
+</html>

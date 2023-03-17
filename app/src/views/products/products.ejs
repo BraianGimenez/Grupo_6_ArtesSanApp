@@ -25,11 +25,15 @@
                             <span class="product__price"><%= price %></span>
                         </div>
                             <i class="product__icon fa-sharp fa-solid fa-cart-plus"></i>
-                            <div class="edit-btn"><a href="/products/edit/<%= id %>">Editar</a> 
-                                <form action="/products/delete/<%- id %>?_method=DELETE" method="POST" style="display: inline-flex">
-                                    <button type="submit" class="action-button delete">Eliminar</button>
-                                </form>
-                            </div>
+                            <% if (session.user && session.user.rol === "admin") { %>
+                                <div class="edit-btn"><a href="/products/edit/<%= id %>">Editar</a> 
+                                    <form action="/products/delete/<%- id %>?_method=DELETE" method="POST" style="display: inline-flex">
+                                        <button type="submit" class="action-button delete">Eliminar</button>
+                                    </form>
+                                </div>
+                             
+                            <% } else { %>
+                            <% } %>
                     </div>
                   <!--   <form action="/products/delete/<%- id %>?_method=DELETE" method="POST" style="display: inline-flex">
                         <button type="submit" class="action-button delete">Eliminar</button>

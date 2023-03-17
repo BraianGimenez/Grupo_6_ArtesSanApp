@@ -16,7 +16,8 @@ module.exports = {
             return products.category == "producto"
         });
         res.render("index", {
-            products,special , inSale , normalProduct
+            products,special , inSale , normalProduct,
+            session: req.session
         })
     },
     search: (req, res) => {
@@ -26,13 +27,15 @@ module.exports = {
 
        res.render("search",{
             productSearch,
-            searchResult
-            
+            searchResult,
+            session: req.session
         });
 
     },
   
     about: (req, res) => {
-        res.render("nosotros")
+        res.render("nosotros", {
+            session: req.session
+        })
     }
 }

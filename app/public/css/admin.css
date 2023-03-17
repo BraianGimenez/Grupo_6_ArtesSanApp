@@ -1,0 +1,251 @@
+@import url("general.css");
+
+*{
+    text-decoration: none;
+}
+
+
+body{
+    background: gray;
+}
+
+header{
+    font-size: var(--titulo);
+    display: flex;
+    justify-content: space-evenly;
+    background: lightslategray;
+    border: 2px solid var(--negro);
+    align-items: center;
+}
+
+header div.admin-header-nombre{
+width: 50%;
+display: flex;
+justify-content: center;
+}
+
+header div.admin-header-search{
+width: 100%; 
+
+}
+header div.admin-header-search input{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 15px;
+}
+header div.admin-header-search input::placeholder{
+    text-align: center;
+}
+
+header div.admin-header-logout{
+width: 50%;
+display: flex;
+justify-content: center;
+}
+header div.admin-header-logout button{
+    padding: 1rem;
+    background: gray;
+    color: var(--blanco);
+    border-radius: 12px;
+}
+
+/* header end */
+
+/* main control panel */
+
+section.admin-control-panel{
+    width: 25%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 3px solid var(--negro);
+    background: var(--blanco);
+    align-items: center;
+}
+section.admin-control-panel div{
+    border: 2px solid var(--negro);
+    width: 100%;
+    text-align: center;
+    font-size: var(--titulo);
+
+}
+
+section.admin-control-panel div a{
+    display: block;
+}
+section.admin-control-panel div:hover{
+    background: black;
+}
+
+section.admin-control-panel div:hover a{
+ color: white;
+}
+section.admin-control-panel div a{
+    color: var(--negro);
+}
+
+/* main control panel end */
+
+/* admin dashboard */
+
+
+section.admin-main-panel{
+    width: 80%;
+    position: relative;
+}
+
+section.admin-main-panel p.admin-main-panel-title{
+    font-size: var(--titulo);
+    text-align: center;
+    border-bottom: 1px solid var(--negro);
+    background: linear-gradient(var(--negro),var(--blanco));
+}
+
+
+main.admin-main{
+    display: flex;
+}
+
+/* table */
+table.admin-main-table{
+    width: 100%;
+    background: var(--blanco);
+    border: 2px solid var(--negro);
+}
+table.admin-main-table a{
+    color: var(--negro);
+}
+
+table.admin-main-table tr a i{
+    border: 1px solid var(--negro);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+    color: var(--verde);
+}
+table.admin-main-table tr a i:hover,
+table.admin-main-table tr form i:hover{
+    background: var(--negro);
+}
+
+table.admin-main-table tr form button{
+    background: none;
+    border: none;
+}
+
+table.admin-main-table tr form i{
+    border: 1px solid var(--negro);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+    color: red;
+    cursor: pointer;
+    
+}
+
+table.admin-main-table tr:nth-child(even){
+    background-color: var(--negro);
+    color: var(--blanco);
+    
+}
+table.admin-main-table tr:nth-child(even) a{
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+table.admin-main-table tr:nth-child(even) a i{
+    border: 1px solid var(--blanco);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+    color: var(--verde);
+}
+
+table.admin-main-table tr:nth-child(even) a i:hover,
+table.admin-main-table tr:nth-child(even) form i:hover{
+    background: var(--blanco);
+}
+
+table.admin-main-table tr:nth-child(even) form button{
+    background: var(--negro);
+    border: none;
+}
+
+table.admin-main-table tr:nth-child(even) form i{
+    border: 1px solid var(--blanco);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+    color: red;
+    cursor: pointer;
+    
+}
+table.admin-main-table thead.admin-main-table-head th{
+border: 3px solid black;
+}
+table.admin-main-table tbody.admin-main-table-body td{
+border: 3px solid black;
+padding: 1rem;
+text-align: center;
+}
+
+.button-column{
+    display: flex;
+    justify-content: space-around;
+}
+/* end table */
+
+/* add product button */
+div.admin-add-product{
+position: absolute;
+top: 10px;
+right: 0;
+}
+
+div.admin-add-product button.main-add-button{
+    border: 1px solid var(--naranja);
+    background: var(--negro);
+    color: var(--blanco);
+    border-radius: 5px;
+    padding: 0.2rem;
+}
+
+div.admin-add-product button.main-add-button:hover{
+    background: linear-gradient(var(--blanco),var(--negro),var(--blanco));
+}
+/* admin product detail */
+
+section.admin-product-detail{
+    width: 80%;
+    background: var(--blanco);
+}
+
+section.admin-product-detail form{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+gap: 1rem;
+padding: 1rem;
+border: 3px solid var(--negro);
+border-radius: 5px;
+margin: 0.2rem;
+}
+
+section.admin-product-detail form label{
+    
+    display: block;
+    text-align: center;
+}
+
+section.admin-product-detail form label input{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+

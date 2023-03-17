@@ -11,7 +11,7 @@ header.header-main {
     display: flex;
     height: 125px;
     background: linear-gradient(var(--verde), var(--blanco), var(--violeta));
-    justify-content: space-around;
+    justify-content: space-evenly;
     border: 1px solid var(--negro);
     box-shadow: 3px 3px 15px black;
     border-bottom-left-radius: 10px;
@@ -250,6 +250,10 @@ header.header-main button.header-log-in{
    cursor: pointer;
    border-radius: 15px;
    display: none;
+}
+/* header buttons */
+
+.header-flex-buttons{
 }
 /*--------------- HEADER END ---------------*/
 
