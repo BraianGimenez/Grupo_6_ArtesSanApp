@@ -91,6 +91,6 @@ module.exports = {
         if(req.cookies.userArtesanApp){
             res.cookie("userArtesanApp","",{maxAge:-1})
         }
-        res.redirect("/")
+        res.redirect("/admin/products")
     },
 }
