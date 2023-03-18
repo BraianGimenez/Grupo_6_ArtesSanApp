@@ -37,7 +37,7 @@ app.use("/", indexRouter);
 app.use("/productCart", cartRouter);
 app.use("/products", productRouter);
 app.use("/results", indexRouter);
-app.use("/user", usersRouter);
+app.use("/users", usersRouter);
 app.use("/admin", adminRouter);
 
 // port

@@ -1,125 +1,85 @@
 <header class="header-main">
-  <div class="header-title">
-    <h1 class="first-title">ArteSan APP</h1>
- 
-  </div>   
-    <div class="header-logo">
-       <a href="/">
-        <img src="/images/logo.png" alt="logo ArtesanApp">
-      </a>
+    <div class="header-title">
+      <h1 class="first-title">ArteSan APP</h1>
+   
+    </div>   
+      <div class="header-logo">
+         <a href="/">
+          <img src="/images/logo.png" alt="logo ArtesanApp">
+        </a>
+      </div>
+      <div class="header-busqueda">
+          <form action="/search" method="GET">
+              <input class="header-barra-busqueda" type="text" name="productSearch" placeholder="Buscar productos, Marcas..."  required>
+              <button class="header__search-button" type="submit">Buscar</button>
+          </form>
+          <nav class="header-caja-links">
+            <ul>
+              <li>
+                <a href="/products" class="header-nav-link">Productos</a>
+              </li>
+              <li>
+                <a href="/users/register" class="header-nav-link">Registrate</a>
+              </li>
+              <li>
+                <a href="/products/create" class="header-nav-link">Vender</a>
+              </li>
+              <li>
+                <a href="/about" class="header-nav-link">Nosotros</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+     <button class="header-log-in"> 
+      <% if (typeof session.user != "undefined") { %>
+  <div class="dropdown">
+    <i class="fa-regular fa-user"></i>
+    <div class="dropdown-content">
+      <a href="#">Sesion Iniciada</a>
+      <a href="users/showProfile">Mis Datos</a>
+    <% if (session.user.rol === "admin") { %>
+        <a href="/admin">Administrador</a>
+    <% } %>
+      <% } else {%>
+        <div class="dropdown">
+          <i class="fa-regular fa-user"></i>
+          <div class="dropdown-content">
+            <a href="/users/login">Iniciar Sesion</a>
+          </div>
+          <% } %>
+         </div>
+     </button>
+     <form action="/users/destroy" method="post">
+     <div class="dropdown">
+       
+       <button class="header-log-in" type="submit">
+       <i class="fa-solid fa-arrow-right-from-bracket"></i>
+       <div class="dropdown-content">
+       
+        </div>
+          </div>
+  
+        </button>
     </div>
-    <div class="header-busqueda">
-        <form action="/search" method="GET">
-            <input class="header-barra-busqueda" type="text" name="productSearch" placeholder="Buscar productos, Marcas..."  required>
-            <button class="header__search-button" type="submit">Buscar</button>
-        </form>
-        <nav class="header-caja-links">
+    </form>
+     <button class="header-go-cart"> 
+       <a href="/productCart">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+     </button>
+     <div class="header-burger-menu" >
+      <div class="header-burger-menu-close">X</div>
+      <div class="header-burger-menu-barra">
+        <i class="fas fa-bars"></i>
+        <nav>
           <ul>
-            <li>
-              <a href="/products" class="header-nav-link">Productos</a>
-            </li>
-            <li>
-              <a href="/products" class="header-nav-link">Ofertas</a>
-            </li>
-            <li>
-              <a href="/products/create" class="header-nav-link">Vender</a>
-            </li>
-            <li>
-              <a href="/about" class="header-nav-link">Nosotros</a>
-            </li>
+            <li>lorem</li>
+            <li>lorem</li>
+            <li>lorem</li>
+            <li>lorem</li>
           </ul>
         </nav>
-      </div>
-  <% if ( session.user && session.user.rol === "admin") { %>
-   <!-- <div class="header-flex-buttons"> -->
-
-   
-  <div>
-    <button class="header-log-in"> 
-      <p>sesion iniciada</p>
-    </button>
-  </div>
-
-  <div>
-    <button class="header-log-in"> 
-      <p>
-      <a href="/user/showProfile">
-        Profile
-      </a>
-    </p>
-  </button>
-</div>
-
-<div class="header-log-in">
-  <button >  
-    <a href="/admin">
-      ADMIN
-    </a>
-  </button>
-</div>
-
-<div class="header-log-in">
-  <form action="/user/destroy" method="post">
-    <button type="submit" >
-      Log out
-    </button>
-  </form>
-</div>
-
-<!-- </div> -->
-
-    <% } else if (typeof session.user != "undefined"){ %>
-      <div>
-        <button class="header-log-in"> 
-           <p>sesion iniciada</p>
-         </button>
        </div>
-
-       <div>
-         <button class="header-log-in"> 
-           <p>
-           <a href="/user/showProfile">
-             Profile
-           </a>
-         </p>
-       </button>
      </div>
      
-     <div>
-       <form action="/user/destroy" method="post">
-         <button type="submit" class="header-log-in">
-          Log out
-
-         </button>
-       </form>
-     </div>
-
-
-      <% } else { %>
-      <button class="header-log-in"> 
-     <a href="/user/login">
-      <i class="fa-regular fa-user"></i>
-    </a>
-  </button>
-   <button class="header-go-cart"> 
-     <a href="/productCart">
-      <i class="fa-solid fa-cart-shopping"></i>
-    </a>
-   </button>
-   <% } %>
-   <div class="header-burger-menu" >
-    <div class="header-burger-menu-close">X</div>
-    <div class="header-burger-menu-barra">
-      <i class="fas fa-bars"></i>
-      <nav>
-        <ul>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-        </ul>
-      </nav>
-     </div>
-   </div>
-   
-</header>
+  </header>

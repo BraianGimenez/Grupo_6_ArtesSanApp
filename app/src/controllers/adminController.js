@@ -1,6 +1,7 @@
 const {readJSON,writeJSON} = require("../database");
 const {validationResult} = require("express-validator");
 
+
 module.exports = {
     index:(req,res) => {
         let userDB = readJSON("users.json");

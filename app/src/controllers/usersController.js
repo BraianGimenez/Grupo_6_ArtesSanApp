@@ -78,7 +78,7 @@ module.exports = {
 
            database.push(newUser);
            writeJSON("users.json",database);
-           return res.redirect("/user/login");
+           return res.redirect("login");
        } else {
         return res.render("register", {
             errors: errors.mapped(),
@@ -88,7 +88,7 @@ module.exports = {
        }
     },
     showProfile:(req,res) => {
-        res.render("showProfile",{
+        res.render("users/showProfile",{
             session:req.session
         })
     },
@@ -117,7 +117,7 @@ module.exports = {
         
         req.session.user = user
         
-        return res.redirect("/user/showProfile")
+        return res.redirect("users/showProfile")
 
     },
     deleteProfile:(req,res) => {

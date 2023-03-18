@@ -1,17 +1,17 @@
 [
    {
       "id": 1,
-      "name":"nico",
-      "rol":"admin",
+      "name": "nico",
+      "rol": "admin",
       "email": "admin@mail.com",
-      "pass":"123456"
+      "pass": "123456"
    },
    {
       "id": 1,
-      "name":"nico",
-      "rol":"user",
+      "name": "nico",
+      "rol": "user",
       "email": "user@mail.com",
-      "pass":"123456"
+      "pass": "123456"
    },
    {
       "id": 0,
@@ -885,5 +885,11 @@
       "password": "iOYV7s",
       "category": "RF Shielding",
       "image": "https://robohash.org/nihilsimiliqueeius.png?size=50x50&set=set1"
+   },
+   {
+      "id": 99,
+      "name": "braian",
+      "email": "email@email.com",
+      "pass": "222222"
    }
 ]

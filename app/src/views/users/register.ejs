@@ -10,7 +10,7 @@
             <div class="logo-container">
             <a href="/"><img src="/images/logo.png" alt="logo ArtesApp"></a></div>
          </div>
-        <form action="/user/register" method="POST">
+        <form action="/users/register" method="POST">
             <div class="form">
             <div class="input-container">
                 <input class="input-style" type="name" name="name" placeholder="Ingrese su nombre y apellido" value="<%= locals.old && old.name %>">
@@ -51,7 +51,7 @@
             <div class="button-container">        
                 <button type="submit" class="btn btn-submit">Registrarme</button>
             </div> 
-                <span><a href="/user/login">Ya tengo cuenta</a></span>
+                <span><a href="/users/login">Ya tengo cuenta</a></span>
             </div>
         </form>
     </div>

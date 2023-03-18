@@ -8,6 +8,15 @@ main.show-profile-main{
 main.show-profile a{
     display: inline-block;
 }
+main.show-profile{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+main.show-profile p {
+    justify-content: center;
+    text-align: center;
+}
 main.show-profile-main p.show-profile-center{
     text-align: center;
     width: 100%;
@@ -51,3 +60,76 @@ main.show-profile-main div.show-profile-center-button{
 main.show-profile-main form.show-profile-form-main{
     text-align: center;
 }
+/* Three columns side by side */
+.row{
+    width: 60%;
+    max-width: 600px;
+
+}
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 8px;
+    
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+ 
+  /* Add some shadows to create a card effect */
+  .card {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+  }
+  .card img {
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  
+  /* Some left and right padding inside the container */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px 16px;
+  }
+  .container p{
+    font-size: 1.5rem;
+    padding: 5px;
+    font-family: var(--Franklin);
+    font-weight: bold;
+    font-style: italic;
+
+  }
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }

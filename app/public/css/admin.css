@@ -6,26 +6,27 @@
 
 
 body{
-    background: gray;
+    background: white
 }
 
 header{
     font-size: var(--titulo);
     display: flex;
     justify-content: space-evenly;
-    background: lightslategray;
+    background: var(--violeta);
     border: 2px solid var(--negro);
     align-items: center;
+    padding: 15px;
 }
 
 header div.admin-header-nombre{
-width: 50%;
+width: 60%;
 display: flex;
 justify-content: center;
 }
 
 header div.admin-header-search{
-width: 100%; 
+width: 80%; 
 
 }
 header div.admin-header-search input{
@@ -44,9 +45,10 @@ justify-content: center;
 }
 header div.admin-header-logout button{
     padding: 1rem;
-    background: gray;
-    color: var(--blanco);
+    background: var(--beige);
+    color: var(--negro);
     border-radius: 12px;
+    font-weight: bold;
 }
 
 /* header end */
@@ -54,13 +56,14 @@ header div.admin-header-logout button{
 /* main control panel */
 
 section.admin-control-panel{
+    padding-top: 20px;
+    background-color: var(--violeta);
     width: 25%;
     height: 100vh;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     border: 3px solid var(--negro);
-    background: var(--blanco);
     align-items: center;
 }
 section.admin-control-panel div{
@@ -68,6 +71,7 @@ section.admin-control-panel div{
     width: 100%;
     text-align: center;
     font-size: var(--titulo);
+    background-color: beige;
 
 }
 
@@ -96,10 +100,11 @@ section.admin-main-panel{
 }
 
 section.admin-main-panel p.admin-main-panel-title{
+    padding-top: 25px;
     font-size: var(--titulo);
     text-align: center;
     border-bottom: 1px solid var(--negro);
-    background: linear-gradient(var(--negro),var(--blanco));
+    background: linear-gradient(var(--blanco),var(--violeta));
 }
 
 
@@ -110,11 +115,12 @@ main.admin-main{
 /* table */
 table.admin-main-table{
     width: 100%;
-    background: var(--blanco);
+    background: var(--beige);
     border: 2px solid var(--negro);
 }
 table.admin-main-table a{
     color: var(--negro);
+    font-size: 1.5rem;
 }
 
 table.admin-main-table tr a i{
@@ -203,7 +209,7 @@ text-align: center;
 /* add product button */
 div.admin-add-product{
 position: absolute;
-top: 10px;
+top: 25px;
 right: 0;
 }
 

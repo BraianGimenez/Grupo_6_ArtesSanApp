@@ -7,12 +7,27 @@
     <main class="show-profile-main">
         
         <section class="show-profile">
-            <p class="show-profile-center"> mis datos</p>
-            <article class="show-profile">
-                <p> <%= session.user.name %></p>
+            <p class="show-profile-center"> MI Perfil</p>
+
+            <div class="row">
+                <div class="column">
+                  <div class="card">
+                    <img src="/images/avatar/default-image.png"></a>
+
+
+                    <div class="container">
+                        <p> Categoria/Rol : <%= session.user.rol %></p>
+                        <p> Nombre de usuario : <%= session.user.name %></p>
+
+                      <article class="show-profile">
+                        <p> <%= session.user.email %></p>
+                     
+                    </div>
+                  </div>
+                </div>
+           
             </article>
-            <article class="show-profile">
-                <p> <%= session.user.email %></p>
+          
             </article>
         </section>
         <div class="show-profile-center-button">
