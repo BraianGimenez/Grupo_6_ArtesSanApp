@@ -1,5 +1,6 @@
 @import url("/css/styles.css");
 @import url("/css/header-footer.css");
+@import url("/css/general.css");
 
 
 *{
@@ -50,6 +51,47 @@ img {
     border: 1px solid black;
     text-decoration: none;
 }*/
+nav.header-caja-links {
+    width: 100%;
+    position: sticky;
+    z-index: 999;
+    top: 135px;
+    border-radius: 15px;
+
+}
+
+ nav.header-caja-links ul {
+    display: flex;
+    margin-top: 1px;
+    height: 40px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius:10px;
+    position: sticky;
+}
+
+
+ nav.header-caja-links ul li a{
+    background: var(--verde);
+    color: var(--negro);
+    border-bottom: 3px ridge var(--violeta);
+    border-top: 3px groove var(--blanco);
+    border-right: 3px groove var(--blanco);
+    border-left: 3px ridge var(--violeta);
+    border-radius: 15px;
+    font-size: var(--parrafo);
+    text-decoration: none;
+    padding: 5px;
+    box-shadow: 2px 2px 5px 3px white;
+}
+
+ nav.header-caja-links ul li a:hover{
+    background: var(--negro);
+    color: var(--blanco);
+}
 
 .main{
     padding: 0 20px;
@@ -258,6 +300,10 @@ div.product__description {
 }
 
 @media(min-width:768px){
+    nav.header-caja-links{
+        display: none;
+        background: none;
+    }
 
 
     main.special-products,

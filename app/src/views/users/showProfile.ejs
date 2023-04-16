@@ -7,7 +7,7 @@
     <main class="show-profile-main">
         
         <section class="show-profile">
-            <p class="show-profile-center"> MI Perfil</p>
+            <p class="show-profile-center"> MIS DATOS</p>
 
             <div class="row">
                 <div class="column">
@@ -16,11 +16,14 @@
 
 
                     <div class="container">
-                        <p> Categoria/Rol : <%= session.user.rol %></p>
-                        <p> Nombre de usuario : <%= session.user.name %></p>
-
-                      <article class="show-profile">
-                        <p> <%= session.user.email %></p>
+                        <ul>
+                            <li><p> Categoria/Rol : <%= session.user.rol %></p></li>
+                            <li><p> Nombre de usuario : <%= session.user.name %></p> </li>
+                            <li><p> Direccion : <%= session.user.name %></p> </li>
+                            <li><p> Mail de contacto :<article class="show-profile">
+                                <p class="ct-mail"> <%= session.user.email %></p></li>
+                    </ul>
+                     
                      
                     </div>
                   </div>
@@ -55,5 +58,7 @@
 </main>
 
     <%-include("./partials/footer") %> 
+    <%-include("./partials/scripts") %> 
+
 </body>
 </html>

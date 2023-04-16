@@ -10,7 +10,7 @@
       </div>
       <div class="header-busqueda">
           <form action="/search" method="GET">
-              <input class="header-barra-busqueda" type="text" name="productSearch" placeholder="Buscar productos, Marcas..."  required>
+              <input class="header-barra-busqueda" type="text" name="productSearch" placeholder="Buscar productos"  required>
               <button class="header__search-button" type="submit">Buscar</button>
           </form>
           <nav class="header-caja-links">
@@ -30,7 +30,7 @@
             </ul>
           </nav>
         </div>
-     <button class="header-log-in"> 
+     <button class="header-log-in" > 
       <% if (typeof session.user != "undefined") { %>
   <div class="dropdown">
     <i class="fa-regular fa-user"></i>
@@ -62,24 +62,67 @@
         </button>
     </div>
     </form>
+     
      <button class="header-go-cart"> 
        <a href="/productCart">
         <i class="fa-solid fa-cart-shopping"></i>
       </a>
      </button>
-     <div class="header-burger-menu" >
-      <div class="header-burger-menu-close">X</div>
+     <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <% if (typeof session.user != "undefined") { %>
+      <a href="#">Sesion Iniciada</a>
+      <a href="users/showProfile">Mis Datos</a>
+    <% if (session.user.rol === "admin") { %>
+      <a href="/admin">Administrador</a>
+    <% } %>
+    <% } else {%>
+      <a href="/users/login">Iniciar Sesion</a>
+      <form action="/users/destroy" method="post">
+        <div class="dropdown">
+          
+          <button class="header-log-in" type="submit">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          <div class="dropdown-content">
+          
+           </div>
+             </div>
+     
+           </button>
+          </div>
+          </form>
+          <% } %>
+        </div>
+  
+
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<span class="burger-btn"onclick="openNav()"><i class="fa-solid fa-bars" style="color: #ae8bbb;"></i></i></span>
+
+
+
+
+     <!-- <div class="header-burger-menu" >
+      <div class="header-burger-menu-close">x</div>
       <div class="header-burger-menu-barra">
         <i class="fas fa-bars"></i>
         <nav>
           <ul>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
           </ul>
         </nav>
        </div>
      </div>
-     
+      -->
+      
   </header>

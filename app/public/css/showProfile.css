@@ -1,7 +1,152 @@
+/* mobile */
+  main.show-profile-main{
+      border: 3px solid black;
+      padding: 1rem;
+      background: linear-gradient(var(--verde), var(--blanco), var(--violeta));
+      margin: 1rem auto;
+      border-radius: 15px;
+  }
+  main.show-profile a{
+      display: inline-block;
+  }
+  main.show-profile{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+  }
+  main.show-profile p {
+      justify-content: center;
+      text-align: center;
+  }
+  main.show-profile-main p.show-profile-center{
+      text-align: center;
+      width: 100%;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      font-family: var(--Franklin);
+      font-weight: bold;
+  }
+  
+  
+  main.show-profile-main section.show-profile{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%;
+  }
+  main.show-profile-main article.show-profile{
+      border: 2px solid var(--negro);
+      background: var(--negro);
+      color: var(--blanco);
+      padding: 1rem;
+      border-radius: 15px;
+  }
+  
+  main.show-profile-main button.show-profile-update-button{
+      width: 50%;
+      padding: 0.5rem;
+      margin: 1rem auto;
+      border-radius: 15px;
+  }
+  
+  main.show-profile-main button.show-profile-delete-button{
+      width: 50%;
+      padding: 0.5rem;
+      margin: 0 auto;
+      border-radius: 15px;
+      
+  }
+  
+  main.show-profile-main div.show-profile-center-button{
+      text-align: center;
+  }
+  
+  main.show-profile-main form.show-profile-form-main{
+      text-align: center;
+  }
+  /* Three columns side by side */
+  .row{
+      width: 90%;
+      max-width: 600px;
+  }
+  
+  .column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 0 8px;
+      
+    }
+    
+    /* Display the columns below each other instead of side by side on small screens */
+   
+    /* Add some shadows to create a card effect */
+    .card {
+      width: 100%;
+      box-shadow: 5px 4px 8px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 25px;
+    }
+    .card img {
+      width: 80%;
+      margin: auto;
+      padding: 10px;
+      border-radius: 35px;
+    }
+    
+    /* Some left and right padding inside the container */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      padding: 15px 16px;
+      
+
+    }
+    .container p{
+      font-size: 1rem;
+      padding: 5px;
+      font-family: var(--Franklin);
+      font-weight: bold;
+      font-style: italic;
+
+  
+    }
+    /* Clear floats */
+    .container::after, .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    .title {
+      color: grey;
+    }
+    
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    .button:hover {
+      background-color: #555;
+    }
+
+
+@media screen and (min-width: 768px){
 main.show-profile-main{
     border: 3px solid black;
     padding: 3rem;
-    background: rgba(181, 213, 197, 0.7);
+    background: linear-gradient(var(--verde), var(--blanco), var(--violeta));
     margin: 1rem auto;
     border-radius: 15px;
 }
@@ -16,12 +161,18 @@ main.show-profile{
 main.show-profile p {
     justify-content: center;
     text-align: center;
+   align-items: center;
+}
+.ct-mail{
+  text-align: center;
 }
 main.show-profile-main p.show-profile-center{
     text-align: center;
     width: 100%;
     margin-bottom: 2rem;
     font-size: 2rem;
+    font-family: var(--Franklin);
+    font-weight: bold;
 }
 
 
@@ -37,19 +188,21 @@ main.show-profile-main article.show-profile{
     background: var(--negro);
     color: var(--blanco);
     padding: 1rem;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 main.show-profile-main button.show-profile-update-button{
     width: 50%;
-    padding: 1rem;
+    padding: 0.5rem;
     margin: 1rem auto;
+    border-radius: 15px;
 }
 
 main.show-profile-main button.show-profile-delete-button{
     width: 50%;
-    padding: 1rem;
+    padding: 0.5rem;
     margin: 0 auto;
+    border-radius: 15px;
     
 }
 
@@ -67,6 +220,10 @@ main.show-profile-main form.show-profile-form-main{
 
 }
 .column {
+  width: 100%;
+}
+
+.column {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,14 +237,14 @@ main.show-profile-main form.show-profile-form-main{
   /* Add some shadows to create a card effect */
   .card {
     width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 4px 8px 8px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
   }
   .card img {
-    width: 70%;
+    width: 80%;
     margin: auto;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 35px;
   }
   
   /* Some left and right padding inside the container */
@@ -133,3 +290,4 @@ main.show-profile-main form.show-profile-form-main{
   .button:hover {
     background-color: #555;
   }
+}

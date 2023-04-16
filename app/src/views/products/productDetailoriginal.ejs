@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%-include("./partials/head") %> 
+<link rel="stylesheet" href="/css/productsDetail.css">
+
+<body> 
+  <%-include("./partials/header") %> 
+     
+
+    <!--PRODUCTOS-->
+    <section class="detail-products">
+      <article class="product">
+          <img src="/images/products/<%= image ? image : "default-image.png"  %>">
+          <div class="btn-left">
+            <i class="fa-solid fa-less-than"></i>
+          </div>
+          <div class="btn-rigth">
+            <i class="fa-solid fa-greater-than"></i>
+          </div>
+      </article></div>
+      <div class="products-photos">
+        <div class="photo-container"><img src="/productos/indumentaria/sombrero3-vista1.png" alt=""></div>
+      <div class="photo-container" ><img src="/productos/indumentaria/sombrero3-vista2.png" alt=""></div>
+    </div>
+      <div><h2><%= name %></h2></div>
+      <div class="product--description">
+        <p><%= description %>
+        </p>
+        </div>
+        <!-- PRODUCTOS SIMILARES -->
+
+<!-- INFORMACION RELACIONADA AL PRODUCTO -->
+        <div class="information">
+          <div class="stock">
+          <h5>Unidades disponibles : </h5>
+        </div>
+        <div class="price">
+          <p>$<%= price  %></p>
+        </div>
+        <div class="discount">
+          <span>% 30</span><span> Descuento</span>
+        </div>
+<button class="cart-btn">
+  <h4>Agregar al carrito</h4>
+</button>
+
+<div class="information-list">
+  <h5>Métodos de envío y pagos disponibles :</h5>
+  <ul>
+    <li><i class="fa-solid fa-money-bill-wave"></i>Efectivo y <a href="#">Tarjetas*</a> </li>
+    <li>Acordar con el vendedor</li>
+    <li><i class="fa-solid fa-truck"></i>Envios a domicilio o a otros puntos de venta</li>
+  </ul>
+
+<button class="btn-calculate"><a class="link" href="#">Calcular Aquí</a></button>
+        </div>
+        <div class="finalize-purchase-btn">
+          <button class="goCart-btn"><a class="link" href="/productCart">Ir a Comprar</a></button>
+        </div>
+      </div>
+</section>
+<div class="title-similar-products"><h4>Productos Destacados</h4></div>
+
+<section class="similar-products">
+  <div class="photo-container"><img src="/productos/indumentaria/sombrero1.jpg" alt=""></div>
+  <div class="photo-container"><img src="/productos/indumentaria/sombrero2.jpg" alt=""></div>
+  <div class="photo-container"><img src="/productos/indumentaria/sombrero4.jpg" alt=""></div>
+  <div class="photo-container"><img src="/productos/indumentaria/sombrero7.jpg" alt=""></div>
+
+</section>
+<%-include("./partials/footer") %> 
+
+
+</body>
+
+</html>

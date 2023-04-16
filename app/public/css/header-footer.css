@@ -1,11 +1,35 @@
-@import url("general.css");
+@import url("css/general.css");
 /*--------------- HEADER START ---------------*/
 
 header.header-main .header-title h1.first-title,h1.secundary-title{
    display: none;
-   
 
 }
+button{
+    border:3px solid var(--negro); 
+    box-shadow: inset 7px -7px 16px var(--violeta);
+    border: 3px solid var(--negro);
+    font-family: var(--Nerko);
+    color: black;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px var(--violeta);
+  }
+  button:hover{
+    transform: scale(1.1);
+  }
+  button:active{
+    background-color: var(--negro);
+    box-shadow: 4px 4px 5px var(--negro);
+    transform: translateY(5px);
+    color: var(--blanco);
+  }
+button.header__search-button{
+    border-radius: 15px;
+    width: 60px;
+    height: 25px;
+    border : 1px solid white;
+    margin-top: 3px;
+  }
 header.header-main {
     width: 100%;
     display: flex;
@@ -108,10 +132,10 @@ header.header-main div.header-burger-menu-close{
 }
 
 header.header-main div.header-burger-menu-barra{
-    background-color: var(--blanco);
+    background-color:var(--white);
     font-size: var(--titulo);
     border: 2px solid var(--violeta);
-    color: var(--negro);
+    color: var(--violeta);
     border-radius: 10px;
     height: 45px;
 }
@@ -120,7 +144,7 @@ header.header-main div.header-burger-menu-barra:hover{
     color: var(--blanco);
 }
 header.header-main div.header-burger-menu-barra:active{
-    background-color: var(--naranja);
+    background-color: var(--violeta);
     color: var(--negro);
     
 }
@@ -149,7 +173,7 @@ header.header-main div.header-burger-menu-burger div.header-burger-menu-barra-bu
     left: 0;
     height: 250px;
     width: 100%;
-    background-color: var(--naranja);
+    background-color: var(--violeta);
     z-index: 10;
     display: flex;
     justify-content: center;
@@ -186,7 +210,8 @@ header.header-main div.header-burger-menu-burger div.header-burger-menu-close-bu
 
 
 /*--------------- CART AND LOGIN BUTTONS ---------------*/
-header.header-main button.header-log-in-burger{  
+
+/*  header.header-main button.header-log-in{  
     margin-top: 1rem;
     height: 30px;
     width: 40px;
@@ -200,8 +225,8 @@ header.header-main button.header-log-in-burger{
     top: 50px;
     left: 10px;
     z-index: 999;
-}
-header.header-main button.header-go-cart-burger{ 
+} */
+/* header.header-main button.header-go-cart-burger{ 
     margin-top: 10rem;
     height: 30px;
     width: 40px;
@@ -216,7 +241,7 @@ header.header-main button.header-go-cart-burger{
     left: 10px;
     z-index: 999;
     
-}
+} */
 
 
 /* BURGUER MENU BUTTON STYLES */
@@ -252,6 +277,65 @@ header.header-main button.header-log-in{
    display: none;
 }
 /* header buttons */
+/* header menu burguer fullscreen */
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color:var(--violeta); /* Black fallback color */
+    background-color:var(--violeta); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--black);
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+    border-radius: 25px;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 60px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
 /* Dropdown Button */
 .dropbtn {
     background-color: #04AA6D;
@@ -450,7 +534,9 @@ footer.footer-main div.footer-contenedor div.footer-caja-redes div.footer-icon-c
 /*--------------- MEDIAQUERYS START ---------------*/
 @media (min-width: 768px) {
     /*--------------- HEADER START ---------------*/
-  
+    .burger-btn{
+        display:none;
+    }
 
     header.header-main button.header-go-cart{
         display: flex;
