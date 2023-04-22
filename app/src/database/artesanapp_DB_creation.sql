@@ -33,7 +33,7 @@ name varchar(100) not null,
 price int(100) not null,
 description varchar(100),
 discount int(100),
-image varchar(100) not null default "default.jpg",
+image varchar(50) not null default "default.jpg",
 categories_id int(20) not null,
 primary key (id),
 foreign key (categories_id) references categories(id)
