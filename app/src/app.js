@@ -5,6 +5,8 @@ const methodOverride = require("method-override");
 const session = require("express-session");
 const cookieParser = require("cookie-parser");
 const cookies = require("./middlewares/cookies");
+const bcrypt = require("bcryptjs")
+
 
 //Template engines
 app.set("view engine","ejs")

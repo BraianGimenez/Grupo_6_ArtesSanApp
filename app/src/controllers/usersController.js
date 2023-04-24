@@ -1,5 +1,8 @@
 const {validationResult} = require("express-validator");
 const {readJSON, writeJSON} = require("../database")
+const { User } = require("../database/models");
+const { error } = require("console");
+const bcrypt = require("bcryptjs")
 
 module.exports = {
     register: (req, res) => {
@@ -13,7 +16,7 @@ module.exports = {
                 session: req.session
             })
         } else {
-            res.render("login")
+            res.render("users/login")
         }
         
     },
@@ -21,36 +24,39 @@ module.exports = {
         let errors = validationResult(req);
 
         if (errors.isEmpty()) {
-            let usersDB = readJSON("users.json");
+            User.findOne({
+                where: {
+                    email: email,
+                }
+            })
+            .then((user)  => {
+                req.session.user = {
+                    id: user.id,
+                    name: user.name,
+                    rol: user.rol
+                }
 
-            let user = usersDB.find(user => user.email === req.body.email);
-            req.session.user = {
-                id:user.id,
-                name:user.name,
-                email:user.email,
-                pass:user.pass,
-                recordar:user.recordar,
-                rol:user.rol
-            }
+                let tiempoDeVidaCookie = new Date(Date.now() + 60000);
 
-            let cookieLife = new Date(Date.now() + 60000); 
-
-            if(req.body.recordar){
-                res.cookie("userArtesanApp",
-                req.session.user,
-                {
-                    expires:cookieLife,
-                    httpOnly: true
-                })
-            }
-
-            res.locals.user = req.session.user
-
-            res.redirect("/")
+                if(req.body.remember) {
+                    res.cookie(
+                        "userArteSanApp", 
+                        req.session.user, 
+                        {
+                            expires: tiempoDeVidaCookie,
+                            httpOnly: true
+                        })
+                }
+    
+                res.locals.user = req.session.user;
+    
+                res.redirect("/");
+            })
+            .catch(error => console.log())
         } else {
-            res.render("login", {
+            return res.render("users/login", {
                 errors: errors.mapped(),
-                session:req.session
+                session: req.session
             })
         }
     },
@@ -62,7 +68,7 @@ module.exports = {
         res.redirect("/")
     },
     storeUser: (req,res) => {
-
+/* 
        let data = req.body;
        let database = readJSON("users.json");
        let errors = validationResult(req);
@@ -86,6 +92,33 @@ module.exports = {
             session:req.session
         })
        }
+    }, */
+    let errors = validationResult(req);
+
+        if(errors.isEmpty()) {
+            
+            let newUser = {
+             name: req.body.name,
+             last_name: req.body.last_name,
+             email: req.body.email,
+             pass: bcrypt.hashSync(req.body.pass, 12),
+             avatar: req.file ? req.file.filename : "default-image.png",
+             rol: 0,
+         
+            };
+
+            User.create(newUser)
+            .then(() => {
+               return res.redirect("users/login");
+            })
+            .catch(error => console.log(error))
+        } else {
+            res.render("users/register", {
+                errors: errors.mapped(),
+                old: req.body,
+                session: req.session
+            })
+        }
     },
     showProfile:(req,res) => {
         res.render("users/showProfile",{
@@ -98,7 +131,7 @@ module.exports = {
         })
     },
     updateProfile: (req,res) => {
-        let userDB = readJSON("users.json");
+       /*  let userDB = readJSON("users.json");
 
         let userId = req.session.user.id;
         let user = userDB.find(user => user.id === userId);
@@ -119,16 +152,51 @@ module.exports = {
         
         return res.redirect("users/showProfile")
 
-    },
+    }, */
+    let errors = validationResult(req);
+
+    if(errors.isEmpty()) {
+
+        let userId = req.session.user.id;
+        let user = users.find(user => user.id === userId);
+
+        const {
+            name,
+            last_name,
+        } = req.body;
+
+        user.name = name;
+        user.last_name = last_name;
+        user.avatar = req.file ? req.file.filename : user.avatar;
+
+        writeUsersJson(users)
+
+        delete user.pass;
+
+        req.session.user = user;
+
+        return res.redirect("/users/showProfile");
+    } else {
+        const userInSessionId = req.session.user.id;
+        const userInSession = users.find(user => user.id === userInSessionId);
+
+        return res.render("user/showProfile", {
+            user: userInSession,
+            session: req.session,
+            errors: errors.mapped(),
+        })
+    }
+},
+    
     deleteProfile:(req,res) => {
-        const userId = req.session.user.id;
-        let userDB = readJSON("users.json");
+       /*  const userId = req.session.user.id;
+      let userDB = readJSON("users.json");
 
         let user = userDB.find(user => user.id === userId);
 
         userDB.pop(user);
 
-        writeJSON("users.json", userDB);
+        writeJSON("users.json", userDB); */
 
         res.redirect("/")
     }

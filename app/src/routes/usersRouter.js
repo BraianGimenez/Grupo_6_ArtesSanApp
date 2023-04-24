@@ -1,11 +1,12 @@
 const express = require("express");
 const router = express.Router();
+const bcrypt = require("bcryptjs")
 
 // controller
 const {login, register, storeUser, loggedIn, profile, updateProfile, deleteProfile, showProfile, loggedOut} = require("../controllers/usersController");
 
 // middlewares
-const LoginUserValidation = require("../validations/LoginUserValidation");
+const loginUserValidation = require("../validations/loginUserValidation");
 const registerUserValidation = require("../validations/registerUserValidation.js");
 const checkSession = require("../middlewares/checkUserInSession");
 const checkUserNormal = require("../middlewares/checkUserNormal");
@@ -13,7 +14,7 @@ const checkUserNormal = require("../middlewares/checkUserNormal");
 
 // Login
 router.get("/login", checkUserNormal,login);
-router.post("/login",checkUserNormal,LoginUserValidation, loggedIn);
+router.post("/login",checkUserNormal,loginUserValidation, loggedIn);
 // Register
 router.get("/register" ,checkUserNormal, register)
 router.post("/register",checkUserNormal, registerUserValidation,storeUser)
